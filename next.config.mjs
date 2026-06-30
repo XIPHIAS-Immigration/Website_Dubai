@@ -39,6 +39,7 @@ const nextConfig = {
   },
 
   images: {
+    unoptimized: process.env.NODE_ENV === "development",
     formats: ["image/avif", "image/webp"],
     qualities: [75, 80],
     remotePatterns: [
