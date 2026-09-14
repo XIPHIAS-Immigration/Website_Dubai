@@ -12,7 +12,7 @@ const SESSION_SHOWN_KEY = "xiphias_quick_enquiry_shown_session";
 // visitor never gets two lead forms in one visit.
 const LEAD_ASK_KEY = "xiphias_exit_form_shown";
 
-const SHOW_DELAY_MS = 25_000;
+const SHOW_DELAY_MS = 800; // near-instant: just enough for the page to paint first
 const SHOW_SCROLL_RATIO = 0.35;
 const DISMISS_HIDE_DAYS = 7;
 const SUBMIT_HIDE_DAYS = 30;
@@ -24,17 +24,6 @@ function shouldSkipPath(pathname: string) {
   if (p === "/eligibility" || p.startsWith("/eligibility/")) return true;
   if (p.includes("eligibility-check")) return true;
   return false;
-}
-
-function readUntilFromLocalStorage(key: string) {
-  try {
-    const raw = window.localStorage.getItem(key);
-    if (!raw) return 0;
-    const parsed = Number.parseInt(raw, 10);
-    return Number.isFinite(parsed) ? parsed : 0;
-  } catch {
-    return 0;
-  }
 }
 
 function writeUntilToLocalStorage(key: string, days: number) {
@@ -103,21 +92,13 @@ export default function QuickEnquiryPopup() {
 
     if (skipRoute) return;
 
-    const now = Date.now();
-    const dismissedUntil = readUntilFromLocalStorage(DISMISS_UNTIL_KEY);
-    const submittedUntil = readUntilFromLocalStorage(SUBMITTED_UNTIL_KEY);
-    let shownThisSession = false;
-
+    // Shown on every page load, per request - no post-submit or dismissal cooldown.
+    // The one exception: if XiaExitForm has already asked this visitor for their
+    // details in this session, do not stack a second lead form on top of it.
     try {
-      shownThisSession =
-        window.sessionStorage.getItem(SESSION_SHOWN_KEY) === "1" ||
-        window.sessionStorage.getItem(LEAD_ASK_KEY) === "1";
+      if (window.sessionStorage.getItem(LEAD_ASK_KEY) === "1") return;
     } catch {
-      shownThisSession = false;
-    }
-
-    if (shownThisSession || now < dismissedUntil || now < submittedUntil) {
-      return;
+      // storage unavailable - fall through and show it
     }
 
     let fired = false;

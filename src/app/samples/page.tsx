@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { cormorant } from "@/lib/local-fonts";
 import MenuIconSamples from "./MenuIconSamples";
 
-const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["500","600","700"], style: ["normal","italic"], display: "swap" });
+const serif = cormorant;
 
 // Design scratchpad, not content. Without this the route is indexable and the
 // sitemap walker happily lists it, which hands Google a page of unfinished
