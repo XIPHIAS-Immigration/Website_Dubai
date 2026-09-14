@@ -1,6 +1,7 @@
 // Auto-generated menu data based on the latest sitemap.
 // Only links that exist in the current sitemap are retained.
 import type { HeaderItem } from '../menu.types'
+import { REPORTS, formatAed } from '@/lib/reports/catalogue';
 
 /**
  * Information architecture (2026 redesign):
@@ -652,8 +653,17 @@ const aboutItems: HeaderItem[] = [
 // ---------------------------
 // Tools (XIA suite + planning tools) — a flagship section
 // ---------------------------
+// Built from the report catalogue so the menu can never drift from the pages.
+const reportItems: HeaderItem[] = REPORTS.map((report) => ({
+  label: report.title,
+  href: `/get-report/${report.slug}`,
+  description: `${formatAed(report.priceAed)} · ${report.turnaround}`,
+  meta: { iconEmoji: '📄' },
+}));
+
 const toolsItems: HeaderItem[] = [
   { label: 'XIA Intelligence', href: '/xia-intelligence', description: 'AI route scoring across every pathway', meta: { iconEmoji: '🧠' } },
+  { label: 'Reports', href: '/reports', description: 'Written assessments from AED 99', meta: { iconEmoji: '📄' } },
   { label: 'Eligibility Check', href: '/eligibility', description: 'Screen your profile in minutes', meta: { iconEmoji: '✅' } },
   { label: 'Cost Estimator', href: '/cost-estimator', description: 'Fees, due diligence & dependants', meta: { iconEmoji: '🧮' } },
   { label: 'Compare Programmes', href: '/compare-programs', description: 'Weigh routes side by side', meta: { iconEmoji: '⚖️' } },
@@ -703,6 +713,60 @@ export const headerMenu: HeaderItem[] = [
     href: '/xia-intelligence',
     badge: { text: 'XIA', tone: 'info' },
     submenu: toolsItems,
+  },
+
+  // Guides — long-form pages written for people living in the Emirates.
+  // Hardcoded rather than imported from src/data/guides.ts on purpose: this
+  // file is pulled into a client component, and importing the guide bodies
+  // would ship ~55KB of prose in the nav bundle. Keep the two in step by hand.
+  {
+    label: 'Guides',
+    href: '/canada-pr-from-dubai',
+    submenu: [
+      {
+        label: 'Canada from the UAE',
+        href: '/canada-pr-from-dubai',
+        submenu: [
+          { label: 'Canada PR from Dubai', href: '/canada-pr-from-dubai', description: 'Routes, timeline and real costs' },
+          { label: 'Canada PR with UAE work experience', href: '/canada-pr-with-uae-work-experience', description: 'What your Gulf employment letter must say' },
+          { label: 'Express Entry from the UAE', href: '/express-entry-from-uae', description: 'The process, in the right order' },
+        ],
+      },
+      {
+        label: 'Australia from the UAE',
+        href: '/australia-pr-from-dubai',
+        submenu: [
+          { label: 'Australia PR from Dubai', href: '/australia-pr-from-dubai', description: 'Assessment first, points second' },
+        ],
+      },
+      {
+        label: 'Second citizenship',
+        href: '/second-passport-for-uae-residents',
+        submenu: [
+          { label: 'A second passport for UAE residents', href: '/second-passport-for-uae-residents', description: 'What it solves, and what it does not' },
+          { label: 'Portugal Golden Visa from Dubai', href: '/portugal-golden-visa-from-dubai', description: 'What survived the 2023 reform' },
+          { label: 'Caribbean citizenship from the UAE', href: '/caribbean-citizenship-from-uae', description: 'Every fee, itemised' },
+        ],
+      },
+      {
+        label: 'Choosing a consultant',
+        href: '/verify-immigration-consultant',
+        submenu: [
+          { label: 'Verify an immigration consultant', href: '/verify-immigration-consultant', description: 'The five-minute register check' },
+          { label: 'Canada immigration consultants in Dubai', href: '/canada-immigration-consultants-in-dubai', description: 'CICC licence R516194' },
+          { label: 'Canada PR consultants, Abu Dhabi', href: '/canada-pr-consultants-abu-dhabi', description: 'Online throughout' },
+          { label: 'Corporate immigration services, UAE', href: '/corporate-immigration-services-uae', description: 'Moving staff, properly' },
+        ],
+      },
+    ],
+  },
+
+  // Reports — the thing we actually sell, one click from anywhere
+  {
+    label: 'Reports',
+    href: '/reports',
+    badge: { text: 'New', tone: 'success' },
+    submenu: reportItems,
   },
 
   // Insights

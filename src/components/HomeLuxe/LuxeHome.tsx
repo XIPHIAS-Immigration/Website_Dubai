@@ -15,6 +15,7 @@ import InsightsNews from "./InsightsNews";
 import WhyInvest from "./WhyInvest";
 import WhatWeProvide from "./WhatWeProvide";
 import FaqSection from "./FaqSection";
+import XiaBand from "@/components/Xia/XiaBand";
 
 const GOLD = "#bfa15c";
 // Below-fold videos (desktop-only via MediaBackdrop; mobile gets the poster).
@@ -263,6 +264,7 @@ export default function AssembledHome({ serifClass }: { serifClass: string }) {
     <div>
       <Header serifClass={serifClass} />
       <Hero serifClass={serifClass} />
+      <XiaBand />
       <WhatBringsYou serifClass={serifClass} />
       <WhyInvest serifClass={serifClass} imageSrc={IMG.dubaiPortrait} imageAlt="Dubai skyline and Museum of the Future" />
       <ProgrammesTable serifClass={serifClass} />

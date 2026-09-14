@@ -2,8 +2,18 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { Phone, Mail, Globe, LogIn } from 'lucide-react';
+import { Phone, Mail, Globe, LogIn, MessageCircle } from 'lucide-react';
 import GlobalSearch from '@/components/GlobalSearch';
+
+const PHONE_DISPLAY = '+971 52 727 5101';
+const PHONE_TEL = '+971527275101';
+const WHATSAPP_URL = 'https://wa.me/971527275101';
+const EMAIL = 'dubai@xiphiasimmigration.com';
+
+const pill =
+  'group flex items-center gap-1.5 text-[#eef3fb]/70 hover:text-[#eef3fb] transition-colors duration-150';
+const icon =
+  'inline-flex h-[22px] w-[22px] items-center justify-center rounded-full bg-gold/90 text-[#0a1733] shrink-0 group-hover:bg-gold transition-colors duration-150';
 
 export default function TopBar() {
   return (
@@ -15,27 +25,41 @@ export default function TopBar() {
           {/* Left — inline contact info */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:+919021335577"
-              aria-label="Call +91 9021335577"
-              className="group flex items-center gap-1.5 text-[#eef3fb]/70 hover:text-[#eef3fb] transition-colors duration-150"
+              href={`tel:${PHONE_TEL}`}
+              aria-label={`Call ${PHONE_DISPLAY}`}
+              className={pill}
             >
-              <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-full bg-gold/90 text-[#0a1733] shrink-0 group-hover:bg-gold transition-colors duration-150">
+              <span className={icon}>
                 <Phone className="h-3 w-3" aria-hidden />
               </span>
-              <span className="font-medium tracking-wide">+91 9021335577</span>
+              <span className="font-medium tracking-wide">{PHONE_DISPLAY}</span>
+            </a>
+
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Chat with us on WhatsApp at ${PHONE_DISPLAY}`}
+              title="WhatsApp us"
+              className={pill}
+            >
+              <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-full bg-[#25D366] text-white shrink-0 group-hover:bg-[#1ebe5b] transition-colors duration-150">
+                <MessageCircle className="h-3 w-3" aria-hidden />
+              </span>
+              <span className="font-medium tracking-wide">WhatsApp</span>
             </a>
 
             <span className="h-4 w-px bg-gold/25" aria-hidden />
 
             <a
-              href="mailto:immigration@xiphias.in"
-              aria-label="Email immigration@xiphias.in"
-              className="group flex items-center gap-1.5 text-[#eef3fb]/70 hover:text-[#eef3fb] transition-colors duration-150"
+              href={`mailto:${EMAIL}`}
+              aria-label={`Email ${EMAIL}`}
+              className={pill}
             >
-              <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-full bg-gold/90 text-[#0a1733] shrink-0 group-hover:bg-gold transition-colors duration-150">
+              <span className={icon}>
                 <Mail className="h-3 w-3" aria-hidden />
               </span>
-              <span className="font-medium tracking-wide">immigration@xiphias.in</span>
+              <span className="font-medium tracking-wide">{EMAIL}</span>
             </a>
           </div>
 

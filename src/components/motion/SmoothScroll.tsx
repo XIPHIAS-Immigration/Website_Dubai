@@ -5,6 +5,9 @@ import { useReducedMotion } from "framer-motion";
 import Lenis from "lenis";
 import { gsap, ScrollTrigger } from "./gsap";
 
+/** Published on window so overlays can pause Lenis without importing it. */
+type LenisWindow = Window & { __lenis?: Lenis };
+
 /**
  * Drives premium inertial scrolling (Lenis) and keeps GSAP ScrollTrigger in
  * sync with it, so scroll-scrubbed and pinned animations track the smoothed
@@ -27,6 +30,11 @@ export default function SmoothScroll() {
       anchors: true,
     });
 
+    // Full-screen overlays (XIA chat, the exit form) must pause Lenis: it
+    // preventDefaults every wheel event at window level, which otherwise
+    // leaves the overlay unscrollable on a trackpad.
+    (window as LenisWindow).__lenis = lenis;
+
     lenis.on("scroll", ScrollTrigger.update);
 
     const onTick = (time: number) => lenis.raf(time * 1000);
@@ -35,6 +43,7 @@ export default function SmoothScroll() {
 
     return () => {
       gsap.ticker.remove(onTick);
+      if ((window as LenisWindow).__lenis === lenis) delete (window as LenisWindow).__lenis;
       lenis.destroy();
     };
   }, [reduce]);

@@ -1,34 +1,39 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
 
-import XiaIntelligenceClient from "@/components/XiaIntelligence/XiaIntelligenceClient";
-import { getXiaIntelligenceData } from "@/lib/xia-intelligence";
+import { JsonLd } from "@/lib/seo";
+import XiaAutoOpen from "@/components/Xia/XiaAutoOpen";
+import XiaBand from "@/components/Xia/XiaBand";
 
-const serif = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
-  display: "swap",
-});
+// Route Intelligence, Deep Analysis and the old XIA suite were three names for
+// one thing, which is exactly how it read to visitors. This is now a single
+// assistant; the URL is kept because it is linked from the menus and indexed.
 
 export const metadata: Metadata = {
-  title: "Route Intelligence",
+  title: "XIA Route Intelligence — which routes you qualify for | XIPHIAS Dubai",
   description:
-    "Rank immigration routes by country, budget, timeline, family needs, and XIPHIAS programme knowledge.",
-  alternates: {
-    canonical: "/route-intelligence",
-  },
+    "Rank every residency, citizenship and skilled-migration route against your own profile: destination, capital, timeline, family and occupation. Built on XIPHIAS programme data.",
+  alternates: { canonical: "/route-intelligence" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "XIA Route Intelligence",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  url: "/route-intelligence",
+  description:
+    "Scores a profile against residency, citizenship and skilled-migration programmes and ranks the routes that fit.",
+  provider: { "@type": "Organization", name: "XIPHIAS Immigration" },
+  offers: { "@type": "Offer", price: 0, priceCurrency: "AED" },
 };
 
 export default function RouteIntelligencePage() {
   return (
-    <XiaIntelligenceClient
-      data={getXiaIntelligenceData()}
-      initialEngine="route"
-      lockedEngine
-      title="Route Intelligence"
-      subtitle="A focused route-fit workspace for destination, capital, timeline, family, and presence preferences."
-      serifClass={serif.className}
-    />
+    <>
+      <JsonLd data={jsonLd} />
+      <XiaAutoOpen />
+      <XiaBand />
+    </>
   );
 }

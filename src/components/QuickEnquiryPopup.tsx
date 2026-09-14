@@ -8,6 +8,9 @@ import ContactForm from "@/components/ContactForm";
 const DISMISS_UNTIL_KEY = "xiphias_quick_enquiry_dismissed_until";
 const SUBMITTED_UNTIL_KEY = "xiphias_quick_enquiry_submitted_until";
 const SESSION_SHOWN_KEY = "xiphias_quick_enquiry_shown_session";
+// Shared with XiaExitForm. Whichever asks first claims the session, so a
+// visitor never gets two lead forms in one visit.
+const LEAD_ASK_KEY = "xiphias_exit_form_shown";
 
 const SHOW_DELAY_MS = 25_000;
 const SHOW_SCROLL_RATIO = 0.35;
@@ -106,7 +109,9 @@ export default function QuickEnquiryPopup() {
     let shownThisSession = false;
 
     try {
-      shownThisSession = window.sessionStorage.getItem(SESSION_SHOWN_KEY) === "1";
+      shownThisSession =
+        window.sessionStorage.getItem(SESSION_SHOWN_KEY) === "1" ||
+        window.sessionStorage.getItem(LEAD_ASK_KEY) === "1";
     } catch {
       shownThisSession = false;
     }
@@ -122,6 +127,7 @@ export default function QuickEnquiryPopup() {
       setPendingOpen(true);
       try {
         window.sessionStorage.setItem(SESSION_SHOWN_KEY, "1");
+        window.sessionStorage.setItem(LEAD_ASK_KEY, "1");
       } catch {
         // ignore storage failures
       }

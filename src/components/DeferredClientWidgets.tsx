@@ -21,6 +21,12 @@ const VisitorAnalyticsTracker = dynamic(() => import("@/components/Analytics/Vis
   ssr: false,
 });
 
+// XIA loads outside the idle gate: a visitor who clicks "Ask XIA" in the first
+// second must get the assistant, not nothing. The exit form rides with it
+// because it only ever reacts to XIA closing.
+const XiaChatHost = dynamic(() => import("@/components/Xia/XiaChatHost"), { ssr: false });
+const XiaExitForm = dynamic(() => import("@/components/Xia/XiaExitForm"), { ssr: false });
+
 type Props = {
   gaId?: string;
 };
@@ -67,17 +73,23 @@ export default function DeferredClientWidgets({ gaId }: Props) {
     return () => window.clearTimeout(timer);
   }, [isIsolatedRoute, ready]);
 
-  if (isIsolatedRoute || !ready) return null;
+  if (isIsolatedRoute) return null;
 
   return (
     <>
-      <ScrollToTop />
-      <ChatWidget />
-      {engagementReady ? <QuickEnquiryPopup /> : null}
-      {engagementReady ? <GlobalBrochureGate /> : null}
-      <CookieConsentManager />
-      <VisitorAnalyticsTracker />
-      {gaId ? <CookieAwareGA4 gaId={gaId} /> : null}
+      <XiaChatHost />
+      <XiaExitForm />
+      {ready ? (
+        <>
+          <ScrollToTop />
+          <ChatWidget />
+          {engagementReady ? <QuickEnquiryPopup /> : null}
+          {engagementReady ? <GlobalBrochureGate /> : null}
+          <CookieConsentManager />
+          <VisitorAnalyticsTracker />
+          {gaId ? <CookieAwareGA4 gaId={gaId} /> : null}
+        </>
+      ) : null}
     </>
   );
 }

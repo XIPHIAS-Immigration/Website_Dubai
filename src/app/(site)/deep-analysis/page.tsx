@@ -1,34 +1,9 @@
-import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { redirect } from "next/navigation";
 
-import XiaIntelligenceClient from "@/components/XiaIntelligence/XiaIntelligenceClient";
-import { getXiaIntelligenceData } from "@/lib/xia-intelligence";
-
-const serif = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
-  display: "swap",
-});
-
-export const metadata: Metadata = {
-  title: "Deep Analysis",
-  description:
-    "Run a deeper XIA assessment with skills, education, CV notes, evidence signals, and advisor-ready immigration route matching.",
-  alternates: {
-    canonical: "/deep-analysis",
-  },
-};
-
+// "Deep Analysis" was a third front door onto the same assistant, which is why
+// clicking any of the three looked like nothing but a heading change. The deep
+// analysis a visitor is actually after is the paid report, so the URL now goes
+// straight there instead of to a fourth version of the same page.
 export default function DeepAnalysisPage() {
-  return (
-    <XiaIntelligenceClient
-      data={getXiaIntelligenceData()}
-      initialEngine="high-skill"
-      lockedEngine
-      title="Deep Analysis"
-      subtitle="A deeper profile review using skills, education, experience, CV notes, and evidence markers before XIPHIAS advisor verification."
-      serifClass={serif.className}
-    />
-  );
+  redirect("/get-report/deep_analysis_report");
 }

@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { getSiteUrl } from "../lib/seo/site";
+import { REPORTS } from "@/lib/reports/catalogue";
 
 export const runtime = "nodejs";
 // regenerate periodically (good for content sites)
@@ -33,6 +34,23 @@ const BLOCKLIST: Array<string | RegExp> = [
   /^\/preview(\/|$)/,
   /^\/draft(\/|$)/,
   /^\/private(\/|$)/,
+
+  // Design scratchpad. src/app/samples/ is ~100 component demos and each of
+  // these directories has a page.tsx, so the walker below would list them as
+  // real pages. Thin unfinished content is exactly what holds a new domain
+  // back, so they are blocked here and carry a page-level noindex as well.
+  /^\/samples(\/|$)/,
+  /^\/sample2(\/|$)/,
+  /^\/sample3(\/|$)/,
+  /^\/hero-preview(\/|$)/,
+
+  // Transactional and internal — nothing here should ever be a landing page.
+  /^\/payment(\/|$)/,
+  /^\/booking$/,
+  /^\/event$/,
+  /^\/report-advisor-workflow(\/|$)/,
+  /^\/australia-assesment-report(\/|$)/,
+  /^\/canada-assesent-report(\/|$)/,
 ];
 
 /* ------------------------------ utils ----------------------------------- */
@@ -190,6 +208,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         // ignore bad files
       }
     }
+  }
+
+  // 2b) Report pages. The walker skips dynamic segments, so the eight
+  //      /get-report/<slug> pages — the ones we actually want ranking — would
+  //      otherwise never reach the sitemap.
+  for (const report of REPORTS) {
+    const route = `/get-report/${report.slug}`;
+    if (isBlocked(route)) continue;
+    urls.push({
+      url: `${base}${route}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
   }
 
   // 3) Ensure homepage exists

@@ -25,6 +25,20 @@ export default function robots(): MetadataRoute.Robots {
           "/draft",
           "/private",
 
+          // Design scratchpad — component demos, not content
+          "/samples",
+          "/sample2",
+          "/sample3",
+          "/hero-preview",
+
+          // Transactional and internal
+          "/payment",
+          "/booking",
+          "/event",
+          "/report-advisor-workflow",
+          "/australia-assesment-report",
+          "/canada-assesent-report",
+
           // Common duplicate param patterns
           "/*?*utm_*",
           "/*?*gclid=*",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond } from "next/font/google";
 import LuxeHome from "@/components/HomeLuxe/LuxeHome";
+import XiaGreeter from "@/components/Xia/XiaGreeter";
 
 const serif = Cormorant_Garamond({
   subsets: ["latin"],
@@ -36,5 +37,12 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <LuxeHome serifClass={serif.className} />;
+  return (
+    <>
+      {/* The bird greets on every load, before anything asks for details.
+          Dismissing it hands over to the contact form; starting it opens XIA. */}
+      <XiaGreeter />
+      <LuxeHome serifClass={serif.className} />
+    </>
+  );
 }
