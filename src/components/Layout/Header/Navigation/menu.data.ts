@@ -75,6 +75,17 @@ const residencyCountries: HeaderItem[] = [
     ],
   },
   {
+    label: 'France',
+    href: '/residency/france',
+    meta: { code: 'FR' },
+    submenu: [
+      { label: 'Direct Economic Investment', href: '/residency/france/france-talent-economic-investment' },
+      { label: 'Business Creation', href: '/residency/france/france-talent-business-creation' },
+      { label: 'Innovative Economic Project', href: '/residency/france/france-talent-innovative-project' },
+      { label: 'Long-Stay Visitor', href: '/residency/france/france-long-stay-visitor' },
+    ],
+  },
+  {
     label: 'Greece',
     href: '/residency/greece',
     meta: { code: 'GR' },
@@ -426,6 +437,14 @@ const skilledCountries: HeaderItem[] = [
       { label: 'Federal Skilled Trades', href: '/skilled/canada/federal-skilled-trades' },
       { label: 'Global Talent Stream', href: '/skilled/canada/global-talent-stream' },
       { label: 'Provincial Nominee Program', href: '/skilled/canada/provincial-nominee-program' },
+    ],
+  },
+  {
+    label: 'France',
+    href: '/skilled/france',
+    meta: { code: 'FR' },
+    submenu: [
+      { label: 'EU Blue Card', href: '/skilled/france/france-eu-blue-card' },
     ],
   },
   {
