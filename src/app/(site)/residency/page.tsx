@@ -85,7 +85,7 @@ const config: VerticalConfig = {
     },
   ],
   destHeading: "Where we secure residency",
-  destSub: "Twenty jurisdictions to call home.",
+  destSub: "Twenty-one jurisdictions to call home.",
   regions: ["All", "Europe", "Gulf", "Asia", "Americas", "Caribbean", "Oceania", "Africa"],
   countries: [
     { name: "United Arab Emirates", slug: "uae",      region: "Gulf",      img: "/images/residency/uae/uae-golden-visa.webp",                                      time: "2–4 wks",  visa: "183", from: "$545k",   note: "10-yr Golden Visa" },
@@ -93,6 +93,7 @@ const config: VerticalConfig = {
     { name: "Greece",               slug: "greece",   region: "Europe",    img: "/images/residency/greece/greece-golden-visa.webp",                                  time: "2–4 mo",   visa: "186", from: "€250k",  note: "Schengen" },
     { name: "Malta",                slug: "malta",    region: "Europe",    img: "/images/residency/malta/malta-mprp.webp",                                           time: "4–6 mo",   visa: "184", from: "€182k",  note: "Permanent residence" },
     { name: "Cyprus",               slug: "cyprus",   region: "Europe",    img: "/images/residency/cyprus/cyprus-residential-property.webp",                        time: "2–3 mo",   visa: "182", from: "€300k",  note: "Permanent residence" },
+    { name: "France",               slug: "france",   region: "Europe",    img: "/images/residency/france/france-residency.webp",                                    time: "4–6 mo",   visa: "185", from: "€300k",  note: "Talent card · no golden visa" },
     { name: "Hungary",              slug: "hungary",  region: "Europe",    img: "/images/residency/hungary/hungary-residency-by-investment.webp",                   time: "3–6 mo",   visa: "186", from: "€250k",  note: "Guest Investor" },
     { name: "Bulgaria",             slug: "bulgaria", region: "Europe",    img: "/images/residency/bulgaria/bulgaria-aif.webp",                                     time: "6 mo",     visa: "176", from: "€512k",  note: "EU permanent residence" },
     { name: "Singapore",            slug: "singapore",region: "Asia",      img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp",                time: "9–12 mo",  visa: "195", from: "S$10M",  note: "Global Investor (GIP)" },
