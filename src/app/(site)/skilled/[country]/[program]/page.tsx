@@ -31,7 +31,9 @@ export async function generateMetadata(props: { params: Promise<{ country: strin
   } catch { return { title: "Programme not found" }; }
 }
 
-function money(n?: number, c?: string) { if (typeof n !== "number") return undefined; const sym = c === "USD" ? "$" : c === "EUR" ? "€" : c === "GBP" ? "£" : ""; return `${sym}${n.toLocaleString("en-US")}${sym ? "" : c ? ` ${c}` : ""}`; }
+function money(n?: number, c?: string) { if (typeof n !== "number") return undefined; const sym = c === "USD" ? "$" : c === "EUR" ? "€" : c === "GBP" ? "£"
+    : c === "CAD" ? "C$" : c === "AUD" ? "A$" : c === "NZD" ? "NZ$" : c === "SGD" ? "S$"
+    : c === "HKD" ? "HK$" : c === "CHF" ? "CHF " : c === "AED" ? "AED " : c === "INR" ? "₹" : ""; return `${sym}${n.toLocaleString("en-US")}${sym ? "" : c ? ` ${c}` : ""}`; }
 const ROUTE_LABEL: Record<string, string> = { donation: "Donation", "real-estate": "Real estate", bond: "Bond", naturalisation: "Naturalisation" };
 
 export default async function ProgramPage(props: { params: Promise<{ country: string; program: string }> }) {

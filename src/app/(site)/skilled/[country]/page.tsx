@@ -29,7 +29,9 @@ export async function generateMetadata(props: { params: Promise<{ country: strin
 }
 
 function prettyLabel(k: string) { const map: Record<string, string> = { timeZone: "Time zone", population: "Population", capital: "Capital", language: "Language", currency: "Currency", climate: "Climate" }; return map[k] ?? k.replace(/([A-Z])/g, " $1").replace(/^./, (c) => c.toUpperCase()); }
-function money(n: number, c?: string) { const sym = c === "USD" ? "$" : c === "EUR" ? "€" : c === "GBP" ? "£" : ""; return `${sym}${n.toLocaleString("en-US")}${sym ? "" : c ? ` ${c}` : ""}`; }
+function money(n: number, c?: string) { const sym = c === "USD" ? "$" : c === "EUR" ? "€" : c === "GBP" ? "£"
+    : c === "CAD" ? "C$" : c === "AUD" ? "A$" : c === "NZD" ? "NZ$" : c === "SGD" ? "S$"
+    : c === "HKD" ? "HK$" : c === "CHF" ? "CHF " : c === "AED" ? "AED " : c === "INR" ? "₹" : ""; return `${sym}${n.toLocaleString("en-US")}${sym ? "" : c ? ` ${c}` : ""}`; }
 
 export default async function CountryPage(props: { params: Promise<{ country: string }> }) {
   const { country: slug } = await props.params;

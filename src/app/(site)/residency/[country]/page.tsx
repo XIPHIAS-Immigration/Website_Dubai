@@ -43,7 +43,9 @@ function prettyLabel(k: string) {
   return map[k] ?? k.replace(/([A-Z])/g, " $1").replace(/^./, (c) => c.toUpperCase());
 }
 function money(n: number, c?: string) {
-  const sym = c === "USD" ? "$" : c === "EUR" ? "€" : c === "GBP" ? "£" : "";
+  const sym = c === "USD" ? "$" : c === "EUR" ? "€" : c === "GBP" ? "£"
+    : c === "CAD" ? "C$" : c === "AUD" ? "A$" : c === "NZD" ? "NZ$" : c === "SGD" ? "S$"
+    : c === "HKD" ? "HK$" : c === "CHF" ? "CHF " : c === "AED" ? "AED " : c === "INR" ? "₹" : "";
   return `${sym}${n.toLocaleString("en-US")}${sym ? "" : c ? ` ${c}` : ""}`;
 }
 
@@ -54,7 +56,7 @@ export default async function CountryPage(props: { params: Promise<{ country: st
   const programs = getResidencyPrograms(slug);
 
   const facts = m.facts && typeof m.facts === "object" ? Object.entries(m.facts).map(([k, v]) => ({ label: prettyLabel(k), value: String(v) })) : [];
-  const froms = programs.map((p) => p.minInvestment).filter((n): n is number => typeof n === "number");
+  const froms = programs.map((p) => p.minInvestment).filter((n): n is number => typeof n === "number" && n > 0);
   const programmes = programs.map((p) => ({
     title: p.title,
     tagline: p.tagline,

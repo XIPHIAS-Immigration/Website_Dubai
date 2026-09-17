@@ -29,14 +29,16 @@ export async function generateMetadata(props: { params: Promise<{ country: strin
 }
 
 function prettyLabel(k: string) { const map: Record<string, string> = { timeZone: "Time zone", population: "Population", capital: "Capital", language: "Language", currency: "Currency", climate: "Climate" }; return map[k] ?? k.replace(/([A-Z])/g, " $1").replace(/^./, (c) => c.toUpperCase()); }
-function money(n: number, c?: string) { const sym = c === "USD" ? "$" : c === "EUR" ? "€" : c === "GBP" ? "£" : ""; return `${sym}${n.toLocaleString("en-US")}${sym ? "" : c ? ` ${c}` : ""}`; }
+function money(n: number, c?: string) { const sym = c === "USD" ? "$" : c === "EUR" ? "€" : c === "GBP" ? "£"
+    : c === "CAD" ? "C$" : c === "AUD" ? "A$" : c === "NZD" ? "NZ$" : c === "SGD" ? "S$"
+    : c === "HKD" ? "HK$" : c === "CHF" ? "CHF " : c === "AED" ? "AED " : c === "INR" ? "₹" : ""; return `${sym}${n.toLocaleString("en-US")}${sym ? "" : c ? ` ${c}` : ""}`; }
 
 export default async function CountryPage(props: { params: Promise<{ country: string }> }) {
   const { country: slug } = await props.params;
   const m = getCountryFrontmatter(slug) as Record<string, any> & { country: string; summary?: string };
   const programs = getCorporatePrograms(slug);
   const facts = m.facts && typeof m.facts === "object" ? Object.entries(m.facts).map(([k, v]) => ({ label: prettyLabel(k), value: String(v) })) : [];
-  const froms = programs.map((p) => p.minInvestment).filter((n): n is number => typeof n === "number");
+  const froms = programs.map((p) => p.minInvestment).filter((n): n is number => typeof n === "number" && n > 0);
   const programmes = programs.map((p) => ({ title: p.title, tagline: p.tagline, from: typeof p.minInvestment === "number" ? `from ${money(p.minInvestment, p.currency)}` : undefined, timeline: p.timelineLabel, href: `/corporate/${slug}/${p.programSlug}` }));
   const stats: { label: string; value: string }[] = [];
   if (m.timelineLabel || m.timelineMonths) stats.push({ label: "Timeline", value: m.timelineLabel ?? `${m.timelineMonths} mo` });
