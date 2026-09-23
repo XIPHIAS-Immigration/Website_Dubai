@@ -51,7 +51,7 @@ const NUMS = [
 const PROGS: { img: string; tag: string; title: string; note: string; href: string }[] = [
   { img: "/images/residency/uae/uae-golden-visa.webp", tag: "Golden Visa", title: "United Arab Emirates", note: "A 10-year residency for investors, founders and talent — zero income tax.", href: "/golden-visa" },
   { img: "/images/citizenship/grenada/grenada-citizenship.webp", tag: "Citizenship", title: "Grenada", note: "A Caribbean passport with a U.S. E-2 route, in 4–6 months.", href: "/citizenship/grenada" },
-  { img: "/images/residency/portugal/portugal-golden-visa.webp", tag: "Residence", title: "Portugal", note: "EU residence with a path to citizenship in five years.", href: "/residency/portugal" },
+  { img: "/images/residency/portugal/portugal-golden-visa.webp", tag: "Residence", title: "Portugal", note: "EU residence, with permanent residence after five years.", href: "/residency/portugal" },
   { img: "/images/residency/malta/malta-mprp.webp", tag: "Residence", title: "Malta", note: "Permanent residence in a stable EU jurisdiction.", href: "/residency/malta" },
 ];
 

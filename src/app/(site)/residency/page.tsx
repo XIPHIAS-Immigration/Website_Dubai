@@ -89,7 +89,7 @@ const config: VerticalConfig = {
   regions: ["All", "Europe", "Gulf", "Asia", "Americas", "Caribbean", "Oceania", "Africa"],
   countries: [
     { name: "United Arab Emirates", slug: "uae",      region: "Gulf",      img: "/images/residency/uae/uae-golden-visa.webp",                                      time: "2–4 wks",  visa: "183", from: "$545k",   note: "10-yr Golden Visa" },
-    { name: "Portugal",             slug: "portugal", region: "Europe",    img: "/images/residency/portugal/portugal-golden-visa.webp",                             time: "6–9 mo",   visa: "188", from: "€500k",  note: "EU · citizenship in 5 yrs" },
+    { name: "Portugal",             slug: "portugal", region: "Europe",    img: "/images/residency/portugal/portugal-golden-visa.webp",                             time: "6–9 mo",   visa: "188", from: "€500k",  note: "EU · permanent residence in 5 yrs" },
     { name: "Greece",               slug: "greece",   region: "Europe",    img: "/images/residency/greece/greece-golden-visa.webp",                                  time: "2–4 mo",   visa: "186", from: "€250k",  note: "Schengen" },
     { name: "Malta",                slug: "malta",    region: "Europe",    img: "/images/residency/malta/malta-mprp.webp",                                           time: "4–6 mo",   visa: "184", from: "€182k",  note: "Permanent residence" },
     { name: "Cyprus",               slug: "cyprus",   region: "Europe",    img: "/images/residency/cyprus/cyprus-residential-property.webp",                        time: "2–3 mo",   visa: "182", from: "€300k",  note: "Permanent residence" },

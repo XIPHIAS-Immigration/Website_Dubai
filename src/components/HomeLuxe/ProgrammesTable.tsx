@@ -23,7 +23,7 @@ const DATA: Record<"citizenship" | "residency", Row[]> = {
   ],
   residency: [
     { flag: "UAE", name: "United Arab Emirates", route: "Golden Visa · property", from: "$545,000", time: "2–4 weeks", note: "10-year residency · 0% income tax", href: "/golden-visa" },
-    { flag: "Portugal", name: "Portugal", route: "Golden Visa · fund", from: "€500,000", time: "6–9 months", note: "EU · citizenship in 5 years", href: "/residency/portugal" },
+    { flag: "Portugal", name: "Portugal", route: "Golden Visa · fund", from: "€500,000", time: "6–9 months", note: "EU · permanent residence in 5 years", href: "/residency/portugal" },
     { flag: "Greece", name: "Greece", route: "Golden Visa · real estate", from: "€250,000", time: "2–4 months", note: "Schengen · 186 visa-free", href: "/residency/greece" },
     { flag: "Malta", name: "Malta", route: "Permanent residence", from: "€182,000", time: "4–6 months", note: "Stable EU residence", href: "/residency/malta" },
     { flag: "cyprust", name: "Cyprus", route: "Permanent residence", from: "€300,000", time: "2–3 months", note: "182 visa-free", href: "/residency/cyprus" },
