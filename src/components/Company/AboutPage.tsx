@@ -522,11 +522,6 @@ const ALL_REGIONS: { region: string; offices: OfficeEntry[] }[] = [
     ],
   },
   {
-    region: "Qatar",
-    offices: [
-    ],
-  },
-  {
     region: "Brazil",
     offices: [
       { city: "São Paulo", entity: "HOFF ADVOCACIA", address: "Tabapuã Street, No. 594, Room 46, Itaim Bibi, São Paulo Capital, SP – 04533-002", phone: "(11) 3787-0935", phone2: "(11) 98070-8842", email: "info@xiphiasimmigration.com" },

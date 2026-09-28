@@ -44,8 +44,6 @@ const ALL_REGIONS: { region: string; offices: OfficeEntry[] }[] = [
   { region: "USA", offices: [
     { city: "Los Angeles, CA", entity: "XIPHIAS IMMIGRATION PVT LTD (Represented by Partners)", address: "1605 North Cahuenga Blvd, Hollywood, CA 90028", phone: "+1 323 466 1400", email: "info@xiphiasimmigration.com" },
   ]},
-  { region: "Qatar", offices: [
-  ]},
   { region: "Brazil", offices: [
     { city: "São Paulo", entity: "HOFF ADVOCACIA", address: "Tabapuã Street, No. 594, Room 46, Itaim Bibi, São Paulo Capital, SP – 04533-002", phone: "(11) 3787-0935", phone2: "(11) 98070-8842", email: "info@xiphiasimmigration.com" },
   ]},
