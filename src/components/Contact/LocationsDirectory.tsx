@@ -150,6 +150,18 @@ export default function LocationsDirectory({
       mapQuery:
         "1st Floor, JK Nirmala Arcade, Plot no. 780, 80 Feet Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560034",
     },
+    {
+      id: "gurugram",
+      city: "Gurugram",
+      company: "XIPHIAS IMMIGRATION PVT LTD",
+      regionKey: "india",
+      address: [
+        "Augusta Point, Golf Course Rd, near Parsvnath Exotica, DLF Phase 5, Sector 53",
+        "Gurugram, Haryana 122002",
+      ],
+      phones: ["+91-96675 20211"],
+      email: "Gurgaon@xiphias.in",
+    },
 
     // CANADA
     {

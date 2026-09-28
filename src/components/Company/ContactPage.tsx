@@ -17,6 +17,7 @@ type OfficeEntry = { city: string; entity: string; address: string; phone: strin
 const ALL_REGIONS: { region: string; offices: OfficeEntry[] }[] = [
   { region: "India", offices: [
     { city: "Bengaluru", entity: "XIPHIAS IMMIGRATION PVT LTD", address: "1st Floor, JK Nirmala Arcade, Plot no. 780, 80 Feet Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560034", phone: "+91 9021335577", email: "immigration@xiphias.in" },
+    { city: "Gurugram", entity: "XIPHIAS IMMIGRATION PVT LTD", address: "Augusta Point, Golf Course Rd, near Parsvnath Exotica, DLF Phase 5, Sector 53, Gurugram, Haryana 122002", phone: "+91-96675 20211", email: "gurgaon@xiphias.in" },
   ]},
   { region: "UAE", offices: [
     { city: "Dubai", entity: "XIPHIAS IMMIGRATION DMCC", address: "Unit No: 608, Platinum Tower, Plot No: JLT-PH1-I2, Jumeirah Lakes Towers, Dubai, UAE", phone: "+971-527 275 101", email: "dubai@xiphiasimmigration.com" },
@@ -325,7 +326,7 @@ export default function ContactPage({ serifClass }: { serifClass: string }) {
                   {submitting ? "Sending…" : "Send confidential enquiry"}
                   <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </button>
-                <p className="text-center text-[11px] text-[#0c1f3f]/30">Dubai · Bengaluru · Leicester · Waterloo</p>
+                <p className="text-center text-[11px] text-[#0c1f3f]/30">Dubai · Bengaluru · Gurugram · Leicester · Waterloo</p>
               </form>
             )}
           </motion.div>

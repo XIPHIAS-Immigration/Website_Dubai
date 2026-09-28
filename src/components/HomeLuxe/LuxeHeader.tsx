@@ -297,7 +297,7 @@ export default function LuxeHeader({ serifClass }: { serifClass: string }) {
               <p className="pt-5 mb-2 text-[9px] font-bold uppercase tracking-[0.32em]" style={{ color: GOLD }}>Global Offices</p>
               <div className="flex flex-wrap gap-x-4 gap-y-1">
                 {[
-                  "Dubai, UAE", "Bengaluru, India",
+                  "Dubai, UAE", "Bengaluru, India", "Gurugram, India",
                   "Leicester, UK", "Larnaca, Cyprus", "Lisbon, Portugal",
                   "Valletta, Malta", "València, Spain", "Waterloo, Canada",
                   "Montreal, Canada", "Melbourne, Australia", "Auckland, NZ",
