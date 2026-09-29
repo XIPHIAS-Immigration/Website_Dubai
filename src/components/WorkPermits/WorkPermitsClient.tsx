@@ -466,6 +466,37 @@ export default function WorkPermitsClient({
                   ))}
                 </div>
               </div>
+
+              {/* ── Become a channel partner ── */}
+              <div
+                className="mt-6 rounded-2xl border p-5"
+                style={{ borderColor: `${GOLD}40`, background: "rgba(191,161,92,0.08)" }}
+              >
+                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/45">
+                  For agents &amp; consultancies
+                </p>
+                <h3 className="mt-2 text-[17px] font-bold text-white">
+                  Become a channel partner
+                </h3>
+                <p className="mt-2 text-[13.5px] leading-relaxed text-white/70">
+                  Refer work-permit and migration clients to XIPHIAS and we handle the filing,
+                  compliance and follow-through. Licensed advisory, transparent commercials.
+                </p>
+                <a
+                  href="/partner-with-us"
+                  className="mt-4 inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-[13.5px] font-semibold transition"
+                  style={{ background: GOLD, color: "#0b1220" }}
+                >
+                  Apply to partner
+                  <ArrowRight className="h-4 w-4" aria-hidden />
+                </a>
+                <p className="mt-3 text-[12px] text-white/45">
+                  Or email{" "}
+                  <a href="mailto:dubai@xiphiasimmigration.com" className="underline hover:text-white/70">
+                    dubai@xiphiasimmigration.com
+                  </a>
+                </p>
+              </div>
             </div>
 
             {/* Resume intake form */}
