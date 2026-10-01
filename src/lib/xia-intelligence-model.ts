@@ -291,7 +291,7 @@ export const highSkillRoutes: HighSkillVisaRoute[] = [
     title: "Australia Global Talent / Distinguished Talent",
     country: "Australia",
     visaFamily: "Talent migration",
-    href: "/skilled/australia/global-talent-visa-858",
+    href: "/skilled/australia/national-innovation-visa-858",
     summary: "For globally recognised professionals with strong achievement and evidence of benefit to Australia.",
     bestFor: ["researchers", "tech specialists", "founders", "high-impact professionals"],
     timeline: "6-12 months",

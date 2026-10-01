@@ -9,6 +9,7 @@ import {
   loadProgramPageSections,
 } from "@/lib/citizenship-content";
 import { JsonLd, breadcrumbLd } from "@/lib/seo";
+import { localBusinessSchemas } from "@/lib/seo/schema";
 import ProgramHub, { type ProgramData } from "@/components/Country/ProgramHub";
 
 const serif = cormorant;
@@ -98,7 +99,7 @@ export default async function ProgramPage(props: { params: Promise<{ country: st
 
   return (
     <>
-      <JsonLd data={breadcrumbLd([{ name: "Citizenship", url: "/citizenship" }, { name: p.country, url: `/citizenship/${country}` }, { name: p.title, url: `/citizenship/${country}/${program}` }])} />
+      <JsonLd data={breadcrumbLd([{ name: "Citizenship", url: "/citizenship" }, { name: p.country, url: `/citizenship/${country}` }, { name: p.title, url: `/citizenship/${country}/${program}` }])} />{localBusinessSchemas().map((lb, i) => (<JsonLd key={`lb-${i}`} data={lb} />))}
       <ProgramHub data={data} serifClass={serif.className} overviewSection={overviewSection} />
     </>
   );

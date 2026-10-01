@@ -86,6 +86,7 @@ export default function WorkPermitsClient({
   const reduceMotion = useReducedMotion();
   const initialCountry = findWorkPermitCountry(initialCountrySlug) || workPermitCountries[0];
   const [selectedSlug, setSelectedSlug] = useState(initialCountry.slug);
+  const [copied, setCopied] = useState(false);
   const [selectedPermit, setSelectedPermit] = useState(initialCountry.permitTypes[0]);
   const [fileName, setFileName] = useState("");
   const [turnstileToken, setTurnstileToken] = useState<string | undefined>();
@@ -96,6 +97,20 @@ export default function WorkPermitsClient({
     () => findWorkPermitCountry(selectedSlug) || workPermitCountries[0],
     [selectedSlug],
   );
+
+  const copyShareLink = async () => {
+    const url =
+      typeof window !== "undefined"
+        ? `${window.location.origin}/work-permits?country=${selectedCountry.slug}`
+        : "";
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* clipboard unavailable - the link is shown below for manual copy */
+    }
+  };
 
   const heroImg = countryImage("uae", "Africa & Middle East");
 
@@ -187,9 +202,10 @@ export default function WorkPermitsClient({
               <span className="italic" style={{ color: GOLD }}>job consultancy noise.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-[16px] leading-relaxed text-white/75">
-              XIPHIAS reviews work permit routes, resume fit, employer documentation, and filing
-              readiness. We do not provide job placement; we help you understand whether the permit
-              side is workable.
+              Sixteen countries, each checked against the current government rules — including the
+              ones that changed this year. Send us your CV and a licensed advisor tells you which
+              permit route you actually qualify for, and which ones to walk away from. We advise on
+              permits; we are not a job placement agency.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
@@ -241,6 +257,29 @@ export default function WorkPermitsClient({
                   {selectedCountry.advisoryFocus}
                 </p>
               </div>
+            </div>
+
+            {/* Direct registration link for this country — shareable on WhatsApp/email */}
+            <div
+              className="flex flex-wrap items-center justify-between gap-3 border-t px-5 py-4"
+              style={{ borderColor: `${GOLD}26` }}
+            >
+              <div className="min-w-0">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40">
+                  Direct link to register
+                </p>
+                <p className="mt-1 truncate text-[12.5px] text-white/60">
+                  /work-permits?country={selectedCountry.slug}
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={copyShareLink}
+                className="shrink-0 rounded-lg border px-3.5 py-2 text-[12.5px] font-semibold transition"
+                style={{ borderColor: `${GOLD}66`, color: GOLD, background: "rgba(191,161,92,0.10)" }}
+              >
+                {copied ? "Link copied" : "Copy link"}
+              </button>
             </div>
           </motion.div>
         </div>

@@ -50,6 +50,7 @@ async function getLoginNonce(cookies = '') {
   });
   const html = res.body.toString();
   // Extract _wpnonce from login form if present
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const nonceMatch = html.match(/name="testcookie" value="([^"]+)"/);
   const setCookies = [].concat(res.headers['set-cookie'] ?? []);
   return { cookies: setCookies.map(c => c.split(';')[0]).join('; '), html };

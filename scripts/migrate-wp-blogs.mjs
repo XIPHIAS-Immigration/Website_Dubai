@@ -98,6 +98,7 @@ function downloadFile(url, destPath) {
         file.on('finish', () => { file.close(); resolve(true); });
       }).on('error', err => {
         file.close();
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         try { fs.unlinkSync(destPath); } catch (_) {}
         reject(err);
       });
@@ -285,6 +286,7 @@ async function fetchAllPosts() {
   return allPosts;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 async function fetchTerms(postId, taxonomy) {
   try {
     const { body } = await fetchJson(`${WP_BASE}/${taxonomy}?post=${postId}`);

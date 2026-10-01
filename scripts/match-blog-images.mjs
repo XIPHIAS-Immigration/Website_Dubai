@@ -235,6 +235,7 @@ function main() {
   const images = availableImages();
   console.log(`Blogs: ${files.length}  |  Images: ${images.length}\n`);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let updated = 0, kept = 0, skipped = 0;
 
   for (const file of files) {
@@ -242,6 +243,7 @@ function main() {
     processBlog(file, images);
     const after = DRY_RUN ? before : fs.readFileSync(path.join(BLOG_DIR, file), 'utf8');
     if (before !== after) updated++;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     else if (before === after && !DRY_RUN) kept++;
   }
 
