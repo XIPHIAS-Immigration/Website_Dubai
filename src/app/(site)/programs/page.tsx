@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Immigration Programmes | XIPHIAS",
     description:
       "Citizenship, residency, golden visas, skilled migration, corporate mobility and work permits — curated and managed end-to-end by XIPHIAS.",
-    url: "https://www.xiphiasimmigration.com/programs",
+    url: "https://www.xiphiasimmigration.ae/programs",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",
@@ -55,7 +55,7 @@ const PROGRAMMES: CategoryHubItem[] = [
     name: "Corporate Mobility",
     href: "/corporate",
     image: countryImage("singapore"),
-    description: "Move teams and expand your business across borders.",
+    description: "Company setup, founder work passes and team moves, from the UAE to Singapore.",
   },
   {
     name: "Work Permits",
@@ -70,7 +70,7 @@ export default function ProgramsPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Immigration Programmes | XIPHIAS",
-    url: "https://www.xiphiasimmigration.com/programs",
+    url: "https://www.xiphiasimmigration.ae/programs",
     description:
       "Every XIPHIAS route to your second home — citizenship by investment, residency and golden visas, skilled migration, corporate mobility and work permits.",
   };
@@ -81,7 +81,7 @@ export default function ProgramsPage() {
     itemListElement: PROGRAMMES.map((p, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://www.xiphiasimmigration.com${p.href}`,
+      url: `https://www.xiphiasimmigration.ae${p.href}`,
       name: p.name,
     })),
   };

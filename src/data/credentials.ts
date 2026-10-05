@@ -114,7 +114,7 @@ export const firmFacts = {
   foundedYear: 2009,
   advisorYearsExperience: 17,
   jurisdictions: 35,
-  googleRating: 4.8,
+  googleRating: 4.7,
   awards: 39,
   serviceBoundary:
     "XIPHIAS provides immigration consulting and documentation support. It is not a law firm, and nothing on this page is legal advice.",

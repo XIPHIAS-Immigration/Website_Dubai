@@ -76,7 +76,7 @@ function buildSitemap(): SitemapGroup[] {
 
 // ---------- SEO base ----------
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "XIPHIAS Immigration";
-const FALLBACK_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xiphiasimmigration.com";
+const FALLBACK_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xiphiasimmigration.ae";
 
 // Dynamic metadata so canonical/OG URL match the current host
 export async function generateMetadata(): Promise<Metadata> {

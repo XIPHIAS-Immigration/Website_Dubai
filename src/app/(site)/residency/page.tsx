@@ -12,13 +12,13 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "Golden Visa & Investor Residency Programs | XIPHIAS",
   description:
-    "UAE 10-yr Golden Visa, Portugal & Greece from €250k. Real estate, fund & capital routes across 20+ jurisdictions. IMC-licensed, Dubai.",
+    "UAE 10-yr Golden Visa, Portugal from €250k, Greece from €400k. Real estate, fund & capital routes across 20+ jurisdictions. IMC Fellow-led, Dubai.",
   alternates: { canonical: "/residency" },
   openGraph: {
     title: "Golden Visa & Investor Residency Programs | XIPHIAS",
     description:
-      "UAE Golden Visa, Portugal, Greece & Malta — investor residence across 20+ jurisdictions from €250k. Real estate & fund routes, Dubai-based.",
-    url: "https://www.xiphiasimmigration.com/residency",
+      "UAE Golden Visa, Portugal, Greece & Malta — investor residence across 20+ jurisdictions from €50k. Real estate & fund routes, Dubai-based.",
+    url: "https://www.xiphiasimmigration.ae/residency",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",
@@ -47,7 +47,7 @@ const config: VerticalConfig = {
   heroStats: [
     { v: "20+", u: "jurisdictions" },
     { v: "€50k", u: "entry point" },
-    { v: "188", u: "visa-free max" },
+    { v: "195", u: "visa-free max" },
     { v: "10-yr", u: "residency" },
   ],
   whyHeading: "Investor residence,",
@@ -67,7 +67,7 @@ const config: VerticalConfig = {
       title: "Investment-route compliance",
       line: "Source of funds, anti-money-laundering, due diligence.",
       detail:
-        "We prepare your compliance file before the government does their checks — so there are no surprises and no rejections at the due-diligence stage.",
+        "We prepare your compliance file before the government does their checks — to reduce the risk of surprises or a refusal at the due-diligence stage.",
     },
     {
       no: "03",
@@ -84,31 +84,31 @@ const config: VerticalConfig = {
         "We plan the family application from day one — not as an add-on when the individual application is already in progress.",
     },
   ],
-  destHeading: "Where we secure residency",
+  destHeading: "Where we arrange residency",
   destSub: "Twenty-one jurisdictions to call home.",
   regions: ["All", "Europe", "Gulf", "Asia", "Americas", "Caribbean", "Oceania", "Africa"],
   countries: [
-    { name: "United Arab Emirates", slug: "uae",      region: "Gulf",      img: "/images/residency/uae/uae-golden-visa.webp",                                      time: "2–4 wks",  visa: "183", from: "$545k",   note: "10-yr Golden Visa" },
-    { name: "Portugal",             slug: "portugal", region: "Europe",    img: "/images/residency/portugal/portugal-golden-visa.webp",                             time: "6–9 mo",   visa: "188", from: "€500k",  note: "EU · permanent residence in 5 yrs" },
-    { name: "Greece",               slug: "greece",   region: "Europe",    img: "/images/residency/greece/greece-golden-visa.webp",                                  time: "2–4 mo",   visa: "186", from: "€250k",  note: "Schengen" },
-    { name: "Malta",                slug: "malta",    region: "Europe",    img: "/images/residency/malta/malta-mprp.webp",                                           time: "4–6 mo",   visa: "184", from: "€182k",  note: "Permanent residence" },
-    { name: "Cyprus",               slug: "cyprus",   region: "Europe",    img: "/images/residency/cyprus/cyprus-residential-property.webp",                        time: "2–3 mo",   visa: "182", from: "€300k",  note: "Permanent residence" },
-    { name: "France",               slug: "france",   region: "Europe",    img: "/images/residency/france/france-residency.webp",                                    time: "4–6 mo",   visa: "185", from: "€300k",  note: "Talent card · no golden visa" },
-    { name: "Hungary",              slug: "hungary",  region: "Europe",    img: "/images/residency/hungary/hungary-residency-by-investment.webp",                   time: "3–6 mo",   visa: "186", from: "€250k",  note: "Guest Investor" },
-    { name: "Bulgaria",             slug: "bulgaria", region: "Europe",    img: "/images/residency/bulgaria/bulgaria-aif.webp",                                     time: "6 mo",     visa: "176", from: "€512k",  note: "EU permanent residence" },
-    { name: "Singapore",            slug: "singapore",region: "Asia",      img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp",                time: "9–12 mo",  visa: "195", from: "S$10M",  note: "Global Investor (GIP)" },
-    { name: "Curaçao",              slug: "curacao",  region: "Caribbean", img: "/images/residency/curacao/curacao-3-year-investor-residency.webp",                 time: "3–4 mo",   visa: "187", from: "$280k",  note: "Dutch citizenship in 5 yrs" },
-    { name: "Switzerland",          slug: "switzerland", region: "Europe", img: "/images/residency/switzerland/switzerland.webp",                                    time: "3–6 mo",   visa: "187", from: "CHF 450k/yr", note: "Lump-sum tax residence" },
-    { name: "Monaco",               slug: "monaco",   region: "Europe",    img: "/images/residency/Monaco/monaco-residency-property-investment.webp",               time: "3–6 mo",   visa: "178", from: "€500k",  note: "Tax-free living" },
-    { name: "Latvia",               slug: "latvia",   region: "Europe",    img: "/images/residency/latvia/latvia-residency-by-investment-golden-visa.webp",          time: "1–3 mo",   visa: "184", from: "€250k",  note: "Golden Visa · Schengen" },
-    { name: "Hong Kong",            slug: "hong-kong",region: "Asia",      img: "/images/residency/hong-kong/hong-kong-residency-investment.webp",                  time: "6–9 mo",   visa: "170", from: "HK$30M", note: "CIES investor scheme" },
-    { name: "Malaysia",             slug: "malaysia", region: "Asia",      img: "/images/residency/malaysia/malaysia-residency-investment.webp",                    time: "3–6 mo",   visa: "183", from: "$150k",  note: "MM2H long-stay residence" },
+    { name: "United Arab Emirates", slug: "uae",      region: "Gulf",      img: "/images/residency/uae/uae-golden-visa.webp",                                      time: "~2 mo",    visa: "183", from: "AED 2M",  note: "10-yr Golden Visa" },
+    { name: "Portugal",             slug: "portugal", region: "Europe",    img: "/images/residency/portugal/portugal-golden-visa.webp",                             time: "~15 mo",   visa: "188", from: "€250k",  note: "EU · permanent residence in 5 yrs" },
+    { name: "Greece",               slug: "greece",   region: "Europe",    img: "/images/residency/greece/greece-golden-visa.webp",                                  time: "50 days",  visa: "186", from: "€400k",  note: "Schengen · €800k in prime areas" },
+    { name: "Malta",                slug: "malta",    region: "Europe",    img: "/images/residency/malta/malta-mprp.webp",                                           time: "Varies",   visa: "184", from: "€14k/yr lease", note: "Permanent residence · plus €99k in fees & contributions" },
+    { name: "Cyprus",               slug: "cyprus",   region: "Europe",    img: "/images/residency/cyprus/cyprus-residential-property.webp",                        time: "Varies",   visa: "182", from: "on assessment", note: "Permanent residence · EU, not Schengen" },
+    { name: "France",               slug: "france",   region: "Europe",    img: "/images/residency/france/france-residency.webp",                                    time: "3–7 mo",   visa: "185", from: "€300k",  note: "Talent card · no golden visa" },
+    { name: "Hungary",              slug: "hungary",  region: "Europe",    img: "/images/residency/hungary/hungary-residency-by-investment.webp",                   time: "Varies",   visa: "186", from: "€250k",  note: "Guest Investor" },
+    { name: "Bulgaria",             slug: "bulgaria", region: "Europe",    img: "/images/residency/bulgaria/bulgaria-aif.webp",                                     time: "Varies",   visa: "176", from: "on assessment", note: "EU permanent residence" },
+    { name: "Singapore",            slug: "singapore",region: "Asia",      img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp",                time: "~12 mo",   visa: "195", from: "S$10M",  note: "Global Investor (GIP)" },
+    { name: "Curaçao",              slug: "curacao",  region: "Caribbean", img: "/images/residency/curacao/curacao-3-year-investor-residency.webp",                 time: "~4 mo",    visa: "187", from: "XCG 500k", note: "Path to Netherlands nationality" },
+    { name: "Switzerland",          slug: "switzerland", region: "Europe", img: "/images/residency/switzerland/switzerland.webp",                                    time: "~6 mo",    visa: "187", from: "CHF 434.7k tax base", note: "Lump-sum tax residence" },
+    { name: "Monaco",               slug: "monaco",   region: "Europe",    img: "/images/residency/Monaco/monaco-residency-property-investment.webp",               time: "~6 mo",    visa: "178", note: "No set minimum · bank attestation" },
+    { name: "Latvia",               slug: "latvia",   region: "Europe",    img: "/images/residency/latvia/latvia-residency-by-investment-golden-visa.webp",          time: "Varies",   visa: "184", from: "€50k",   note: "Share-capital route only · Schengen" },
+    { name: "Hong Kong",            slug: "hong-kong",region: "Asia",      img: "/images/residency/hong-kong/hong-kong-residency-investment.webp",                  time: "Varies",   visa: "170", from: "HK$30M", note: "CIES investor scheme" },
+    { name: "Malaysia",             slug: "malaysia", region: "Asia",      img: "/images/residency/malaysia/malaysia-residency-investment.webp",                    time: "Varies",   visa: "183", from: "$150k",  note: "MM2H long-stay residence" },
     { name: "Canada",               slug: "canada",   region: "Americas",  img: "/images/residency/canada/bc-entrepreneur-base.webp",                               time: "18–24 mo", visa: "185", from: "C$100k", note: "Ten provincial entrepreneur routes" },
-    { name: "USA",                  slug: "usa",      region: "Americas",  img: "/images/residency/usa/usa-eb5.webp",                                               time: "24–36 mo", visa: "182", from: "$800k",  note: "EB-5 investor green card" },
-    { name: "Panama",               slug: "panama",   region: "Americas",  img: "/images/residency/panama/panama-residency-by-investment.webp",                     time: "1–2 mo",   visa: "141", from: "$300k",  note: "Qualified Investor visa" },
-    { name: "Uruguay",              slug: "uruguay",  region: "Americas",  img: "/images/residency/uruguay/uruguay-residency-by-investment.webp",                   time: "3–6 mo",   visa: "153", from: "$525k",  note: "Residency by investment" },
-    { name: "New Zealand",          slug: "new-zealand", region: "Oceania", img: "/images/residency/new-zealand/new-zealand-residency-by-investment.webp",          time: "6–9 mo",   visa: "190", from: "NZ$5M",  note: "Active Investor Plus" },
-    { name: "Mauritius",            slug: "mauritius",region: "Africa",    img: "/images/residency/mauritius/mauritius-residency-investment.webp",                  time: "3–6 mo",   visa: "143", from: "$375k",  note: "Permanent residence via property" },
+    { name: "USA",                  slug: "usa",      region: "Americas",  img: "/images/residency/usa/usa-eb5.webp",                                               time: "~24 mo",   visa: "182", from: "$800k",  note: "EB-5 investor green card" },
+    { name: "Panama",               slug: "panama",   region: "Americas",  img: "/images/residency/panama/panama-residency-by-investment.webp",                     time: "2–3 mo",   visa: "141", from: "$500k",  note: "Qualified Investor visa" },
+    { name: "Uruguay",              slug: "uruguay",  region: "Americas",  img: "/images/residency/uruguay/uruguay-residency-by-investment.webp",                   time: "~18 mo",   visa: "153", note: "No set investment minimum" },
+    { name: "New Zealand",          slug: "new-zealand", region: "Oceania", img: "/images/residency/new-zealand/new-zealand-residency-by-investment.webp",          time: "36 working days", visa: "190", from: "NZ$5M",  note: "Active Investor Plus" },
+    { name: "Mauritius",            slug: "mauritius",region: "Africa",    img: "/images/residency/mauritius/mauritius-residency-investment.webp",                  time: "~3 mo",    visa: "143", from: "$375k",  note: "Residence permit via property" },
   ],
   routesEyebrow: "How you invest",
   routesEyebrowAr: "طرق الاستثمار",
@@ -130,8 +130,8 @@ const config: VerticalConfig = {
     {
       k: "Capital transfer",
       tag: "Simple & liquid",
-      line: "A bank deposit, business or talent route — the fastest, cleanest path to a Gulf or EU residence permit.",
-      points: ["Fewest moving parts", "Fast to permit", "Liquid capital retained"],
+      line: "A bank deposit, business or talent route — a simple path to a Gulf or EU residence permit.",
+      points: ["Fewest moving parts", "Straightforward to evidence", "Liquid capital retained"],
     },
   ],
   process: [
@@ -186,7 +186,7 @@ const config: VerticalConfig = {
   articles: [
     {
       cat: "Golden Visa",
-      title: "UAE Golden Visa 2025: the complete updated guide",
+      title: "UAE Golden Visa: the complete guide",
       meta: "8 min read · Residency",
       img: "/images/residency/uae/uae-golden-visa.webp",
       href: "/insights",
@@ -200,7 +200,7 @@ const config: VerticalConfig = {
     },
     {
       cat: "Investor Residence",
-      title: "Greece €250k Golden Visa: the complete investor guide",
+      title: "Greece Golden Visa: the €800k, €400k and €250k tiers explained",
       meta: "5 min read · Residency",
       img: "/images/residency/greece/greece-golden-visa.webp",
       href: "/insights",
@@ -221,7 +221,7 @@ export default function ResidencyPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Residency & Golden Visas — Investor Residence, Privately Arranged",
-    url: "https://www.xiphiasimmigration.com/residency",
+    url: "https://www.xiphiasimmigration.ae/residency",
     description: "Investor residence across 20+ jurisdictions — the UAE Golden Visa, Portugal, Greece, Malta and more.",
   };
   const countryListLd = {
@@ -231,7 +231,7 @@ export default function ResidencyPage() {
     itemListElement: countries.map((c, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://www.xiphiasimmigration.com/residency/${c.countrySlug}`,
+      url: `https://www.xiphiasimmigration.ae/residency/${c.countrySlug}`,
       name: c.title || c.country,
     })),
   };
@@ -242,7 +242,7 @@ export default function ResidencyPage() {
     itemListElement: programs.slice(0, 5).map((p, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://www.xiphiasimmigration.com/residency/${p.countrySlug}/${p.programSlug}`,
+      url: `https://www.xiphiasimmigration.ae/residency/${p.countrySlug}/${p.programSlug}`,
       name: p.title,
     })),
   };

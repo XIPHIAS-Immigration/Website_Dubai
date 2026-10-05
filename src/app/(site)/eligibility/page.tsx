@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Immigration Assessment Preview | XIPHIAS Immigration",
     description:
       "Start with a guided XIPHIAS assessment, receive a branded preview by email, and register for a detailed personal report.",
-    url: "https://www.xiphiasimmigration.com/eligibility",
+    url: "https://www.xiphiasimmigration.ae/eligibility",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",

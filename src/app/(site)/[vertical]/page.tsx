@@ -46,7 +46,7 @@ export async function generateMetadata({
   const title = `${capVertical} Programs by Country`;
   const description = `Browse ${vertical} programs, grouped by country.`;
   const canonicalPath = `/${vertical}`;
-  const canonicalUrl = `https://www.xiphiasimmigration.com${canonicalPath}`;
+  const canonicalUrl = `https://www.xiphiasimmigration.ae${canonicalPath}`;
 
   return {
     title,

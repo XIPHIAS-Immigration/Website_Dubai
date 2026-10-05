@@ -28,7 +28,7 @@ export async function generateMetadata(props: { params: Promise<{ country: strin
     const rawD = (m.tagline as string | undefined) ?? `${m.title} — ${m.country} skilled migration route. Profile scoring & end-to-end filing by XIPHIAS, Dubai.`;
     const description = seo?.description ?? rawD.slice(0, 150);
     const heroImage = m.heroImage as string | undefined;
-    return { title, description, keywords: seo?.keywords ?? [title, m.country, ...(m.tags ?? [])].join(", "), alternates: { canonical: `/skilled/${params.country}/${params.program}` }, openGraph: { title, description, type: "article", url: `https://www.xiphiasimmigration.com/skilled/${params.country}/${params.program}`, siteName: "XIPHIAS Immigration", locale: "en_US", images: [{ url: heroImage ?? "/xiphias-immigration.png", width: 1200, height: 630, alt: `${title} – XIPHIAS Immigration` }] }, twitter: { card: "summary_large_image", title, description, images: [heroImage ?? "/xiphias-immigration.png"] } };
+    return { title, description, keywords: seo?.keywords ?? [title, m.country, ...(m.tags ?? [])].join(", "), alternates: { canonical: `/skilled/${params.country}/${params.program}` }, openGraph: { title, description, type: "article", url: `https://www.xiphiasimmigration.ae/skilled/${params.country}/${params.program}`, siteName: "XIPHIAS Immigration", locale: "en_US", images: [{ url: heroImage ?? "/xiphias-immigration.png", width: 1200, height: 630, alt: `${title} – XIPHIAS Immigration` }] }, twitter: { card: "summary_large_image", title, description, images: [heroImage ?? "/xiphias-immigration.png"] } };
   } catch { return { title: "Programme not found" }; }
 }
 

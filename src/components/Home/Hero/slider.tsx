@@ -40,6 +40,8 @@ const getImg = (i: Item) => i?.hero || i?.image || i?.cover || i?.thumbnail || F
 const INTERNAL_HOSTS = new Set([
   "xiphiasimmigration.com",
   "www.xiphiasimmigration.com",
+  "xiphiasimmigration.ae",
+  "www.xiphiasimmigration.ae",
   "localhost",
   "127.0.0.1",
   "0.0.0.0",
@@ -50,7 +52,7 @@ function normalizeHref(raw?: string, item?: Item) {
   let out = raw || "#";
   try {
     const base =
-      typeof window !== "undefined" ? window.location.origin : "https://www.xiphiasimmigration.com";
+      typeof window !== "undefined" ? window.location.origin : "https://www.xiphiasimmigration.ae";
     const u = new URL(out, base);
     if (INTERNAL_HOSTS.has(u.hostname)) out = u.pathname + u.search + u.hash;
   } catch {}

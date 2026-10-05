@@ -8,7 +8,7 @@ import {
   serifClass,
 } from "@/components/PassportIndex/PassportIndexShared";
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 export const metadata: Metadata = {
   title: "Improve Passport Mobility - XIPHIAS Passport Power",

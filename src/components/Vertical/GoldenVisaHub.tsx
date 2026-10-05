@@ -37,7 +37,7 @@ const STEPS = [
 ];
 
 const PROOF = [
-  { v: "20+", u: "Years advising HNW families" },
+  { v: "17+", u: "Years advising HNW families" },
   { v: "2,000+", u: "Approvals delivered" },
   { v: "1", u: "Dedicated desk per client" },
 ];
@@ -93,8 +93,8 @@ export default function GoldenVisaHub({
     String(count);
   const heroStats = [
     { v: String(count), u: "Headline destinations" },
-    { v: "€250K", u: "Entry investment from" },
-    { v: "90+", u: "Visa-free unlocked" },
+    { v: "€50K", u: "Entry investment from" },
+    { v: "Schengen", u: "Travel on most EU routes" },
   ];
 
   return (

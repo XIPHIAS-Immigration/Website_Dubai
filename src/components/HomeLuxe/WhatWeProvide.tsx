@@ -17,7 +17,7 @@ type ProvideItem = {
 
 const ITEMS: ProvideItem[] = [
   { t: "Citizenship by Investment Advisory", line: "Compare second passport programs, investment routes, costs and family requirements.", chip: "Second citizenship", img: "/images/citizenship/grenada/grenada-citizenship.webp" },
-  { t: "Residency and Golden Visa Services", line: "Complete UAE Golden Visa and global residency support from top immigration consultants.", chip: "UAE and global", img: "/images/residency/uae/uae-golden-visa.webp" },
+  { t: "Residency and Golden Visa Services", line: "Complete UAE Golden Visa and global residency support from our immigration consultants.", chip: "UAE and global", img: "/images/residency/uae/uae-golden-visa.webp" },
   { t: "Skilled Migration Services", line: "Skilled migration and permanent residency guidance for Canada, Australia, the UK and other destinations.", chip: "Canada · Australia · UK", img: "/images/corporate/uae/dubai-corporate-immigration.webp" },
   { t: "Corporate Immigration Services", line: "UAE visa and Dubai visa services for founders, executives, specialists and business teams.", chip: "Business mobility", img: "/images/corporate/uae/dubai-corporate-immigration.webp" },
   { t: "Due-Diligence Support", line: "Confidential identity, financial and source-of-funds document preparation.", chip: "Confidential", img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp" },

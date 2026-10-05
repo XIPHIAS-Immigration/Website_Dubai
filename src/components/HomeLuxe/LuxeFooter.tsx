@@ -54,10 +54,7 @@ const NAV = [
 ] as const;
 
 const OFFICES = [
-  "Dubai", "Bengaluru", "Gurugram", "Leicester",
-  "Larnaca", "Lisbon", "Valletta", "València",
-  "Waterloo", "Montreal", "Melbourne", "Auckland",
-  "Los Angeles", "São Paulo",
+  "Dubai", "Bengaluru", "Gurugram", "Melbourne", "Waterloo",
 ];
 
 const SOCIALS = [

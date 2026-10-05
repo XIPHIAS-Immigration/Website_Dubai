@@ -9,7 +9,7 @@ export const ORG = {
   name: "XIPHIAS Immigration",
   legalName: "XIPHIAS Immigration Pvt. Limited",
   slogan: "Trusted investment-migration advisory across citizenship and residency.",
-  url: "https://www.xiphiasimmigration.com",
+  url: "https://www.xiphiasimmigration.ae",
   logo: "/images/logo.svg",
   contactEmail: "immigration@xiphias.in",
   sameAs: [

@@ -146,7 +146,7 @@ export function VerticalLanding({ d, serifClass }: { d: VerticalLandingData; ser
       <section data-tone="light" className="relative isolate px-6 py-24 text-[#0c1f3f] sm:px-12 lg:px-20" style={{ background: "#eef3fb" }}>
         <Ambient tone="light" />
         <div className="relative z-10 mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {[{ v: "20+", u: "Years of practice" }, { v: "60+", u: "Programmes" }, { v: "30+", u: "Jurisdictions" }, { v: "98%", u: "Approval rate" }].map((s) => (
+          {[{ v: "17+", u: "Years of practice" }, { v: "100+", u: "Programmes" }, { v: "35+", u: "Jurisdictions" }, { v: "98%", u: "Approval rate" }].map((s) => (
             <Fade key={s.u}><div className="flex flex-col gap-1 border-t pt-6" style={{ borderColor: `${INK}1a` }}><span className={`${serifClass} text-[clamp(2rem,3.4vw,3rem)] font-medium leading-none`} style={{ color: GOLD }}>{s.v}</span><span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0c1f3f]/50">{s.u}</span></div></Fade>
           ))}
         </div>

@@ -5,7 +5,7 @@ import AboutPage from "@/components/Company/AboutPage";
 
 const serif = cormorant;
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 const OG_IMAGE = "/xiphias-immigration.png";
 
 export const revalidate = 86400;
@@ -13,13 +13,13 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "About XIPHIAS — Licensed Immigration Advisors, Dubai",
   description:
-    "XIPHIAS since 2009, UAE-licensed in Dubai since 2017. 10,000+ families, 35 jurisdictions. IMC Fellow-led, offices in Dubai, London & Bengaluru.",
+    "XIPHIAS since 2009, UAE-licensed in Dubai since 2017. 10,000+ families, 35 jurisdictions. IMC Fellow-led, offices in Dubai, Bengaluru & Gurugram.",
   alternates: { canonical: "/about" },
   robots: { index: true, follow: true },
   openGraph: {
     title: "About XIPHIAS — Licensed Immigration Advisors Since 2009",
     description:
-      "Founded 2009. 10,000+ families, 35 jurisdictions. IMC Fellow-led, UAE-licensed, with offices in Dubai, London and Bengaluru.",
+      "Founded 2009. 10,000+ families, 35 jurisdictions. IMC Fellow-led, UAE-licensed, with offices in Dubai, Bengaluru and Gurugram.",
     url: `${SITE_URL}/about`,
     siteName: "XIPHIAS Immigration",
     locale: "en_US",

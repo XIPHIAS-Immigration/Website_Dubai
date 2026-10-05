@@ -89,8 +89,8 @@ const CATEGORIES = [
 // A few real headline figures for the hero ledger.
 const STATS = [
   { v: "6", u: "Programme families" },
-  { v: "30+", u: "Jurisdictions advised" },
-  { v: "20+", u: "Years of practice" },
+  { v: "35+", u: "Jurisdictions advised" },
+  { v: "17+", u: "Years of practice" },
 ];
 
 // Treated image filter for the dark editorial blocks.

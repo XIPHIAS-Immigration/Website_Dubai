@@ -55,13 +55,13 @@ const valueCards = [
   },
   {
     icon: BadgeCheck,
-    title: "6,000+ successful relocations",
+    title: "10,000+ families advised",
     description:
       "A strong track record of delivering consistent results for clients worldwide.",
   },
   {
     icon: Globe2,
-    title: "25+ global jurisdictions",
+    title: "35+ global jurisdictions",
     description:
       "Coverage across leading residency, citizenship, and business migration destinations.",
   },
@@ -121,8 +121,8 @@ const processSteps = [
 
 const heroChips = [
   "17+ years industry experience",
-  "25+ jurisdictions",
-  "6,000+ relocations",
+  "35+ jurisdictions",
+  "10,000+ families",
   "Compliance-first delivery",
 ];
 

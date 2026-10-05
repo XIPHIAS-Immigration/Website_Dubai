@@ -19,7 +19,7 @@ type Props = {
   className?: string;
 };
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 const SERVICE_TYPE = "Citizenship by Investment";
 
 /* ---------------- utils ---------------- */

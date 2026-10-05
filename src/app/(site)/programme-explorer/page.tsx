@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SITE = "https://www.xiphiasimmigration.com";
+const SITE = "https://www.xiphiasimmigration.ae";
 
 /** Map a country (name + content slug) to a verified countryImage() key. */
 function imageSlugFor(item: ProgrammeExplorerItem): string {

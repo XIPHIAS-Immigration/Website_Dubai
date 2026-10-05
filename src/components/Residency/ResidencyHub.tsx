@@ -38,7 +38,7 @@ function spotlight(e: React.PointerEvent<HTMLElement>) { const el = e.currentTar
 
 /* ── HERO ── */
 const CHIPS = ["EU & Schengen", "10-year UAE Golden Visa", "Family included"];
-const STATS = [{ v: "20+", u: "jurisdictions" }, { v: "€50k", u: "entry point" }, { v: "188", u: "visa-free max" }, { v: "10-yr", u: "residency" }];
+const STATS = [{ v: "20+", u: "jurisdictions" }, { v: "€50k", u: "entry point" }, { v: "195", u: "visa-free max" }, { v: "10-yr", u: "residency" }];
 function Hero({ serifClass, play }: { serifClass: string; play: boolean }) {
   return (
     <section data-tone="dark" className="relative flex min-h-screen items-center overflow-hidden text-[#eef3fb]" style={{ background: NAVY }}>
@@ -62,15 +62,15 @@ function Hero({ serifClass, play }: { serifClass: string; play: boolean }) {
 
 /* ── DESTINATIONS ── */
 const COUNTRIES = [
-  { name: "United Arab Emirates", slug: "uae", region: "Gulf", img: "/images/residency/uae/uae-golden-visa.webp", time: "2–4 wks", visa: "183", from: "$545k", note: "10-yr Golden Visa" },
-  { name: "Portugal", slug: "portugal", region: "Europe", img: "/images/residency/portugal/portugal-golden-visa.webp", time: "6–9 mo", visa: "188", from: "€500k", note: "EU · citizenship 5 yrs" },
-  { name: "Greece", slug: "greece", region: "Europe", img: "/images/residency/greece/greece-golden-visa.webp", time: "2–4 mo", visa: "186", from: "€250k", note: "Schengen" },
-  { name: "Malta", slug: "malta", region: "Europe", img: "/images/residency/malta/malta-mprp.webp", time: "4–6 mo", visa: "184", from: "€182k", note: "Permanent residence" },
-  { name: "Cyprus", slug: "cyprus", region: "Europe", img: "/images/residency/cyprus/cyprus-residential-property.webp", time: "2–3 mo", visa: "182", from: "€300k", note: "Permanent residence" },
-  { name: "Hungary", slug: "hungary", region: "Europe", img: "/images/residency/hungary/hungary-residency-by-investment.webp", time: "3–6 mo", visa: "186", from: "€250k", note: "Guest Investor" },
-  { name: "Bulgaria", slug: "bulgaria", region: "Europe", img: "/images/residency/bulgaria/bulgaria-aif.webp", time: "6 mo", visa: "176", from: "€512k", note: "EU permanent residence" },
-  { name: "Singapore", slug: "singapore", region: "Asia", img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp", time: "9–12 mo", visa: "195", from: "S$10M", note: "Global Investor (GIP)" },
-  { name: "Curaçao", slug: "curacao", region: "Caribbean", img: "/images/residency/curacao/curacao-3-year-investor-residency.webp", time: "3–4 mo", visa: "187", from: "$280k", note: "Dutch citizenship 5 yrs" },
+  { name: "United Arab Emirates", slug: "uae", region: "Gulf", img: "/images/residency/uae/uae-golden-visa.webp", time: "~2 mo", visa: "183", from: "AED 2M", note: "10-yr Golden Visa" },
+  { name: "Portugal", slug: "portugal", region: "Europe", img: "/images/residency/portugal/portugal-golden-visa.webp", time: "~15 mo", visa: "188", from: "€250k", note: "EU · permanent residence in 5 yrs" },
+  { name: "Greece", slug: "greece", region: "Europe", img: "/images/residency/greece/greece-golden-visa.webp", time: "50 days", visa: "186", from: "€400k", note: "Schengen · €800k in prime areas" },
+  { name: "Malta", slug: "malta", region: "Europe", img: "/images/residency/malta/malta-mprp.webp", time: "Varies", visa: "184", from: "€14k/yr lease", note: "Permanent residence · plus €99k in fees & contributions" },
+  { name: "Cyprus", slug: "cyprus", region: "Europe", img: "/images/residency/cyprus/cyprus-residential-property.webp", time: "Varies", visa: "182", from: "on assessment", note: "Permanent residence · EU, not Schengen" },
+  { name: "Hungary", slug: "hungary", region: "Europe", img: "/images/residency/hungary/hungary-residency-by-investment.webp", time: "Varies", visa: "186", from: "€250k", note: "Guest Investor" },
+  { name: "Bulgaria", slug: "bulgaria", region: "Europe", img: "/images/residency/bulgaria/bulgaria-aif.webp", time: "Varies", visa: "176", from: "on assessment", note: "EU permanent residence" },
+  { name: "Singapore", slug: "singapore", region: "Asia", img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp", time: "~12 mo", visa: "195", from: "S$10M", note: "Global Investor (GIP)" },
+  { name: "Curaçao", slug: "curacao", region: "Caribbean", img: "/images/residency/curacao/curacao-3-year-investor-residency.webp", time: "~4 mo", visa: "187", from: "XCG 500k", note: "Path to Netherlands nationality" },
 ];
 const REGIONS = ["All", "Europe", "Gulf", "Asia", "Caribbean"];
 const DUO = "object-cover [filter:grayscale(0.55)_brightness(0.66)_contrast(1.05)] transition-[filter,transform] duration-700 group-hover:[filter:grayscale(0)_brightness(0.82)] group-hover:scale-105";
@@ -118,7 +118,7 @@ function Destinations({ serifClass }: { serifClass: string }) {
 const ROUTES = [
   { k: "Real estate", from: "from €250,000", tag: "Tangible & resaleable", line: "Buy a qualifying property and hold it — your capital stays in a hard asset that can be sold after the holding period.", points: ["Tangible, resaleable asset", "Potential rental yield", "Capital retained, not spent"] },
   { k: "Investment fund", from: "from €250,000", tag: "Regulated & passive", line: "Subscribe to a government-approved fund — a hands-off, professionally managed route with no property to maintain.", points: ["Fully passive", "Regulated & diversified", "No asset management"] },
-  { k: "Capital transfer", from: "from $545,000", tag: "Simple & liquid", line: "A bank deposit, business or talent route — the fastest, cleanest path to a Gulf or EU residence permit.", points: ["Fewest moving parts", "Fast to permit", "Liquid capital"] },
+  { k: "Capital transfer", from: "from $545,000", tag: "Simple & liquid", line: "A bank deposit, business or talent route — a simple path to a Gulf or EU residence permit.", points: ["Fewest moving parts", "Straightforward to evidence", "Liquid capital"] },
 ];
 const BENEFITS = [
   { v: "Live & work", t: "Anywhere", d: "Across the EU, the Gulf and beyond." },
@@ -218,7 +218,7 @@ function CTA({ serifClass }: { serifClass: string }) {
         <h2 className={`${serifClass} mt-6 text-[clamp(2.6rem,6vw,5rem)] font-medium leading-[1.0]`}>Secure your <span className="italic" style={{ color: GOLD }}>residency.</span></h2>
         <p className="mx-auto mt-6 max-w-xl text-[16px] leading-relaxed text-white/75">Tell us your goal. A senior advisor will recommend the residence programme and route that fit — privately, and entirely off the record.</p>
         <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"><a href="/contact" className="group inline-flex items-center gap-2 rounded-full px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.12em]" style={{ background: GOLD, color: NAVY }}>Book a private consultation <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></a><a href="/residency/eligibility-check" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:border-[#bfa15c]">Check your eligibility</a></div>
-        <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">By appointment · Dubai · London · Bengaluru</p>
+        <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">By appointment · Dubai · Bengaluru · Gurugram</p>
       </div>
     </section>
   );

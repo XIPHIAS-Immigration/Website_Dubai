@@ -11,7 +11,7 @@ export function getSiteUrl() {
 
   // Fallback
   if (!base) {
-    base = "https://www.xiphiasimmigration.com";
+    base = "https://www.xiphiasimmigration.ae";
   }
 
   // Ensure protocol (covers: "example.com", "www.example.com")

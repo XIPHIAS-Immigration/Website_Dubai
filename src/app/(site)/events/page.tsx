@@ -6,7 +6,7 @@ import ContentIndex, { type ContentIndexPost } from "@/components/Content/Conten
 
 const serif = cormorant;
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 const OG_IMAGE = "/xiphias-immigration.png";
 const BASE_TITLE = "Events | XIPHIAS Immigration";
 const BASE_DESCRIPTION =

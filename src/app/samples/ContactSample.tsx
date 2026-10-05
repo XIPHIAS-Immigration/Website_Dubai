@@ -32,7 +32,7 @@ const CONTACT = [
 ];
 const OFFICES = [
   { city: "Dubai", note: "DIFC · Gate Village", ar: "دبي" },
-  { city: "London", note: "Mayfair", ar: "لندن" },
+  { city: "Gurugram", note: "Golf Course Road", ar: "غوروغرام" },
   { city: "Bengaluru", note: "UB City", ar: "بنغالورو" },
 ];
 const INTERESTS = ["Citizenship by Investment", "Residency & Golden Visa", "Skilled Migration", "Corporate Mobility", "Not sure yet"];
@@ -97,7 +97,7 @@ export default function ContactSample({ serifClass }: { serifClass: string }) {
                 <Field label="Your situation"><textarea rows={4} className={inputCls} style={{ borderColor: `${INK}22` }} placeholder="A few details about your goals…" /></Field>
                 <label className="flex items-start gap-3 text-[12px] text-[#0c1f3f]/60"><input type="checkbox" required className="mt-0.5 accent-[#bfa15c]" />I agree to be contacted about my enquiry. We never sell your data.</label>
                 <button type="submit" className="group inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.12em]" style={{ background: GOLD, color: NAVY }}>Send confidential enquiry <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></button>
-                <p className="text-center text-[12px] text-[#0c1f3f]/45">By appointment · Dubai · London · Bengaluru</p>
+                <p className="text-center text-[12px] text-[#0c1f3f]/45">By appointment · Dubai · Bengaluru · Gurugram</p>
               </form>
             )}
           </motion.div>

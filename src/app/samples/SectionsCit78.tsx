@@ -83,7 +83,7 @@ function CTA({ serifClass }: { serifClass: string }) {
           <a href="#" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:border-[#bfa15c]">Download the guide</a>
         </div>
         <p lang="ar" dir="rtl" className="mt-8 font-arabic-display text-2xl" style={{ color: GOLD }}>جنسيتك الثانية تبدأ من هنا</p>
-        <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">By appointment · Dubai · London · Bengaluru</p>
+        <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">By appointment · Dubai · Bengaluru · Gurugram</p>
       </div>
     </section>
   );

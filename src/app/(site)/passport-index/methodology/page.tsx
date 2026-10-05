@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { PassportIndexShell, PassportSourceNote, serifClass } from "@/components/PassportIndex/PassportIndexShared";
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 export const metadata: Metadata = {
   title: "Passport Power Methodology - XIPHIAS",

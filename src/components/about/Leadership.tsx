@@ -180,7 +180,7 @@ export default function Leadership() {
                 <Stat label="Programs" value={160} suffix="+" />
               </div>
               <p className="mt-2 text-center text-[11px] text-ink/45">
-                ICCRC | MARA | IMC aligned practices
+                CICC RCIC | MARA | IMC Fellow
               </p>
             </div>
           </div>

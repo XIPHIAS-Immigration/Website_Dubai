@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Corporate Immigration Eligibility Check (Free)",
     description:
       "Assess corporate immigration options for entity setup, sponsorship, and global mobility. Instant results + downloadable summary.",
-    url: "https://www.xiphiasimmigration.com/corporate/eligibility-check",
+    url: "https://www.xiphiasimmigration.ae/corporate/eligibility-check",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",

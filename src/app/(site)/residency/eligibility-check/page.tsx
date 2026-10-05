@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Residency Eligibility Check (Free) | Interactive Assessment",
     description:
       "Check your residency eligibility in minutes. Answer a few questions and get instant results plus a personalized PDF report.",
-    url: "https://www.xiphiasimmigration.com/residency/eligibility-check",
+    url: "https://www.xiphiasimmigration.ae/residency/eligibility-check",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",

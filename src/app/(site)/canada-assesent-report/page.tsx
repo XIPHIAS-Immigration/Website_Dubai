@@ -823,7 +823,7 @@ function buildReportHtml(args: {
 
       <tr>
         <td style="padding:12px 14px;font-family:Arial,Roboto,sans-serif;color:#2A3443;font-size:14px;line-height:22px;text-align:justify;">
-          This could be your investment for a better future. With your permission, we want to start the process to provide you immigration consultation and representation service. Please proceed immediately by contacting our team to know and get current special discount. After you pay for Process 1 and sign the retainer agreement(s) (mandated by ICCRC), we will start your process. You will get final retainer agreement(s) signed by our ICCRC RCIC.
+          This could be your investment for a better future. With your permission, we want to start the process to provide you immigration consultation and representation service. Please proceed immediately by contacting our team to know and get current special discount. After you pay for Process 1 and sign the retainer agreement(s) (mandated by the CICC), we will start your process. You will get final retainer agreement(s) signed by our CICC-licensed RCIC (R516194).
         </td>
       </tr>
 

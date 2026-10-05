@@ -120,7 +120,7 @@ function scoreAU(a: AnswerMap, baseline: boolean): Result {
   return {
     tier: "Not Yet Eligible",
     summary: "Start with skills assessment, English test, or pursue employer sponsorship.",
-    programs: [{ name: "Employer Sponsorship (TSS/ENS)", why: "Alternative route to PR later" }],
+    programs: [{ name: "Employer Sponsorship (Skills in Demand 482 / ENS 186)", why: "Alternative route to PR later" }],
   };
 }
 
@@ -129,7 +129,7 @@ function scoreUK(a: AnswerMap, baseline: boolean): Result {
   if (shortage === "yes") {
     return {
       tier: "Eligible",
-      summary: "Strong fit for Skilled Worker (shortage/eligible list).",
+      summary: "Strong fit for Skilled Worker (eligible occupation and salary).",
       programs: [{ name: "Skilled Worker (sponsor-backed)", why: "Main UK employer route" }],
     };
   }
@@ -235,7 +235,7 @@ function suggestProgramsWithOffer(dest: string): Result["programs"] {
         { name: "Express Entry + Job Offer", why: "CRS boost" },
       ];
     case "au":
-      return [{ name: "TSS / ENS", why: "Employer routes → PR" }];
+      return [{ name: "Skills in Demand 482 / ENS 186", why: "Employer routes → PR" }];
     case "uk":
       return [{ name: "Skilled Worker (sponsor-backed)", why: "Main UK employer route" }];
     case "eu":
@@ -247,6 +247,6 @@ function suggestProgramsWithOffer(dest: string): Result["programs"] {
     case "ae":
       return [{ name: "UAE Work Residence", why: "Company-sponsored permit" }];
     default:
-      return [{ name: "Employer-Sponsored Work Visa", why: "Fastest skilled route with offer" }];
+      return [{ name: "Employer-Sponsored Work Visa", why: "Direct skilled route with an offer" }];
   }
 }

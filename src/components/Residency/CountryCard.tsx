@@ -19,7 +19,7 @@ type AnyCountry =
 type Variant = "compact" | "standard" | "plush";
 
 // ✅ CHANGE ONLY HERE if your canonical domain changes later
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 /* ---------------- utils ---------------- */
 function baseFromCategory(cat?: AnyCountry["category"]) {

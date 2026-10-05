@@ -86,7 +86,7 @@ function H3({ serifClass }: { serifClass: string }) {
     <HeroBlock serifClass={serifClass} label="H3 · Two-tier concierge">
       <div className="absolute inset-x-0 top-0 z-30">
         <div className="flex items-center justify-between border-b px-6 py-2 text-[11px] uppercase tracking-[0.16em] text-white/45 sm:px-10" style={{ borderColor: "#ffffff14", background: "rgba(11,14,19,0.4)" }}>
-          <span>By appointment · Dubai · London · Bengaluru</span>
+          <span>By appointment · Dubai · Bengaluru · Gurugram</span>
           <span className="flex items-center gap-4"><span>+971 4 000 0000</span><Lang /></span>
         </div>
         <header className="flex items-center justify-between px-6 py-4 backdrop-blur-md sm:px-10" style={{ background: "rgba(11,14,19,0.3)" }}>
@@ -129,7 +129,7 @@ function F1({ serifClass }: { serifClass: string }) {
         </div>
         <div className="grid gap-6 border-t pt-8 text-[12px] text-white/45 sm:grid-cols-3" style={{ borderColor: "#ffffff14" }}>
           <span><span className="font-semibold text-white/70">Dubai</span> · DIFC, Gate Village</span>
-          <span><span className="font-semibold text-white/70">London</span> · Mayfair</span>
+          <span><span className="font-semibold text-white/70">Gurugram</span> · Golf Course Road</span>
           <span><span className="font-semibold text-white/70">Bengaluru</span> · UB City</span>
         </div>
         <div className="mt-8 flex flex-col items-start justify-between gap-4 text-[12px] text-white/40 sm:flex-row sm:items-center">
@@ -149,7 +149,7 @@ function F2({ serifClass }: { serifClass: string }) {
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 text-center">
         <span className={`${serifClass} text-[2.6rem] font-semibold tracking-[0.04em]`}>XIPHIAS</span>
         <nav className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-[13px] font-medium text-[#14110c]/70">{[...NAV, "Tools", "Contact"].map((n) => <a key={n} href="#" className="hover:text-[#14110c]">{n}</a>)}</nav>
-        <p className="text-[12px] uppercase tracking-[0.18em]" style={{ color: GOLD }}>By appointment · Dubai · London · Bengaluru</p>
+        <p className="text-[12px] uppercase tracking-[0.18em]" style={{ color: GOLD }}>By appointment · Dubai · Bengaluru · Gurugram</p>
         <div className="h-px w-24" style={{ background: `${INK}1a` }} />
         <div className="flex flex-col items-center gap-3 text-[12px] text-[#14110c]/45 sm:flex-row sm:gap-6">
           <span>© 2026 XIPHIAS Immigration · Licensed in the UAE</span>

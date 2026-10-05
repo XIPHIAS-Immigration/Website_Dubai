@@ -298,10 +298,7 @@ export default function LuxeHeader({ serifClass }: { serifClass: string }) {
               <div className="flex flex-wrap gap-x-4 gap-y-1">
                 {[
                   "Dubai, UAE", "Bengaluru, India", "Gurugram, India",
-                  "Leicester, UK", "Larnaca, Cyprus", "Lisbon, Portugal",
-                  "Valletta, Malta", "València, Spain", "Waterloo, Canada",
-                  "Montreal, Canada", "Melbourne, Australia", "Auckland, NZ",
-                  "Los Angeles, USA", "São Paulo, Brazil",
+                  "Melbourne, Australia", "Waterloo, Canada",
                 ].map((city, i, arr) => (
                   <span key={city} className="text-[11px] tracking-[0.1em] whitespace-nowrap" style={{ color: "rgba(238,243,251,0.42)" }}>
                     {city}{i < arr.length - 1 && <span className="ml-4" style={{ color: "rgba(191,161,92,0.35)" }}>·</span>}

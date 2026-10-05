@@ -59,18 +59,18 @@ const BIG_STATS = [
   { v: "35+", u: "Jurisdictions covered" },
   { v: "100+", u: "Immigration programmes" },
   { v: "98%", u: "Visa approval rate" },
-  { v: "50+", u: "Countries served" },
-  { v: "40+", u: "Industry awards" },
-  { v: "3", u: "Global offices" },
+  { v: "2017", u: "Licensed in Dubai (DMCC)" },
+  { v: "39", u: "Industry awards" },
+  { v: "5", u: "XIPHIAS offices" },
 ];
 
 const MILESTONES = [
   { year: "2009", title: "XIPHIAS founded", text: "Varun Singh establishes XIPHIAS on one conviction: immigration advisory must be personal, rigorous and truly end-to-end." },
-  { year: "2014", title: "Top 5 recognition", text: "Silicon India names XIPHIAS among India's Top 5 Immigration Consultants. The first of more than forty industry awards to follow." },
+  { year: "2014", title: "Top 5 recognition", text: "Silicon India names XIPHIAS among India's Top 5 Immigration Consultants. The first of the 39 industry awards XIPHIAS has received." },
   { year: "2016", title: "ISO 9001:2015 Certified", text: "Quality management certification formalises our commitment to process excellence, client outcomes and regulatory compliance." },
   { year: "2017", title: "XIPHIAS Dubai established", text: "XIPHIAS Immigration DMCC opens in Dubai — the crossroads of global mobility — serving Gulf and Middle East clients from the heart of the region." },
-  { year: "2019", title: "UK & global expansion", text: "Corporate LiveWire (UK) Corporate Excellence Award. Practice extended to corporate mobility, work permits and employer-sponsored visas." },
-  { year: "2022", title: "London · Mayfair opens", text: "European HNI advisory desk established in Mayfair to serve the growing EU golden-visa and citizenship market." },
+  { year: "2019", title: "Corporate mobility practice", text: "Corporate LiveWire (UK) Corporate Excellence Award. Practice extended to corporate mobility, work permits and employer-sponsored visas." },
+  { year: "2022", title: "Best Immigration Consultant", text: "Named Best Immigration Consultant by The Times of India in 2022." },
   { year: "2025", title: "Forbes India recognition", text: "Named India's Most Trusted Global Mobility Brand by Forbes India — 10,000 families relocated, four continents served." },
 ];
 
@@ -104,10 +104,10 @@ const CREDS = [
   "Fellow · Investment Migration Council",
   "IMI Professional · CPD credentials",
   "ISO 9001:2015 Certified",
-  "RCIC Registered · R516194",
-  "MARA Aligned · #1680615",
+  "CICC RCIC · R516194",
+  "MARA · 1680615",
   "Licensed in the UAE",
-  "ICCRC/CICC-aligned counsel",
+  "CICC-licensed counsel (Canada)",
   "KYC / AML compliant",
 ];
 
@@ -213,7 +213,7 @@ function Story({ serifClass }: { serifClass: string }) {
             </Fade>
             <Fade delay={0.2}>
               <p className="mt-4 text-[16px] leading-relaxed text-[#0c1f3f]/65">
-                Today, from offices in Dubai, London and Bengaluru, we advise internationally mobile families and businesses on residency, citizenship and skilled migration across more than 35 jurisdictions. We cover 100+ programmes — Caribbean citizenship, EU golden visas, UAE Golden Visas, corporate mobility, skilled migration pathways and more.
+                Today, from offices in Dubai, Bengaluru, Gurugram, Melbourne and Waterloo, we advise internationally mobile families and businesses on residency, citizenship and skilled migration across more than 35 jurisdictions. We cover 100+ programmes — Caribbean citizenship, EU golden visas, UAE Golden Visas, corporate mobility, skilled migration pathways and more.
               </p>
             </Fade>
             <Fade delay={0.3}>
@@ -293,7 +293,7 @@ function Timeline({ serifClass }: { serifClass: string }) {
       <div className="mx-auto max-w-6xl">
         <Eyebrow ar="مسيرتنا" light>Our journey</Eyebrow>
         <h2 className={`${serifClass} mt-5 text-[clamp(2rem,4vw,3.2rem)] font-medium`}>
-          <Rise text="A practice built over decades." />
+          <Rise text="A practice built since 2009." />
         </h2>
         <div className="mt-14 grid gap-10 lg:grid-cols-[0.55fr_1fr] lg:gap-16">
           {/* year list */}
@@ -380,7 +380,7 @@ function Awards({ serifClass }: { serifClass: string }) {
       <div className="mx-auto max-w-6xl">
         <Eyebrow ar="التقدير" light>Awards &amp; recognition</Eyebrow>
         <h2 className={`${serifClass} mt-5 text-[clamp(2rem,4vw,3.2rem)] font-medium`}>
-          <Rise text="Forty-plus awards across eleven years." />
+          <Rise text="Thirty-nine awards across eleven years." />
         </h2>
         <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-[#0c1f3f]/60">
           From Silicon India's Top 5 in 2014 to Forbes India's Most Trusted Global Mobility Brand in 2025 — recognised consistently across publications, geographies and categories.
@@ -455,7 +455,7 @@ function Credentials({ serifClass }: { serifClass: string }) {
             <Image src="/images/personal/credentials/imi-professionals-logo.png" alt="IMI Professional" fill sizes="48px" className="object-contain" />
           </div>
           <p className="max-w-lg text-[14px] leading-relaxed text-white/55">
-            XIPHIAS maintains the highest compliance standards across all jurisdictions — ISO 9001:2015 quality management, full KYC/AML procedures, and source-of-funds verification before any application is filed.
+            XIPHIAS applies the same compliance standards in every jurisdiction — ISO 9001:2015 quality management, full KYC/AML procedures, and source-of-funds verification before any application is filed.
           </p>
         </div>
       </div>
@@ -524,7 +524,7 @@ const ALL_REGIONS: { region: string; offices: OfficeEntry[] }[] = [
   {
     region: "Brazil",
     offices: [
-      { city: "São Paulo", entity: "HOFF ADVOCACIA", address: "Tabapuã Street, No. 594, Room 46, Itaim Bibi, São Paulo Capital, SP – 04533-002", phone: "(11) 3787-0935", phone2: "(11) 98070-8842", email: "info@xiphiasimmigration.com" },
+      { city: "São Paulo", entity: "HOFF ADVOCACIA (Partner)", address: "Tabapuã Street, No. 594, Room 46, Itaim Bibi, São Paulo Capital, SP – 04533-002", phone: "(11) 3787-0935", phone2: "(11) 98070-8842", email: "info@xiphiasimmigration.com" },
     ],
   },
 ];
@@ -547,7 +547,7 @@ function Offices({ serifClass }: { serifClass: string }) {
             </h2>
           </div>
           <p className="max-w-xs text-[14px] leading-relaxed text-white/45 sm:text-right">
-            14 offices across 10 countries — all by appointment, same senior-led standard worldwide.
+            Five XIPHIAS offices — Bengaluru, Gurugram, Dubai, Melbourne and Waterloo — plus partner representation in other countries. All by appointment.
           </p>
         </div>
 
@@ -680,7 +680,7 @@ function CTA({ serifClass }: { serifClass: string }) {
             Meet our advisors
           </a>
         </div>
-        <p className="mt-7 text-[12px] uppercase tracking-[0.18em] text-white/35">By appointment · Dubai · London · Bengaluru</p>
+        <p className="mt-7 text-[12px] uppercase tracking-[0.18em] text-white/35">By appointment · Dubai · Bengaluru · Gurugram</p>
         <p lang="ar" dir="rtl" className="mt-3 font-arabic-display text-xl" style={{ color: `${GOLD}aa` }}>مستقبلك العالمي يبدأ من هنا</p>
       </div>
     </section>

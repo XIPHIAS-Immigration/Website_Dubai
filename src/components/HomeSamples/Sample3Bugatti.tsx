@@ -183,7 +183,7 @@ function Mobility({ serifClass }: { serifClass: string }) {
 /* ── PROCESS (GSAP pinned horizontal) ── */
 const STEPS = [
   { no: "01", title: "Private consultation", line: "A confidential conversation about your goals, timeline and budget.", detail: "Senior advisor · under NDA", img: IMG.dubai },
-  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 25+ jurisdictions.", detail: "Cost · timeline · passport power", img: IMG.portugal },
+  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 35+ jurisdictions.", detail: "Cost · timeline · passport power", img: IMG.portugal },
   { no: "03", title: "Handled end to end", line: "Filing, liaison and follow-through — managed by your named advisor.", detail: "One desk · in writing", img: IMG.greece },
   { no: "04", title: "Arrival", line: "Your residency or citizenship secured — and we remain on call.", detail: "Banking · schooling · relocation", img: IMG.malta },
 ];

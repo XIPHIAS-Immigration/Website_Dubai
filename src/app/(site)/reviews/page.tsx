@@ -14,7 +14,7 @@ import {
 const serif = cormorant;
 
 const CANONICAL = "/reviews";
-const ABSOLUTE_URL = "https://www.xiphiasimmigration.com/reviews";
+const ABSOLUTE_URL = "https://www.xiphiasimmigration.ae/reviews";
 const PAGE_SIZE = 10;
 
 type SearchParams = Record<string, string | string[] | undefined>;
@@ -120,7 +120,7 @@ export default async function ReviewsPage({ searchParams }: PageProps) {
           itemReviewed: {
             "@type": "Organization",
             name: "XIPHIAS Immigration",
-            url: "https://www.xiphiasimmigration.com",
+            url: "https://www.xiphiasimmigration.ae",
           },
         },
       })),

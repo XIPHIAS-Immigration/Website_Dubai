@@ -12,12 +12,12 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "Corporate Immigration & Relocation Services | XIPHIAS",
   description:
-    "Intra-company transfers, UAE company setup & workforce relocation across 7 jurisdictions. One partner for founders, HR & legal teams.",
+    "Intra-company transfers, UAE company setup & workforce relocation across 8 jurisdictions. One partner for founders, HR & legal teams.",
   alternates: { canonical: "/corporate" },
   openGraph: {
     title: "Corporate Immigration & Relocation Services | XIPHIAS",
-    description: "L-1/ICT intra-company transfers, UAE free-zone setup & workforce relocation across 7 jurisdictions. One partner, end-to-end, Dubai.",
-    url: "https://www.xiphiasimmigration.com/corporate",
+    description: "L-1/ICT intra-company transfers, UAE free-zone setup & workforce relocation across 8 jurisdictions. One partner, end-to-end, Dubai.",
+    url: "https://www.xiphiasimmigration.ae/corporate",
     siteName: "XIPHIAS Immigration", locale: "en_US", type: "website",
     images: [{ url: "/xiphias-immigration.png", width: 1200, height: 630, alt: "Corporate Mobility – XIPHIAS Immigration" }],
   },
@@ -33,7 +33,7 @@ const config: VerticalConfig = {
   heroEyebrowAr: "تنقل الشركات",
   heroTitle: "Move your people,",
   heroTitleItalic: "across borders.",
-  heroSummary: "Intra-company transfers, market entry and compliant workforce relocation — one accountable partner for founders, HR and global teams across seven jurisdictions.",
+  heroSummary: "Intra-company transfers, market entry and compliant workforce relocation — one accountable partner for founders, HR and global teams across eight jurisdictions.",
   heroChips: ["Intra-company transfers", "Market entry", "Compliant at scale"],
   heroStats: [{ v: "7", u: "jurisdictions" }, { v: "L-1 · ICT", u: "transfers" }, { v: "EOR", u: "& payroll" }, { v: "17 yrs", u: "advising" }],
   whyHeading: "One desk for",
@@ -56,8 +56,8 @@ const config: VerticalConfig = {
     { cat: "Transfer", title: "L-1 intra-company transfer: a practical step-by-step guide", meta: "7 min read · Corporate", img: "/images/corporate/usa/l1-visa-usa.webp", href: "/insights" },
   ],
   destHeading: "Where we move your teams",
-  destSub: "Seven markets, one partner.",
-  regions: ["All", "Europe", "Gulf", "Americas"],
+  destSub: "Eight markets, one partner.",
+  regions: ["All", "Europe", "Gulf", "Americas", "Asia"],
   countries: [
     { name: "United Arab Emirates", slug: "uae", region: "Gulf", img: "/images/corporate/uae/dubai-corporate-immigration.webp", note: "Free-zone & mainland setup" },
     { name: "United Kingdom", slug: "united-kingdom", region: "Europe", img: "/images/corporate/uk/expansion-worker-visa.webp", note: "Expansion Worker · sponsor licence" },
@@ -66,6 +66,7 @@ const config: VerticalConfig = {
     { name: "Portugal", slug: "portugal", region: "Europe", img: "/images/corporate/portugal/portugal-corporate-immigration.webp", note: "EU base & relocation" },
     { name: "Spain", slug: "spain", region: "Europe", img: "/images/corporate/spain/spain-company-formation.webp", note: "Company formation" },
     { name: "Cyprus", slug: "cyprus", region: "Europe", img: "/images/corporate/cyprus/cyprus-company-setup.webp", note: "HQ & company setup" },
+    { name: "Singapore", slug: "singapore", region: "Asia", img: "/images/corporate/singapore/singapore.webp", note: "Company setup & Employment Pass" },
   ],
   routesEyebrow: "What we handle",
   routesEyebrowAr: "خدماتنا",
@@ -93,7 +94,7 @@ export default function CorporatePage() {
   const countries: CountryMeta[] = getCorporateCountries();
   const ld = {
     "@context": "https://schema.org", "@type": "ItemList", name: "Corporate Mobility Destinations",
-    itemListElement: countries.map((c, i) => ({ "@type": "ListItem", position: i + 1, url: `https://www.xiphiasimmigration.com/corporate/${c.countrySlug}`, name: c.title || c.country })),
+    itemListElement: countries.map((c, i) => ({ "@type": "ListItem", position: i + 1, url: `https://www.xiphiasimmigration.ae/corporate/${c.countrySlug}`, name: c.title || c.country })),
   };
   return (<><JsonLd data={ld} /><VerticalHub c={config} serifClass={serif.className} /></>);
 }

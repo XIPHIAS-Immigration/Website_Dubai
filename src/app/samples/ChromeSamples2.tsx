@@ -56,7 +56,7 @@ function Overlay({ serifClass, onClose, withPreview }: { serifClass: string; onC
         </nav>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }} className="mt-10 flex flex-wrap items-center gap-6 text-[12px] uppercase tracking-[0.16em] text-white/50">
           <span>EN · <span className="font-arabic-display" style={{ color: GOLD }}>ع</span></span>
-          <span>Dubai · London · Bengaluru</span>
+          <span>Dubai · Bengaluru · Gurugram</span>
           <a href="#" className="rounded-full px-5 py-2.5 text-[#0b0e13]" style={{ background: GOLD }}>Book a consultation →</a>
         </motion.div>
       </div>
@@ -121,7 +121,7 @@ function FooterLight({ serifClass }: { serifClass: string }) {
         </div>
         <div className="grid gap-6 border-t pt-8 text-[12px] text-[#14110c]/55 sm:grid-cols-3" style={{ borderColor: `${INK}15` }}>
           <span><span className="font-semibold text-[#14110c]">Dubai</span> · DIFC, Gate Village</span>
-          <span><span className="font-semibold text-[#14110c]">London</span> · Mayfair</span>
+          <span><span className="font-semibold text-[#14110c]">Gurugram</span> · Golf Course Road</span>
           <span><span className="font-semibold text-[#14110c]">Bengaluru</span> · UB City</span>
         </div>
         <div className="mt-8 flex flex-col items-start justify-between gap-4 text-[12px] text-[#14110c]/45 sm:flex-row sm:items-center">

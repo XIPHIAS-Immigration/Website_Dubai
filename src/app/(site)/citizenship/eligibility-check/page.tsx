@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Citizenship Eligibility Check (Free) | Interactive Assessment",
     description:
       "Explore citizenship by investment, by descent, or via residency-to-naturalization. Instant results + downloadable summary.",
-    url: "https://www.xiphiasimmigration.com/citizenship/eligibility-check",
+    url: "https://www.xiphiasimmigration.ae/citizenship/eligibility-check",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",

@@ -33,7 +33,7 @@ const VALUE = [
   {
     icon: ScanSearch,
     title: "Checked, not guessed",
-    body: "Fifteen programmes across eight countries, against each government's own published criteria.",
+    body: "More than twenty programmes in Canada, Australia, the UK, the US, Europe, the UAE and the Caribbean, against each government's own published criteria.",
   },
   {
     icon: Compass,
@@ -48,7 +48,7 @@ const VALUE = [
 ];
 
 /** Publicly verifiable — every one of these can be looked up on a register. */
-const PROOF = ["Licensed in the UAE", "IMC & ICCRC members", "39 awards", "17 years", "4.8★ Google"];
+const PROOF = ["Licensed in the UAE", "IMC member · CICC RCIC R516194", "39 awards", "17 years", "4.7★ Google"];
 
 export default function XiaGreeter() {
   const [open, setOpen] = useState(false);

@@ -72,7 +72,7 @@ export default function Hero({ serifClass, openCount }: { serifClass: string; op
         <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t pt-6" style={{ borderColor: "rgba(255,255,255,0.08)" }}>
           {[
             [typeof openCount === "number" ? String(openCount) : "—", "Open roles"],
-            ["10+", "Global offices"],
+            ["5", "Offices"],
             ["2009", "Est."],
             ["Bengaluru", "HQ"],
           ].map(([v, u]) => (

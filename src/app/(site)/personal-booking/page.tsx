@@ -6,7 +6,7 @@ const serif = cormorant;
 
 export const revalidate = 86400;
 
-const SITE = "https://www.xiphiasimmigration.com";
+const SITE = "https://www.xiphiasimmigration.ae";
 
 export const metadata: Metadata = {
   title: "Book a Private Immigration Consultation | XIPHIAS",

@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 const PROOF = [
   { value: "17+", label: "Years advising" },
   { value: "39", label: "Industry awards" },
-  { value: "6", label: "Global offices" },
-  { value: "4.8★", label: "Google rating" },
+  { value: "5", label: "Global offices" },
+  { value: "4.7★", label: "Google rating" },
 ];
 
 const HOW = [

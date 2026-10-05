@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PassportPlannerClient from "@/components/PassportIndex/PassportPlannerClient";
 import { passportIndexStats, passportRecords } from "@/data/passport-index";
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 export const metadata: Metadata = {
   title: "My Passport Planner - XIPHIAS Passport Power",

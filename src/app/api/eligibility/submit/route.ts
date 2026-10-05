@@ -20,7 +20,7 @@ const PHONE_RE = /^[+]?[\d\s().-]{6,20}$/;
 const RATE_LIMIT_WINDOW_MS = 60_000;
 const RATE_LIMIT_MAX = 8;
 const MAX_JSON_KB = 64;
-const DEFAULT_SITE_URL = "https://www.xiphiasimmigration.com";
+const DEFAULT_SITE_URL = "https://www.xiphiasimmigration.ae";
 const DEFAULT_REPORT_PRICE_INR = "10000";
 
 const rlBucket: Map<string, number[]> =

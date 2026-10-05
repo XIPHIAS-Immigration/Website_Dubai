@@ -6,13 +6,13 @@ export interface Award {
 
 const awardsData: Award[] = [
   { id: 1, title: "Global Excellence Award", img: "/images/awards/1.jpg" },
-  { id: 2, title: "Best Immigration Firm 2024", img: "/images/awards/1.jpg" },
+  { id: 2, title: "Best Immigration Consultant 2022 — The Times of India", img: "/images/awards/1.jpg" },
   { id: 3, title: "Innovation in Consultancy", img: "/images/awards/1.jpg" },
-  { id: 4, title: "Top Client Satisfaction", img: "/images/awards/1.jpg" },
+  { id: 4, title: "Consultant of the Year 2021 — The Global Hues", img: "/images/awards/1.jpg" },
   { id: 5, title: "Leadership Recognition", img: "/images/awards/1.jpg" },
   { id: 6, title: "Excellence in Service", img: "/images/awards/1.jpg" },
   { id: 7, title: "Outstanding Support Award", img: "/images/awards/1.jpg" },
-  { id: 8, title: "Industry Leadership 2025", img: "/images/awards/1.jpg" },
+  { id: 8, title: "India's Most Trusted Global Mobility Brand 2025 — Forbes India", img: "/images/awards/1.jpg" },
   { id: 9, title: "Trusted Brand Award", img: "/images/awards/1.jpg" },
   { id: 10, title: "Trusted Brand Award", img: "/images/awards/1.jpg" },
   { id: 11, title: "Trusted Brand Award", img: "/images/awards/1.jpg" },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PassportRankingClient from "@/components/PassportIndex/PassportRankingClient";
 import { passportIndexStats, passportRecords, passportRegions } from "@/data/passport-index";
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 export const metadata: Metadata = {
   title: "Passport Ranking - XIPHIAS Passport Power",

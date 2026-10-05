@@ -57,7 +57,7 @@ export const HERO_ROUTE_CARDS = [
     type: "Residency",
     flag: "PT",
     href: "/residency/portugal",
-    timeframe: "6–8 months",
+    timeframe: "15–18 months",
     color: "#3b82f6",
   },
   {
@@ -65,7 +65,7 @@ export const HERO_ROUTE_CARDS = [
     type: "Citizenship",
     flag: "GD",
     href: "/citizenship/grenada",
-    timeframe: "4–6 months",
+    timeframe: "Varies by case",
     color: "#e1b923",
   },
   {
@@ -89,7 +89,7 @@ export const JOURNEY_PATHS = [
     description:
       "Golden Visa programs granting long-term residency and access to world-class education, healthcare, and global mobility.",
     href: "/residency",
-    countries: ["UAE", "Portugal", "Greece", "Malta", "Spain"],
+    countries: ["UAE", "Portugal", "Greece", "Malta", "Hungary"],
     accentColor: "#3b82f6",
     bgColor: "rgba(59,130,246,0.08)",
   },
@@ -98,7 +98,7 @@ export const JOURNEY_PATHS = [
     title: "Citizenship",
     subtitle: "Second passport pathways",
     description:
-      "Citizenship by investment programs offering visa-free access to 140+ countries for you and your family.",
+      "Citizenship by investment programs offering a second passport and wider visa-free travel for you and your family.",
     href: "/citizenship",
     countries: ["Grenada", "St. Kitts", "Turkey", "Dominica", "Vanuatu"],
     accentColor: "#e1b923",
@@ -171,10 +171,10 @@ export const TRUST_POINTS = [
     stat: "17+",
     statLabel: "Years",
     title: "Licensed Advisory",
-    description: "Regulated advisors operating across every jurisdiction we serve.",
+    description: "CICC-licensed RCIC for Canada, registered MARA agent for Australia, UAE-licensed in Dubai.",
   },
   {
-    stat: "4,500+",
+    stat: "10,000+",
     statLabel: "Families",
     title: "Family Relocation",
     description: "End-to-end support from school selection to property and banking.",
@@ -186,7 +186,7 @@ export const TRUST_POINTS = [
     description: "Government-approved cases across all primary programs.",
   },
   {
-    stat: "50+",
+    stat: "35+",
     statLabel: "Countries",
     title: "Global Coverage",
     description: "Residency, citizenship, and skilled programs across six continents.",
@@ -198,10 +198,10 @@ export const TRUST_POINTS = [
     description: "Workforce mobility reports and bulk work authorisation programmes.",
   },
   {
-    stat: "3",
+    stat: "5",
     statLabel: "Offices",
     title: "Global Advisory Desks",
-    description: "Physical advisory desks in India, UAE, and the United Kingdom.",
+    description: "Offices in Bengaluru, Gurugram, Dubai, Melbourne and Waterloo.",
   },
 ] as const;
 
@@ -217,7 +217,7 @@ export const XIA_FLOW = [
     step: "02",
     label: "XIA Builds Your Shortlist",
     description:
-      "Our intelligence engine analyses 50+ programs against your profile in seconds.",
+      "Our intelligence engine checks programmes against your profile in seconds.",
   },
   {
     step: "03",

@@ -5,7 +5,7 @@ import { passportIndexStats, passportRecords } from "@/data/passport-index";
 
 const serif = cormorant;
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 export const metadata: Metadata = {
   title: "XIPHIAS Passport Power - Global Mobility Ranking",

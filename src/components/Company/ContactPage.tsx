@@ -45,12 +45,12 @@ const ALL_REGIONS: { region: string; offices: OfficeEntry[] }[] = [
     { city: "Los Angeles, CA", entity: "XIPHIAS IMMIGRATION PVT LTD (Represented by Partners)", address: "1605 North Cahuenga Blvd, Hollywood, CA 90028", phone: "+1 323 466 1400", email: "info@xiphiasimmigration.com" },
   ]},
   { region: "Brazil", offices: [
-    { city: "São Paulo", entity: "HOFF ADVOCACIA", address: "Tabapuã Street, No. 594, Room 46, Itaim Bibi, São Paulo Capital, SP – 04533-002", phone: "(11) 3787-0935", phone2: "(11) 98070-8842", email: "info@xiphiasimmigration.com" },
+    { city: "São Paulo", entity: "HOFF ADVOCACIA (Partner)", address: "Tabapuã Street, No. 594, Room 46, Itaim Bibi, São Paulo Capital, SP – 04533-002", phone: "(11) 3787-0935", phone2: "(11) 98070-8842", email: "info@xiphiasimmigration.com" },
   ]},
 ];
 
 const CHANNELS = [
-  { label: "Call", value: "+971-527 275 101", sub: "Mon–Sat · 9:00–18:00 GST", href: "tel:+971527275101" },
+  { label: "Call", value: "+971-527 275 101", sub: "Mon–Fri · 9:00–18:00 GST", href: "tel:+971527275101" },
   { label: "Email", value: "dubai@xiphiasimmigration.com", sub: "Reply within one business day", href: "mailto:dubai@xiphiasimmigration.com" },
   { label: "WhatsApp", value: "+971-527 275 101", sub: "Message our Dubai advisory desk", href: "https://wa.me/971527275101" },
   { label: "Office", value: "Jumeirah Lakes Towers, Dubai", sub: "Unit 608, Platinum Tower, JLT-PH1-I2", href: "https://maps.google.com/?q=Platinum+Tower+JLT+Dubai" },
@@ -168,7 +168,7 @@ export default function ContactPage({ serifClass }: { serifClass: string }) {
 
           {/* quick stats row */}
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t pt-6" style={{ borderColor: "rgba(255,255,255,0.1)" }}>
-            {[["17+", "Years advising"], ["10,000+", "Families relocated"], ["35", "Jurisdictions"], ["10", "Global offices"]].map(([v, u]) => (
+            {[["17+", "Years advising"], ["10,000+", "Families relocated"], ["35", "Jurisdictions"], ["5", "XIPHIAS offices"]].map(([v, u]) => (
               <div key={u} className="flex items-baseline gap-2">
                 <span className={`${serifClass} text-[1.4rem] font-medium`} style={{ color: GOLD }}>{v}</span>
                 <span className="text-[12px] text-white/40">{u}</span>
@@ -324,7 +324,7 @@ export default function ContactPage({ serifClass }: { serifClass: string }) {
                   {submitting ? "Sending…" : "Send confidential enquiry"}
                   <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </button>
-                <p className="text-center text-[11px] text-[#0c1f3f]/30">Dubai · Bengaluru · Gurugram · Leicester · Waterloo</p>
+                <p className="text-center text-[11px] text-[#0c1f3f]/30">Dubai · Bengaluru · Gurugram · Melbourne · Waterloo</p>
               </form>
             )}
           </motion.div>
@@ -340,7 +340,7 @@ export default function ContactPage({ serifClass }: { serifClass: string }) {
             <div>
               <Eyebrow ar="مكاتبنا">Our offices</Eyebrow>
               <h2 className={`${serifClass} mt-3 text-[clamp(1.7rem,3.2vw,2.6rem)] font-medium leading-[1.0]`}>
-                10 countries. <span className="italic" style={{ color: GOLD }}>One standard.</span>
+                Five offices, plus partners. <span className="italic" style={{ color: GOLD }}>One standard.</span>
               </h2>
             </div>
             <p className="text-[12px] text-white/30">By appointment · Same senior service worldwide</p>

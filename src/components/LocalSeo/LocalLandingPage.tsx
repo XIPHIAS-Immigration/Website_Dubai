@@ -8,7 +8,7 @@ const PROOF = [
   { value: "17+", label: "Years advising" },
   { value: "35", label: "Jurisdictions" },
   { value: "39", label: "Awards" },
-  { value: "4.8★", label: "Google rating" },
+  { value: "4.7★", label: "Google rating" },
 ];
 
 export default function LocalLandingPage({ landing }: { landing: LocalLanding }) {

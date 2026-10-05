@@ -76,7 +76,7 @@ function MiniFooter({ serifClass }: { serifClass: string }) {
     <footer className="px-6 py-10 sm:px-12" style={{ background: "#f6f9fd", borderTop: `1px solid ${INK}14` }}>
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-[12px] text-[#0c1f3f]/50 sm:flex-row">
         <span className={`${serifClass} text-[1.3rem] font-semibold tracking-[0.04em] text-[#0c1f3f]`}>XIPHIAS</span>
-        <span>Dubai · London · Bengaluru · Licensed in the UAE</span>
+        <span>Dubai · Bengaluru · Gurugram · Licensed in the UAE</span>
         <span>© 2026 XIPHIAS Immigration</span>
       </div>
     </footer>

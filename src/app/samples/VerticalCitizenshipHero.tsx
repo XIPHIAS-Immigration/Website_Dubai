@@ -48,7 +48,7 @@ function HeroFullBleed({ serifClass }: { serifClass: string }) {
         <div className="mb-8 pt-24"><Crumb dark /></div>
         <Eyebrow />
         <h1 className={`${serifClass} mt-6 max-w-3xl text-[clamp(2.8rem,6vw,5.5rem)] font-medium leading-[0.98]`}>Second citizenship,<br /><span className="italic" style={{ color: GOLD }}>first-class advisory.</span></h1>
-        <p className="mt-7 max-w-xl text-[16px] leading-relaxed text-white/75">Donation and real-estate routes across the Caribbean, Malta and Türkiye — arranged end-to-end, with transparent costs and rigorous compliance.</p>
+        <p className="mt-7 max-w-xl text-[16px] leading-relaxed text-white/75">Donation and real-estate routes across the Caribbean, Türkiye and beyond — arranged end-to-end, with transparent costs and rigorous compliance.</p>
         <Actions dark />
         <div className="mt-10 flex flex-wrap gap-2.5">{CHIPS.map((c) => <span key={c} className="rounded-full border px-3 py-1.5 text-[12px] text-white/70" style={{ borderColor: "rgba(191,161,92,0.4)" }}>{c}</span>)}</div>
       </div>

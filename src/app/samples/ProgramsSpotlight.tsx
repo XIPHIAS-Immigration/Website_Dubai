@@ -158,7 +158,7 @@ export default function ProgramsSpotlight({ serifClass }: { serifClass: string }
             </a>
           </motion.div>
           <motion.div initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7, delay: 1 }} className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t pt-7" style={{ borderColor: "rgba(255,255,255,0.12)" }}>
-            {[{ v: "6", u: "Programme categories" }, { v: "30+", u: "Destinations worldwide" }, { v: "1", u: "Private advisory desk" }].map((x) => (
+            {[{ v: "6", u: "Programme categories" }, { v: "35+", u: "Destinations worldwide" }, { v: "1", u: "Private advisory desk" }].map((x) => (
               <div key={x.u} className="flex flex-col">
                 <span className="text-[clamp(1.3rem,2vw,1.8rem)] font-semibold tabular-nums" style={{ color: GOLD }}>{x.v}</span>
                 <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">{x.u}</span>

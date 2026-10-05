@@ -247,7 +247,7 @@ export default function MenuColumnDrill({ serifClass }: { serifClass: string }) 
         className="px-6 pb-7 text-[12px] tracking-[0.18em] sm:px-10 lg:px-16"
         style={{ color: "rgba(238,243,251,0.55)" }}
       >
-        EN <span className="font-arabic-display">·&nbsp;ع</span>&nbsp;&nbsp;·&nbsp;&nbsp;Dubai · London · Bengaluru
+        EN <span className="font-arabic-display">·&nbsp;ع</span>&nbsp;&nbsp;·&nbsp;&nbsp;Dubai · Bengaluru · Gurugram
       </p>
     </div>
   );

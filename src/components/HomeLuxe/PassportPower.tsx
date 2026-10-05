@@ -8,17 +8,16 @@ const GOLD = "#bfa15c";
 const NAVY = "#0a1733";
 
 const CURRENT = [
-  { name: "India", vf: 62, rank: 80 },
+  { name: "India", vf: 55, rank: 80 },
   { name: "China", vf: 85, rank: 60 },
   { name: "Nigeria", vf: 45, rank: 91 },
   { name: "Pakistan", vf: 32, rank: 96 },
   { name: "Bangladesh", vf: 40, rank: 93 },
-  { name: "Egypt", vf: 51, rank: 87 },
+  { name: "Egypt", vf: 50, rank: 86 },
   { name: "South Africa", vf: 106, rank: 53 },
   { name: "Russia", vf: 116, rank: 51 },
 ];
 const TARGETS = [
-  { flag: "Malta", name: "Malta", vf: 187, note: "EU citizenship" },
   { flag: "st-kitts-nevis", name: "St Kitts & Nevis", vf: 156, note: "Caribbean" },
   { flag: "Antigua-barbuda", name: "Antigua & Barbuda", vf: 151, note: "Caribbean" },
   { flag: "st-lucia", name: "Saint Lucia", vf: 146, note: "Caribbean" },
@@ -38,7 +37,7 @@ export default function PassportPower({ serifClass }: { serifClass: string }) {
       <div className="mx-auto max-w-6xl">
         <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.34em]" style={{ color: GOLD }}><span className="h-px w-8" style={{ background: GOLD }} />Intelligence<span lang="ar" dir="rtl" className="font-arabic-display text-sm tracking-normal">مؤشر الجوازات</span></p>
         <h2 className={`${serifClass} mt-5 max-w-3xl text-[clamp(2.2rem,4.6vw,3.6rem)] font-medium leading-[1.04]`}>Compare Second Passports <span className="italic" style={{ color: GOLD }}>and Global Mobility</span></h2>
-        <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-white/65">Compare second passports by investment amount, processing time, family inclusion and visa-free access. Our best immigration consultants help investors and families evaluate suitable citizenship by investment options.</p>
+        <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-white/65">Compare second passports by investment amount, processing time, family inclusion and visa-free access. Our immigration consultants help investors and families evaluate suitable citizenship by investment options.</p>
 
         <div className="mt-12 grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
           <div>
@@ -69,7 +68,7 @@ export default function PassportPower({ serifClass }: { serifClass: string }) {
           </div>
 
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50">Passports we secure — by visa-free reach</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50">Passports we advise on — by visa-free reach</p>
             <div className="mt-5 flex flex-col gap-3.5">
               {TARGETS.map((t, idx) => (
                 <motion.div key={t.name} initial={{ opacity: 0, x: 14 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay: idx * 0.06 }} className="group">

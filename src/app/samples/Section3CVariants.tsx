@@ -38,7 +38,7 @@ function Header() {
 
 const PROGRAMMES = [
   { no: "01", name: "Golden Visa", line: "Long-term residency by investment — the UAE, Portugal, Greece and more.", stat: "2–8 months", img: "/images/residency/uae/uae-golden-visa.webp" },
-  { no: "02", name: "Citizenship by Investment", line: "A second passport in 4–6 months — the Caribbean, Malta, Türkiye.", stat: "140+ visa-free", img: "/images/citizenship/grenada/grenada-citizenship.webp" },
+  { no: "02", name: "Citizenship by Investment", line: "A second passport in months — the Caribbean, Türkiye and beyond.", stat: "140+ visa-free", img: "/images/citizenship/grenada/grenada-citizenship.webp" },
   { no: "03", name: "Residency & Relocation", line: "Skilled, corporate and family routes to permanent residency.", stat: "PR pathways", img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp" },
 ];
 

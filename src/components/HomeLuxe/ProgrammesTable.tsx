@@ -10,25 +10,25 @@ const INK = "#0c1f3f";
 type Row = { flag: string; name: string; route: string; from: string; time: string; note: string; href: string };
 const DATA: Record<"citizenship" | "residency", Row[]> = {
   citizenship: [
-    { flag: "grenada", name: "Grenada", route: "Donation / Real estate", from: "$158,000", time: "4–6 months", note: "E-2 visa to the USA · 145 visa-free", href: "/citizenship/grenada" },
-    { flag: "Dominica", name: "Dominica", route: "Donation", from: "$200,000", time: "3–6 months", note: "Most accessible donation · 145", href: "/citizenship/dominica" },
-    { flag: "st-kitts-nevis", name: "St Kitts & Nevis", route: "Donation", from: "$250,000", time: "3–6 months", note: "The original CBI · 150+", href: "/citizenship/saintkitts" },
-    { flag: "Antigua-barbuda", name: "Antigua & Barbuda", route: "Donation", from: "$230,000", time: "3–6 months", note: "Family-friendly · 150+", href: "/citizenship/antigua-barbuda" },
+    { flag: "grenada", name: "Grenada", route: "Donation / Real estate", from: "$150,000", time: "Varies", note: "US E-2 treaty · UK visa-free with ETA", href: "/citizenship/grenada" },
+    { flag: "Dominica", name: "Dominica", route: "Donation / Real estate", from: "$200,000", time: "4–6 months", note: "Two routes · UK visa required", href: "/citizenship/dominica" },
+    { flag: "st-kitts-nevis", name: "St Kitts & Nevis", route: "Donation", from: "$250,000", time: "4–6 months", note: "The original CBI · UK visa-free with ETA", href: "/citizenship/saintkitts" },
+    { flag: "Antigua-barbuda", name: "Antigua & Barbuda", route: "Donation", from: "$230,000", time: "Varies", note: "Same fund amount for any family size", href: "/citizenship/antigua-barbuda" },
     { flag: "turkey", name: "Türkiye", route: "Real estate", from: "$400,000", time: "~6 months", note: "E-2 eligible · 113 visa-free", href: "/citizenship/turkey" },
-    { flag: "st-lucia", name: "Saint Lucia", route: "Donation / Bonds", from: "$240,000", time: "6–12 months", note: "145 visa-free", href: "/citizenship/saint-lucia" },
-    { flag: "Ejypt", name: "Egypt", route: "Donation / Deposit", from: "$250,000", time: "6–9 months", note: "Regional base · fast track", href: "/citizenship/egypt" },
-    { flag: "vanuatu", name: "Vanuatu", route: "Donation (VDSP)", from: "$130,000", time: "1–2 months", note: "Fastest CBI · 117 visa-free", href: "/citizenship/vanuatu" },
-    { flag: "Nauru", name: "Nauru", route: "Donation", from: "$105,000", time: "3–4 months", note: "Newest CBI · family-inclusive", href: "/citizenship/nauru" },
-    { flag: "sao-tome", name: "São Tomé & Príncipe", route: "Donation (NTF)", from: "$90,000", time: "~6 weeks", note: "Most affordable entry", href: "/citizenship/saotome" },
+    { flag: "st-lucia", name: "Saint Lucia", route: "Donation / Bonds", from: "$240,000", time: "Under 3 months", note: "UK visa required since March 2026", href: "/citizenship/saint-lucia" },
+    { flag: "Ejypt", name: "Egypt", route: "Donation / Deposit", from: "$250,000", time: "6–12 months", note: "Regional base · four routes", href: "/citizenship/egypt" },
+    { flag: "vanuatu", name: "Vanuatu", route: "Donation (VDSP)", from: "$130,000", time: "Varies", note: "No Schengen or UK access · 88 visa-free", href: "/citizenship/vanuatu" },
+    { flag: "Nauru", name: "Nauru", route: "Donation", from: "$90,000", time: "3–4 months", note: "Launched 2024 · family-inclusive", href: "/citizenship/nauru" },
+    { flag: "sao-tome", name: "São Tomé & Príncipe", route: "Donation (NTF)", from: "$90,000", time: "~4 months", note: "In force since August 2025", href: "/citizenship/saotome" },
   ],
   residency: [
-    { flag: "UAE", name: "United Arab Emirates", route: "Golden Visa · property", from: "$545,000", time: "2–4 weeks", note: "10-year residency · 0% income tax", href: "/golden-visa" },
-    { flag: "Portugal", name: "Portugal", route: "Golden Visa · fund", from: "€500,000", time: "6–9 months", note: "EU · permanent residence in 5 years", href: "/residency/portugal" },
-    { flag: "Greece", name: "Greece", route: "Golden Visa · real estate", from: "€250,000", time: "2–4 months", note: "Schengen · 186 visa-free", href: "/residency/greece" },
-    { flag: "Malta", name: "Malta", route: "Permanent residence", from: "€182,000", time: "4–6 months", note: "Stable EU residence", href: "/residency/malta" },
-    { flag: "cyprust", name: "Cyprus", route: "Permanent residence", from: "€300,000", time: "2–3 months", note: "182 visa-free", href: "/residency/cyprus" },
-    { flag: "hungary", name: "Hungary", route: "Guest Investor · fund", from: "€250,000", time: "3–6 months", note: "10-year EU residence", href: "/residency/hungary" },
-    { flag: "Curacao", name: "Curaçao", route: "Residency", from: "$280,000", time: "3–4 months", note: "Dutch citizenship in 5 years", href: "/residency/curacao" },
+    { flag: "UAE", name: "United Arab Emirates", route: "Golden Visa · property", from: "AED 2,000,000", time: "~2 months", note: "10-year residency · 0% income tax", href: "/golden-visa" },
+    { flag: "Portugal", name: "Portugal", route: "Golden Visa · fund", from: "€500,000", time: "~15 months", note: "EU · permanent residence in 5 years", href: "/residency/portugal" },
+    { flag: "Greece", name: "Greece", route: "Golden Visa · real estate", from: "€400,000", time: "50 days (statutory)", note: "Schengen · €800,000 in prime areas", href: "/residency/greece" },
+    { flag: "Malta", name: "Malta", route: "Permanent residence", from: "€14,000 a year (lease)", time: "Varies", note: "Plus €60,000 admin fee & €37,000 contribution", href: "/residency/malta" },
+    { flag: "cyprust", name: "Cyprus", route: "Permanent residence", from: "On assessment", time: "Varies", note: "EU, not Schengen · 182 visa-free", href: "/residency/cyprus" },
+    { flag: "hungary", name: "Hungary", route: "Guest Investor · fund", from: "€250,000", time: "Varies", note: "10-year EU residence", href: "/residency/hungary" },
+    { flag: "Curacao", name: "Curaçao", route: "Residency", from: "XCG 500,000", time: "~4 months", note: "Path to Netherlands nationality", href: "/residency/curacao" },
   ],
 };
 const TABS: { key: "citizenship" | "residency"; label: string }[] = [
@@ -46,10 +46,10 @@ export default function ProgrammesTable({ serifClass, defaultTab = "citizenship"
           <div>
             <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.34em]" style={{ color: GOLD }}><span className="h-px w-8" style={{ background: GOLD }} />What we offer<span lang="ar" dir="rtl" className="font-arabic-display text-sm tracking-normal">برامجنا</span></p>
             <h2 className={`${serifClass} mt-5 text-[clamp(2.2rem,4.4vw,3.4rem)] font-medium leading-[1.05]`}>Compare Residency and <span className="italic" style={{ color: GOLD }}>Citizenship by Investment Programs</span></h2>
-            <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-[#0c1f3f]/60">Compare UAE Golden Visa, residency by investment and second citizenship programs by cost, timeline, family eligibility and mobility benefits. The best immigration consultants help you identify a program suited to your goals and investment range.</p>
+            <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-[#0c1f3f]/60">Compare UAE Golden Visa, residency by investment and second citizenship programs by cost, timeline, family eligibility and mobility benefits. Our immigration consultants help you identify a program suited to your goals and investment range.</p>
           </div>
           <div className="flex flex-wrap gap-2.5 text-center">
-            {[["35", "jurisdictions"], ["60+", "programmes"], ["$90k", "entry point"], ["190", "destinations"]].map(([v, u]) => (
+            {[["35", "jurisdictions"], ["100+", "programmes"], ["$90k", "entry point"], ["10", "citizenship countries"]].map(([v, u]) => (
               <div key={u} className="rounded-lg border px-4 py-2.5" style={{ borderColor: `${INK}1a` }}>
                 <div className={`${serifClass} text-[1.4rem] font-semibold leading-none`} style={{ color: GOLD }}>{v}</div>
                 <div className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#0c1f3f]/50">{u}</div>

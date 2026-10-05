@@ -163,7 +163,7 @@ export default function MidnightEmbassyHero() {
             <Reveal delay={0.15} y={20}>
               <p className="mt-6 max-w-md text-[15px] leading-relaxed text-ink/65 sm:text-16">
                 Golden Visa, residency-by-investment and citizenship programmes
-                across 25+ countries — reviewed and advised end-to-end from the
+                across 35+ countries — reviewed and advised end-to-end from the
                 Emirates.
               </p>
             </Reveal>

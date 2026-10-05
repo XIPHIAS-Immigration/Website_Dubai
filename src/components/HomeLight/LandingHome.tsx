@@ -210,7 +210,7 @@ export default function LandingHome({ serifClass }: { serifClass: string }) {
           </div>
           <div className="mt-8 flex flex-col items-start justify-between gap-4 text-[12px] text-[#0c1f3f]/50 sm:flex-row sm:items-center">
             <span className={`${serifClass} text-[1.4rem] font-semibold tracking-[0.04em] text-[#0c1f3f]`}>XIPHIAS</span>
-            <span>Dubai · London · Bengaluru · Licensed in the UAE</span>
+            <span>Dubai · Bengaluru · Gurugram · Licensed in the UAE</span>
             <span>© 2026 XIPHIAS Immigration</span>
           </div>
         </div>

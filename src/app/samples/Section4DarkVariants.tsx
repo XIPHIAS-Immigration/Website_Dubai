@@ -29,7 +29,7 @@ function Header() {
 type Step = { no: string; title: string; line: string; detail: string; img: string; w: string; h: string; self: string };
 const STEPS: Step[] = [
   { no: "01", title: "Private consultation", line: "A confidential conversation about your goals, timeline and budget.", detail: "Senior advisor · under NDA", img: "/images/citizenship/dubai/dubai-country-image.webp", w: "lg:w-[32rem]", h: "lg:h-[62vh]", self: "lg:self-start" },
-  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 25+ jurisdictions.", detail: "Cost · timeline · passport power", img: "/images/citizenship/grenada/grenada-citizenship.webp", w: "lg:w-[26rem]", h: "lg:h-[50vh]", self: "lg:self-end" },
+  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 35+ jurisdictions.", detail: "Cost · timeline · passport power", img: "/images/citizenship/grenada/grenada-citizenship.webp", w: "lg:w-[26rem]", h: "lg:h-[50vh]", self: "lg:self-end" },
   { no: "03", title: "Handled end to end", line: "Filing, liaison and follow-through — managed by your named advisor.", detail: "One desk · in writing", img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp", w: "lg:w-[36rem]", h: "lg:h-[58vh]", self: "lg:self-start" },
   { no: "04", title: "Arrival", line: "Your residency or citizenship secured — and we remain on call.", detail: "Banking · schooling · relocation", img: "/images/residency/uae/uae-golden-visa.webp", w: "lg:w-[28rem]", h: "lg:h-[54vh]", self: "lg:self-center" },
 ];

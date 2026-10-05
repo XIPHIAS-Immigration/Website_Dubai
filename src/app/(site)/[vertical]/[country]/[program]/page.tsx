@@ -94,7 +94,7 @@ export async function generateMetadata({
   const title = doc.title;
   const description = doc.summary || `Discover the ${doc.title} program in ${doc.country}.`;
   const keywords = doc.tags?.join(", ");
-  const canonicalUrl = `https://www.xiphiasimmigration.com${doc.url}`;
+  const canonicalUrl = `https://www.xiphiasimmigration.ae${doc.url}`;
 
   return {
     title,

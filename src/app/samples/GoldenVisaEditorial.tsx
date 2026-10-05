@@ -51,7 +51,7 @@ const PROCESS = [
 ];
 
 const PROOF = [
-  { v: "20+", u: "Years advising HNW families" },
+  { v: "17+", u: "Years advising HNW families" },
   { v: "8", u: "Golden Visa jurisdictions" },
   { v: "100%", u: "Bespoke, single-desk service" },
 ];

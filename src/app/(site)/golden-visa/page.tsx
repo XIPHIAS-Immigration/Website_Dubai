@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Golden Visa Programs – Residency by Investment",
     description:
       "The headline Golden Visa routes — Portugal, Greece, the UAE, Malta and more. Compare investment, timeline and benefits.",
-    url: "https://www.xiphiasimmigration.com/golden-visa",
+    url: "https://www.xiphiasimmigration.ae/golden-visa",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",
@@ -113,7 +113,7 @@ export default function GoldenVisaPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Golden Visa Programs – Residency by Investment",
-    url: "https://www.xiphiasimmigration.com/golden-visa",
+    url: "https://www.xiphiasimmigration.ae/golden-visa",
     description:
       "The headline Golden Visa routes — Portugal, Greece, the UAE, Malta and more. Compare investment, timeline and benefits, then book a consultation.",
   };
@@ -124,7 +124,7 @@ export default function GoldenVisaPage() {
     itemListElement: destinations.map((d, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://www.xiphiasimmigration.com/residency/${d.slug}`,
+      url: `https://www.xiphiasimmigration.ae/residency/${d.slug}`,
       name: d.name,
     })),
   };

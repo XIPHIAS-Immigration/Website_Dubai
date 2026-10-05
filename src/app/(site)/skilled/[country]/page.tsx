@@ -25,7 +25,7 @@ export async function generateMetadata(props: { params: Promise<{ country: strin
   const rawD = (m.summary as string | undefined) ?? `${cn} skilled migration & permanent residence — Express Entry, points-based & employer-sponsored routes. XIPHIAS Dubai.`;
   const description = seo?.description ?? rawD.slice(0, 150);
   const heroImage = m.heroImage as string | undefined;
-  return { title, description, keywords: seo?.keywords, alternates: { canonical: `/skilled/${params.country}` }, openGraph: { title, description, url: `https://www.xiphiasimmigration.com/skilled/${params.country}`, siteName: "XIPHIAS Immigration", locale: "en_US", type: "website", images: [{ url: heroImage ?? "/xiphias-immigration.png", width: 1200, height: 630, alt: `${title} – XIPHIAS Immigration` }] }, twitter: { card: "summary_large_image", title, description, images: [heroImage ?? "/xiphias-immigration.png"] } };
+  return { title, description, keywords: seo?.keywords, alternates: { canonical: `/skilled/${params.country}` }, openGraph: { title, description, url: `https://www.xiphiasimmigration.ae/skilled/${params.country}`, siteName: "XIPHIAS Immigration", locale: "en_US", type: "website", images: [{ url: heroImage ?? "/xiphias-immigration.png", width: 1200, height: 630, alt: `${title} – XIPHIAS Immigration` }] }, twitter: { card: "summary_large_image", title, description, images: [heroImage ?? "/xiphias-immigration.png"] } };
 }
 
 function prettyLabel(k: string) { const map: Record<string, string> = { timeZone: "Time zone", population: "Population", capital: "Capital", language: "Language", currency: "Currency", climate: "Climate" }; return map[k] ?? k.replace(/([A-Z])/g, " $1").replace(/^./, (c) => c.toUpperCase()); }

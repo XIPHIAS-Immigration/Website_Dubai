@@ -73,7 +73,7 @@ function HeroA({ serifClass }: { serifClass: string }) {
           <div className="absolute inset-0" style={{ boxShadow: `inset 0 0 0 1px ${GOLD}55` }} />
           <span aria-hidden className="absolute left-4 top-4 h-7 w-7 border-l-2 border-t-2" style={{ borderColor: GOLD }} />
           <span aria-hidden className="absolute bottom-4 right-4 h-7 w-7 border-b-2 border-r-2" style={{ borderColor: GOLD }} />
-          <div className="absolute bottom-4 left-4 rounded-full bg-black/55 px-4 py-2 text-[12px] font-semibold backdrop-blur" style={{ color: GOLD }}>Licensed in the UAE · ICCRC & IMC members</div>
+          <div className="absolute bottom-4 left-4 rounded-full bg-black/55 px-4 py-2 text-[12px] font-semibold backdrop-blur" style={{ color: GOLD }}>Licensed in the UAE · IMC member · CICC RCIC R516194</div>
         </div>
       </div>
     </section>

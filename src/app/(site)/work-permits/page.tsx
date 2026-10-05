@@ -60,7 +60,7 @@ export default async function WorkPermitsPage({
     provider: {
       "@type": "Organization",
       name: "XIPHIAS Immigration",
-      url: "https://www.xiphiasimmigration.com",
+      url: "https://www.xiphiasimmigration.ae",
     },
     serviceType: "Work permit immigration advisory",
     areaServed: workPermitCountries.map((item) => item.country),

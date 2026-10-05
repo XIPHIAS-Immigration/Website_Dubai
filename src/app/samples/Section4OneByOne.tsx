@@ -28,7 +28,7 @@ function Header() {
 type Step = { no: string; title: string; line: string; detail: string; img: string };
 const STEPS: Step[] = [
   { no: "01", title: "Private consultation", line: "A confidential conversation about your goals, timeline and budget.", detail: "Senior advisor · under NDA", img: "/images/citizenship/dubai/dubai-country-image.webp" },
-  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 25+ jurisdictions.", detail: "Cost · timeline · passport power", img: "/images/citizenship/grenada/grenada-citizenship.webp" },
+  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 35+ jurisdictions.", detail: "Cost · timeline · passport power", img: "/images/citizenship/grenada/grenada-citizenship.webp" },
   { no: "03", title: "Handled end to end", line: "Filing, liaison and follow-through — managed by your named advisor.", detail: "One desk · in writing", img: "/images/residency/singapore/singapore-gip-pr-investment-hero.webp" },
   { no: "04", title: "Arrival", line: "Your residency or citizenship secured — and we remain on call.", detail: "Banking · schooling · relocation", img: "/images/residency/uae/uae-golden-visa.webp" },
 ];

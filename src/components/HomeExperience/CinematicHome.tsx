@@ -36,8 +36,8 @@ const PATHWAYS = [
   {
     eyebrow: "02 — A second passport",
     label: "Citizenship",
-    line: "Citizenship by investment — visa-free access to 140+ countries, for you and your family.",
-    stat: "140+ visa-free · 4–6 months",
+    line: "Citizenship by investment — wider visa-free travel, for you and your family.",
+    stat: "10 countries · from USD 90,000",
     href: "/citizenship",
     img: "/images/citizenship/grenada/grenada-citizenship.webp",
   },

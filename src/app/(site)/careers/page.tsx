@@ -17,13 +17,13 @@ const serif = cormorant;
 const GOLD = "#bfa15c";
 const NAVY = "#0a1733";
 const INK = "#0c1f3f";
-const SITE = "https://www.xiphiasimmigration.com";
+const SITE = "https://www.xiphiasimmigration.ae";
 
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "Immigration Jobs at XIPHIAS | Dubai & Bengaluru",
-  description: "On-site roles in citizenship, residency, skilled migration & corporate mobility. Bengaluru HQ, 10+ global offices. Apply directly.",
+  description: "On-site roles in citizenship, residency, skilled migration & corporate mobility. Bengaluru HQ and offices in Gurugram, Dubai, Melbourne and Waterloo. Apply directly.",
   alternates: { canonical: `${SITE}/careers` },
   robots: { index: true, follow: true },
   openGraph: {

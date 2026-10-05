@@ -162,7 +162,7 @@ export async function POST(req: NextRequest) {
             </a>
           </div>
           <p style="font-size:12px;color:#9ca3af;line-height:1.5;border-top:1px solid #f3f4f6;padding-top:16px;margin:0;">
-            XIPHIAS Immigration Consultancy &bull; India&apos;s Most Trusted Global Mobility Partner<br/>
+            XIPHIAS Immigration Consultancy &bull; Global mobility advisory since 2009<br/>
             <a href="https://www.xiphiasimmigration.com" style="color:#1c57b4;">xiphiasimmigration.com</a>
             &nbsp;&bull;&nbsp;
             <a href="mailto:immigration@xiphias.in" style="color:#1c57b4;">immigration@xiphias.in</a>

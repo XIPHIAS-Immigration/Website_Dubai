@@ -36,7 +36,7 @@ export async function generateMetadata(props: { params: Promise<{ country: strin
     return {
       title, description, keywords: seo?.keywords ?? [title, m.country, ...(m.tags ?? [])].join(", "),
       alternates: { canonical: canonicalPath },
-      openGraph: { title, description, type: "article", url: `https://www.xiphiasimmigration.com${canonicalPath}`, siteName: "XIPHIAS Immigration", locale: "en_US", images: [{ url: heroImage ?? "/xiphias-immigration.png", width: 1200, height: 630, alt: `${title} – XIPHIAS Immigration` }] },
+      openGraph: { title, description, type: "article", url: `https://www.xiphiasimmigration.ae${canonicalPath}`, siteName: "XIPHIAS Immigration", locale: "en_US", images: [{ url: heroImage ?? "/xiphias-immigration.png", width: 1200, height: 630, alt: `${title} – XIPHIAS Immigration` }] },
       twitter: { card: "summary_large_image", title, description, images: [heroImage ?? "/xiphias-immigration.png"] },
     };
   } catch {

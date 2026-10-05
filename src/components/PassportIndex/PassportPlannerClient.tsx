@@ -68,7 +68,7 @@ function recommendationFor(goal: GoalId, record: PassportRecord) {
     title: "Start with Europe residence routes.",
     body: "Look at Portugal, Greece, Spain, Malta, Hungary, Latvia, and Switzerland depending on investment appetite, stay requirement, and tax planning.",
     href: "/residency", cta: "View residency routes",
-    checks: ["Investment threshold varies: €250k–€500k+", "Minimum annual stay obligations by country", "Tax residence and reporting implications", "Eventual citizenship eligibility timeline"],
+    checks: ["Investment threshold varies: €50k–€800k+", "Minimum annual stay obligations by country", "Tax residence and reporting implications", "Eventual citizenship eligibility timeline"],
   };
   if (record.score >= 170) return {
     eyebrow: "High-access passport",

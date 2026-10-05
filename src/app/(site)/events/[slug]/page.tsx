@@ -10,7 +10,7 @@ import { formatDateLong } from "@/lib/date-format";
 import { getAllEvents, getEventBySlug } from "@/lib/events-data";
 import ArticleDetail from "@/components/Content/ArticleDetail";
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 const serif = cormorant;
 

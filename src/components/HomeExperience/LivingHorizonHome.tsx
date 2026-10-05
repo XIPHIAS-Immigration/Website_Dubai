@@ -59,7 +59,7 @@ const PATHWAYS: {
   href: string; img: string; mode: PathMode;
 }[] = [
   { no: "01", eyebrow: "Investment-backed", label: "Residency", line: "Golden Visas and residency-by-investment — long-term status, world-class healthcare and the freedom to come and go.", stat: "5 countries · 2–8 months", href: "/residency", img: IMG.residency, mode: "curtain" },
-  { no: "02", eyebrow: "A second passport", label: "Citizenship", line: "Citizenship by investment — visa-free access to 140+ countries, secured for you and your family for life.", stat: "140+ visa-free · 4–6 months", href: "/citizenship", img: IMG.citizenship, mode: "shutter" },
+  { no: "02", eyebrow: "A second passport", label: "Citizenship", line: "Citizenship by investment — wider visa-free travel, secured for you and your family for life.", stat: "10 countries · from USD 90,000", href: "/citizenship", img: IMG.citizenship, mode: "shutter" },
   { no: "03", eyebrow: "Merit-based", label: "Skilled", line: "Points-based and employer-sponsored routes to permanent residency in the world's most sought-after economies.", stat: "PR pathways · 12–24 months", href: "/skilled", img: IMG.skilled, mode: "blurscale" },
   { no: "04", eyebrow: "For enterprise", label: "Corporate", line: "Intra-company transfers, work authorisations and relocation programmes for multinational teams.", stat: "Global workforce mobility", href: "/corporate", img: IMG.corporate, mode: "hpan" },
 ];
@@ -75,7 +75,7 @@ const DESTINATIONS = [
 
 const RIBBON = [
   "17+ YEARS ADVISING", "10,000+ FAMILIES GUIDED", "98% APPROVAL RATE",
-  "35 DESTINATIONS", "LICENSED ADVISORS", "DUBAI · LONDON · BENGALURU",
+  "35 DESTINATIONS", "LICENSED ADVISORS", "DUBAI · BENGALURU · GURUGRAM",
 ];
 
 const STEPS = [

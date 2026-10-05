@@ -21,7 +21,7 @@ export default function WorkPermitIntelligencePage() {
     name: "Work Permit Intelligence | XIPHIAS",
     description:
       "Assess employer-led and points-based work routes across eight destinations — permit types, route-readiness signals, and document checklists.",
-    url: "https://www.xiphiasimmigration.com/work-permit-intelligence",
+    url: "https://www.xiphiasimmigration.ae/work-permit-intelligence",
   };
 
   return (

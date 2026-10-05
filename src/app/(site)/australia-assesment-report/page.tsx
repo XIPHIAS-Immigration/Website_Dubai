@@ -747,9 +747,9 @@ function buildReportHtml(args: {
                 <td class="pad bodyText" style="padding:0 22px 14px 22px;font-family:Arial,Roboto,sans-serif;color:#2A3443;font-size:14px;line-height:22px;">
                   <strong>Government Visa Application Fees (approx.):</strong>
                   <ul style="margin-top:8px;">
-                    <li style="margin:0 0 6px 0;">Primary applicant fee: AUD $ 4910</li>
-                    <li style="margin:0 0 6px 0;">Dependent applicant fee if applicable (spouse): AUD $ 2455</li>
-                    <li style="margin:0;">Additional applicant charge for each additional adult that is 18 years or under: AUD $ 1230</li>
+                    <li style="margin:0 0 6px 0;">Primary applicant fee: AUD 6,135 (subclass 189) or AUD 6,140 (subclasses 190 and 491)</li>
+                    <li style="margin:0 0 6px 0;">Dependent applicant fee if applicable (spouse): additional charge set by the Department of Home Affairs</li>
+                    <li style="margin:0;">Each dependent child: additional charge set by the Department of Home Affairs</li>
                   </ul>
 
                   <div style="margin-top:10px;">

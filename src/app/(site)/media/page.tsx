@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Media – Videos & Interviews",
     description:
       "Watch our latest interviews, webinars and media appearances covering investment migration, residency and citizenship programs.",
-    url: "https://www.xiphiasimmigration.com/media",
+    url: "https://www.xiphiasimmigration.ae/media",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
 export const revalidate = 86400;
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 // Derive a sensible topic for a media item: prefer first country/program/tag, else generic.
 function categoryFor(m: InsightMeta): string {

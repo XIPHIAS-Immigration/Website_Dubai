@@ -18,7 +18,7 @@ export type RelatedItem = {
 type Props = { items: RelatedItem[]; className?: string; title?: string };
 
 // ✅ Change this only if your canonical domain changes later
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 const SERVICE_TYPE = "Citizenship by Investment";
 
 /**

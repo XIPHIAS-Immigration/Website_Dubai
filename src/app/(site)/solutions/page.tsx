@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Solutions by Profile | XIPHIAS",
     description:
       "Tailored migration solutions for investors, families, professionals, businesses and entrepreneurs.",
-    url: "https://www.xiphiasimmigration.com/solutions",
+    url: "https://www.xiphiasimmigration.ae/solutions",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",
@@ -66,7 +66,7 @@ export default function SolutionsPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Solutions by Profile | XIPHIAS",
-    url: "https://www.xiphiasimmigration.com/solutions",
+    url: "https://www.xiphiasimmigration.ae/solutions",
     description:
       "Your goals, mapped to a route. XIPHIAS solutions for investors, families, professionals, businesses and entrepreneurs.",
   };
@@ -77,7 +77,7 @@ export default function SolutionsPage() {
     itemListElement: SOLUTIONS_ITEMS.map((s, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://www.xiphiasimmigration.com${s.href}`,
+      url: `https://www.xiphiasimmigration.ae${s.href}`,
       name: s.name,
     })),
   };

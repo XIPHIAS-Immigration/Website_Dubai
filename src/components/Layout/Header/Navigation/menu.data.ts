@@ -115,10 +115,10 @@ const residencyCountries: HeaderItem[] = [
     href: '/residency/latvia',
     meta: { code: 'LV' },
     submenu: [
-      { label: 'Bank Deposit', href: '/residency/latvia/latvia-bank-deposit' },
+      { label: 'Bank Deposit (closed)', href: '/residency/latvia/latvia-bank-deposit' },
       { label: 'Business Investment', href: '/residency/latvia/latvia-business-investment' },
-      { label: 'Government Bonds', href: '/residency/latvia/latvia-government-bonds' },
-      { label: 'Real Estate Investment', href: '/residency/latvia/latvia-real-estate-investment' },
+      { label: 'Government Bonds (closed)', href: '/residency/latvia/latvia-government-bonds' },
+      { label: 'Real Estate Investment (closed)', href: '/residency/latvia/latvia-real-estate-investment' },
     ],
   },
   {
@@ -371,6 +371,14 @@ const corporateCountries: HeaderItem[] = [
     ],
   },
   {
+    label: 'Singapore',
+    href: '/corporate/singapore',
+    meta: { code: 'SG' },
+    submenu: [
+      { label: 'Self-Employed Employment Pass', href: '/corporate/singapore/self-employed-employment-pass' },
+    ],
+  },
+  {
     label: 'Spain',
     href: '/corporate/spain',
     meta: { code: 'ES' },
@@ -394,7 +402,7 @@ const corporateCountries: HeaderItem[] = [
     meta: { code: 'GB' },
     submenu: [
       { label: 'Expansion Worker Visa', href: '/corporate/united-kingdom/expansion-worker-visa' },
-      { label: 'Self Sponsorship Visa', href: '/corporate/united-kingdom/self-sponsorship-visa' },
+      { label: 'Sponsoring Yourself Through a UK Company', href: '/corporate/united-kingdom/self-sponsorship-visa' },
     ],
   },
   {
@@ -453,7 +461,7 @@ const skilledCountries: HeaderItem[] = [
     href: '/skilled/germany',
     meta: { code: 'DE' },
     submenu: [
-      { label: 'Germany Job Seeker Visa', href: '/skilled/germany/germany-job-seeker-visa' },
+      { label: 'Germany Opportunity Card (Chancenkarte)', href: '/skilled/germany/germany-job-seeker-visa' },
     ],
   },
   {

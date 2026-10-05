@@ -14,7 +14,7 @@ const points: Point[] = [
   {
     icon: ShieldCheck,
     title: "Licensed & Regulated",
-    text: "Advisory aligned to CICC/ICCRC, MARA & IMC practices.",
+    text: "Canada advice through a CICC-licensed RCIC (R516194), Australia through a registered migration agent (MARA 1680615).",
     bullets: ["Rule-tracking & audit-ready files", "Partner-led review on priority cases"],
   },
   {

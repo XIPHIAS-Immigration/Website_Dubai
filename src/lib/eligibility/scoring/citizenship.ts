@@ -36,7 +36,7 @@ export function scoreCitizenship(answers: AnswerMap): Result {
         tier: "Eligible",
         summary: "Your budget fits mainstream citizenship-by-investment options.",
         programs: [
-          { name: "Malta (Residence → Exceptional Services)", why: "Meets capital expectations" },
+          { name: "Türkiye (USD 400k real estate)", why: "Meets the minimum property threshold" },
           { name: "Caribbean CBI", why: "Streamlined due diligence; 3–6 months typical" },
         ],
       };

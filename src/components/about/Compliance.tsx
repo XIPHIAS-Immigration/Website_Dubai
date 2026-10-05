@@ -82,7 +82,7 @@ export default function Compliance() {
 
           {/* regulator alignment chips */}
           <div className="relative mb-5 flex flex-wrap gap-2">
-            <Chip>ICCRC / CICC-aligned</Chip>
+            <Chip>CICC-licensed RCIC</Chip>
             <Chip>MARA-aligned</Chip>
             <Chip>IMC standards</Chip>
             <Chip>KYC / AML procedures</Chip>

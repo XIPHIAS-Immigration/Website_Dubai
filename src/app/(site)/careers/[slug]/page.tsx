@@ -21,7 +21,7 @@ export async function generateStaticParams() {
   return jobsStaticParams();
 }
 
-const SITE = "https://www.xiphiasimmigration.com";
+const SITE = "https://www.xiphiasimmigration.ae";
 
 type Params = { slug: string };
 type PageProps = { params: Promise<Params> };

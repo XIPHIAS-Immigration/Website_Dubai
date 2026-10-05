@@ -32,7 +32,7 @@ type InsightItem = {
 const FEATURED: FeaturedInsight = {
   cat: "Guide",
   title: "Secure Dubai's Golden Visa through real estate",
-  excerpt: "A practical walk-through of the property thresholds, eligible developments and the exact steps to a 10-year UAE residency — with the costs nobody else spells out.",
+  excerpt: "A practical walk-through of the property thresholds, eligible developments and the exact steps to a 10-year UAE residency — with the costs spelled out.",
   date: "Mar 2025",
   read: "6 min read",
   img: "/images/blogs/dubai-golden-visa-real-estate.webp",

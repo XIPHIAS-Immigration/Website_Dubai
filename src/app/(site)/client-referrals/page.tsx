@@ -8,7 +8,7 @@ const serif = cormorant;
 
 const CANONICAL = "/client-referrals";
 const ABSOLUTE_URL =
-    "https://www.xiphiasimmigration.com/client-referrals";
+    "https://www.xiphiasimmigration.ae/client-referrals";
 
 export const revalidate = 86400;
 

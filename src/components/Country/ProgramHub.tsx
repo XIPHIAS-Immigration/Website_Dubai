@@ -540,7 +540,7 @@ function FamilyScope({ d, serifClass }: { d: ProgramData; serifClass: string }) 
   const items: string[] = [];
   if (fm.spouse) items.push("Spouse or common-law partner");
   if (fm.childrenUpTo) items.push(`Dependent children up to age ${fm.childrenUpTo}`);
-  if (fm.parentsFromAge) items.push(`Parents & grandparents from age ${fm.parentsFromAge}`);
+  if (typeof fm.parentsFromAge === "number") items.push(fm.parentsFromAge > 0 ? `Parents & grandparents from age ${fm.parentsFromAge}` : "Dependent parents");
   if (fm.siblings) items.push("Unmarried siblings of applicant or spouse");
   if (!items.length) return null;
   return (

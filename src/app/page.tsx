@@ -9,15 +9,15 @@ const serif = cormorant;
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Top Immigration Consultants in Dubai | Golden Visa & Citizenship",
+  title: "Immigration Consultants in Dubai | Golden Visa & Citizenship",
   description:
-    "Best immigration consultants in Dubai for Golden Visas, residency, citizenship by investment and skilled migration. Get a confidential eligibility assessment.",
+    "Immigration consultants in Dubai for Golden Visas, residency, citizenship by investment and skilled migration. Get a confidential eligibility assessment.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Visa & Immigration Consultants in Dubai | XIPHIAS",
     description:
-      "Golden visas, second passports & investor residency across 35+ jurisdictions. Licensed IMC advisors — XIPHIAS since 2009, XIPHIAS Dubai since 2017.",
-    url: "https://www.xiphiasimmigration.com",
+      "Golden visas, second passports & investor residency across 35+ jurisdictions. IMC Fellow-led advisors — XIPHIAS since 2009, XIPHIAS Dubai since 2017.",
+    url: "https://www.xiphiasimmigration.ae",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",

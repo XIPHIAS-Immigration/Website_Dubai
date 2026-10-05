@@ -87,7 +87,7 @@ export default function CinematicHero() {
           <Reveal delay={0.35} y={20}>
             <p className="mt-7 max-w-xl text-[15px] leading-relaxed text-white/70 sm:text-base">
               Residency, citizenship and global mobility — engineered for you across
-              25+ countries, advised end-to-end from our Dubai desk.
+              35+ countries, advised end-to-end from our Dubai desk.
             </p>
           </Reveal>
 

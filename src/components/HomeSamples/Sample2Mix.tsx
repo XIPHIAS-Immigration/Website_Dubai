@@ -144,7 +144,7 @@ function WhatBringsYou({ serifClass }: { serifClass: string }) {
 /* 3 · PROGRAMMES (clip-reveal rows) */
 const PROG = [
   { no: "01", name: "Golden Visa", line: "Long-term residency by investment — the UAE, Portugal, Greece and more.", stat: "2–8 months", img: IMG.uae },
-  { no: "02", name: "Citizenship by Investment", line: "A second passport in 4–6 months — the Caribbean, Malta, Türkiye.", stat: "140+ visa-free", img: IMG.grenada },
+  { no: "02", name: "Citizenship by Investment", line: "A second passport in months — the Caribbean, Türkiye and beyond.", stat: "140+ visa-free", img: IMG.grenada },
   { no: "03", name: "Residency & Relocation", line: "Skilled, corporate and family routes to permanent residency.", stat: "PR pathways", img: IMG.singapore },
 ];
 function ProgRow({ p, i, serifClass }: { p: (typeof PROG)[number]; i: number; serifClass: string }) {
@@ -187,7 +187,7 @@ function Programmes({ serifClass }: { serifClass: string }) {
 /* 4 · PROCESS (GSAP pinned horizontal) */
 const STEPS = [
   { no: "01", title: "Private consultation", line: "A confidential conversation about your goals, timeline and budget.", detail: "Senior advisor · under NDA", img: IMG.dubai },
-  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 25+ jurisdictions.", detail: "Cost · timeline · passport power", img: IMG.portugal },
+  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 35+ jurisdictions.", detail: "Cost · timeline · passport power", img: IMG.portugal },
   { no: "03", title: "Handled end to end", line: "Filing, liaison and follow-through — managed by your named advisor.", detail: "One desk · in writing", img: IMG.greece },
   { no: "04", title: "Arrival", line: "Your residency or citizenship secured — and we remain on call.", detail: "Banking · schooling · relocation", img: IMG.malta },
 ];
@@ -281,7 +281,7 @@ function XIA({ serifClass }: { serifClass: string }) {
 /* 7 · PROOF (counters over parallax video) */
 function Proof({ serifClass }: { serifClass: string }) {
   const ref = useRef<HTMLDivElement>(null); const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] }); const y = useTransform(scrollYProgress, [0, 1], ["-9%", "9%"]);
-  const stats = [[17, "", "Years advising"], [10000, "+", "Families relocated"], [25, "+", "Countries served"], [98, "%", "Approval rate"]] as const;
+  const stats = [[17, "", "Years advising"], [10000, "+", "Families relocated"], [35, "+", "Countries served"], [98, "%", "Approval rate"]] as const;
   return (
     <section ref={ref} data-tone="dark" className="relative flex min-h-screen items-center overflow-hidden py-28 text-[#eef3fb]" style={{ background: "#0a1733" }}>
       <motion.div className="absolute -inset-y-[14%] inset-x-0" style={{ y }}><MediaBackdrop poster={P_SKYLINE} video={V_SKYLINE} sizes="100vw" filter="grayscale(0.5) sepia(0.18) contrast(1.05) brightness(0.5)" /></motion.div>
@@ -307,7 +307,7 @@ function CTA({ serifClass }: { serifClass: string }) {
           <p className="mt-6 max-w-md text-[16px] leading-relaxed text-white/70">Tell us your goal. A senior advisor will map your most secure, cost-effective pathway — privately, and entirely off the record.</p>
           <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center"><Btn href="/contact">Book a private consultation</Btn><Btn ghost href="/contact">WhatsApp our Dubai desk</Btn></div>
           <p lang="ar" dir="rtl" className="mt-8 font-arabic-display text-2xl" style={{ color: GOLD }}>مستقبلك العالمي يبدأ من هنا</p>
-          <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">By appointment · Dubai · London · Bengaluru</p>
+          <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">By appointment · Dubai · Bengaluru · Gurugram</p>
         </div>
         <div className="relative mx-auto aspect-[9/16] w-full max-w-[24rem] overflow-hidden rounded-md" style={{ boxShadow: "0 40px 110px -40px rgba(0,0,0,0.7)" }}>
           <div className="absolute inset-0 z-10" style={{ boxShadow: `inset 0 0 0 1px ${GOLD}45` }} />

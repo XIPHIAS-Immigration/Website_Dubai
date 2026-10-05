@@ -6,14 +6,14 @@ import PartnerWithUsView from "./PartnerWithUsView";
 const serif = cormorant;
 
 const CANONICAL = "/partner-with-us";
-const ABSOLUTE_URL = "https://www.xiphiasimmigration.com/partner-with-us";
+const ABSOLUTE_URL = "https://www.xiphiasimmigration.ae/partner-with-us";
 
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: "Partner With Us | XIPHIAS Immigration",
   description:
-    "Strategic global mobility partnerships for private advisory firms, corporate mobility teams, and referral partners backed by 17+ years, 25+ jurisdictions, and compliance-first execution.",
+    "Strategic global mobility partnerships for private advisory firms, corporate mobility teams, and referral partners backed by 17+ years, 35+ jurisdictions, and compliance-first execution.",
   keywords: [
     "partner with XIPHIAS Immigration",
     "global mobility partner",
@@ -61,7 +61,7 @@ export default function PartnerWithUsPage() {
     provider: {
       "@type": "Organization",
       name: "XIPHIAS Immigration",
-      url: "https://www.xiphiasimmigration.com",
+      url: "https://www.xiphiasimmigration.ae",
     },
     areaServed: "Worldwide",
     url: ABSOLUTE_URL,

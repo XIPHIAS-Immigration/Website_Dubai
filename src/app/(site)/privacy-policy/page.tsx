@@ -18,7 +18,7 @@ import {
 const serif = cormorant;
 
 // ✅ Keep one canonical domain everywhere (matches your layout.tsx metadataBase)
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 // ---------------- SEO METADATA ----------------
 export const metadata: Metadata = {

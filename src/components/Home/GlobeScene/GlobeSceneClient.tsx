@@ -137,7 +137,7 @@ export default function GlobeSceneClient({ markers, arcs }: { markers: GlobeMark
           className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.2em] text-secondary backdrop-blur-sm">
-            <Globe2 className="size-3.5" /> 50+ destinations, one partner
+            <Globe2 className="size-3.5" /> 35+ destinations, one partner
           </span>
           <h2 className="mt-6 max-w-4xl text-[clamp(2rem,6vw,4.5rem)] font-black leading-[1.05] text-white">
             Where will your story begin?

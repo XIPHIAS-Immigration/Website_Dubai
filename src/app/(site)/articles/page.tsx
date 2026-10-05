@@ -8,7 +8,7 @@ import type { InsightMeta } from "@/types/insights";
 
 const serif = cormorant;
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 const OG_IMAGE = "/xiphias-immigration.png";
 
 // SEO metadata for the articles listing page

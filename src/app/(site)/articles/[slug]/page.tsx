@@ -10,7 +10,7 @@ const InsightJsonLd = nextDynamic(() => import("@/components/SEO/InsightJsonLd")
 
 const serif = cormorant;
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 function formatDate(input?: string) {
   if (!input) return "";

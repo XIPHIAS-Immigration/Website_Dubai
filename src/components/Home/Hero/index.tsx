@@ -11,7 +11,7 @@ import {
 
 const STATS = [
   { value: "17+",  label: "Years of Excellence" },
-  { value: "50+",  label: "Countries Covered" },
+  { value: "35+",  label: "Countries Covered" },
   { value: "10K+", label: "Families Relocated" },
   { value: "98%",  label: "Visa Success Rate" },
 ];
@@ -109,7 +109,7 @@ export default function Hero() {
         {/* Eyebrow badge */}
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[13px] font-medium text-white/90 backdrop-blur-sm">
           <ShieldCheck className="h-3.5 w-3.5 text-secondary shrink-0" />
-          India&apos;s Most Trusted Immigration Consultancy
+          Named Best Immigration Consultant by The Times of India, 2022
         </div>
 
         {/* Headline */}
@@ -131,7 +131,7 @@ export default function Hero() {
         {/* Subheadline */}
         <p className="mt-5 max-w-2xl text-[1.05rem] leading-relaxed text-white/75">
           Expert advisory across Residency by Investment, Citizenship by Investment,
-          Skilled Migration &amp; Corporate Mobility — 50+ countries, one trusted partner.
+          Skilled Migration &amp; Corporate Mobility — 35+ countries, one partner.
         </p>
 
         {/* Stats strip */}

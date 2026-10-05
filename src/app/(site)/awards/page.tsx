@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Awards & Recognition",
     description:
       "Independent accolades that recognize our quality, leadership, and client service.",
-    url: "https://www.xiphiasimmigration.com/awards",
+    url: "https://www.xiphiasimmigration.ae/awards",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",

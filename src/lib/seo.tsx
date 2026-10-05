@@ -12,7 +12,7 @@ function getSiteBase(): string {
   const env =
     process.env.NEXT_PUBLIC_SITE_URL ||
     process.env.SITE_URL ||
-    "https://www.xiphiasimmigration.com";
+    "https://www.xiphiasimmigration.ae";
 
   const base = env.startsWith("http") ? env : `https://${env}`;
   return base.replace(/\/$/, "");

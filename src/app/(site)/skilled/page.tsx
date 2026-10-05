@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Skilled Migration Visa — Canada, Australia & UK | XIPHIAS",
     description: "Canada Express Entry, Australia points visa, UK Skilled Worker & Germany Opportunity Card. PR through your profession, arranged from Dubai.",
-    url: "https://www.xiphiasimmigration.com/skilled",
+    url: "https://www.xiphiasimmigration.ae/skilled",
     siteName: "XIPHIAS Immigration", locale: "en_US", type: "website",
     images: [{ url: "/xiphias-immigration.png", width: 1200, height: 630, alt: "Skilled Migration – XIPHIAS Immigration" }],
   },
@@ -40,7 +40,7 @@ const config: VerticalConfig = {
   whyHeadingItalic: "to skilled migration.",
   whySubline: "Most advisers submit and hope. We score, optimise and track your profile through every draw.",
   whyProps: [
-    { no: "01", title: "Profile scoring & strategy", line: "We assess every points factor before you commit.", detail: "Canada CRS, Australia points test, UK shortage SOL — we model your score across systems and optimise every factor before the first submission." },
+    { no: "01", title: "Profile scoring & strategy", line: "We assess every points factor before you commit.", detail: "Canada CRS, Australia points test, UK salary and occupation thresholds — we model your score across systems and optimise every factor before the first submission." },
     { no: "02", title: "Credential & language planning", line: "We map your qualifications to each country's recognition rules.", detail: "Assessment bodies, language benchmarks and occupational thresholds — we identify gaps early and plan around them." },
     { no: "03", title: "End-to-end submission", line: "From your expression of interest to your PR grant.", detail: "One desk handles your EOI, provincial nomination, ITA and final application — with status updates at every stage." },
     { no: "04", title: "Family included from day one", line: "Spouse, children and dependants — all in scope.", detail: "We plan for your whole family from the first consultation, not as an afterthought when the process is already underway." },
@@ -77,7 +77,7 @@ const config: VerticalConfig = {
     { k: "Points-based PR", tag: "Express Entry & equivalents", line: "Permanent residence scored on age, education, language and experience — Canada's Express Entry, Australia's points test and more.", points: ["Direct to permanent residence", "No job offer required", "Profile optimisation & ranking"] },
     { k: "Employer-sponsored", tag: "A job offer to a visa", line: "A confirmed role becomes a work visa and a route to settlement — UK Skilled Worker, US H-1B/EB, Australia 186.", points: ["Employer sponsorship", "Work visa to PR", "Sponsor & role matching"] },
     { k: "Provincial / state nomination", tag: "Regional fast-tracks", line: "Province- and state-level streams with lower thresholds and faster timelines for in-demand occupations.", points: ["PNP & state nomination", "In-demand occupations", "Faster processing"] },
-    { k: "Global talent", tag: "For exceptional skills", line: "Fast-track routes for leaders in tech, science, academia and the arts — UK Global Talent, US EB-1 and equivalents.", points: ["Talent endorsement", "Top-tier fast-track", "Minimal restrictions"] },
+    { k: "Global talent", tag: "For exceptional skills", line: "Routes for leaders in tech, science, academia and the arts — UK Global Talent, US EB-1 and equivalents.", points: ["Talent endorsement", "No job offer required", "Minimal restrictions"] },
   ],
   process: [
     { no: "01", title: "Private consultation", detail: "We understand your profession, goals and family, and recommend the country and route that fit best.", handle: ["Goals & profile", "Country & route fit", "Under NDA"] },
@@ -88,7 +88,7 @@ const config: VerticalConfig = {
   ],
   ctaHeading: "Begin your",
   ctaItalic: "skilled visa.",
-  ctaSummary: "Tell us your profession and goal. A senior advisor will score your profile and map the fastest route — privately.",
+  ctaSummary: "Tell us your profession and goal. A senior advisor will score your profile and map the right route — privately.",
   ctaImage: "/images/skilled/australia/australia-186-employer-visa.webp",
 };
 
@@ -96,7 +96,7 @@ export default function SkilledPage() {
   const countries: CountryMeta[] = getSkilledCountries();
   const ld = {
     "@context": "https://schema.org", "@type": "ItemList", name: "Skilled Migration Destinations",
-    itemListElement: countries.map((c, i) => ({ "@type": "ListItem", position: i + 1, url: `https://www.xiphiasimmigration.com/skilled/${c.countrySlug}`, name: c.title || c.country })),
+    itemListElement: countries.map((c, i) => ({ "@type": "ListItem", position: i + 1, url: `https://www.xiphiasimmigration.ae/skilled/${c.countrySlug}`, name: c.title || c.country })),
   };
   return (<><JsonLd data={ld} /><VerticalHub c={config} serifClass={serif.className} /></>);
 }

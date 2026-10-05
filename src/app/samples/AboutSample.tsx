@@ -30,10 +30,10 @@ function Eyebrow({ children, ar }: { children: React.ReactNode; ar: string }) {
   return <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.34em]" style={{ color: GOLD }}><span className="h-px w-8" style={{ background: GOLD }} />{children}<span lang="ar" dir="rtl" className="font-arabic-display text-sm tracking-normal">{ar}</span></p>;
 }
 
-const STATS = [{ v: "2009", u: "founded" }, { v: "10,000+", u: "families relocated" }, { v: "35", u: "jurisdictions" }, { v: "3", u: "global offices" }];
+const STATS = [{ v: "2009", u: "founded" }, { v: "10,000+", u: "families relocated" }, { v: "35", u: "jurisdictions" }, { v: "5", u: "global offices" }];
 const OFFICES = [
   { city: "Dubai", note: "DIFC · Gate Village", ar: "دبي" },
-  { city: "London", note: "Mayfair", ar: "لندن" },
+  { city: "Gurugram", note: "Golf Course Road", ar: "غوروغرام" },
   { city: "Bengaluru", note: "UB City", ar: "بنغالورو" },
 ];
 const GALLERY = [1, 2, 3, 4, 5, 6].map((n) => `/images/gallery/xiphias-immigration-gallery-0${n}.jpeg`);
@@ -72,7 +72,7 @@ export default function AboutSample({ serifClass }: { serifClass: string }) {
         <div className="mx-auto max-w-4xl">
           <Eyebrow ar="قصتنا">Our story</Eyebrow>
           <h2 className={`${serifClass} mt-5 text-[clamp(2rem,4vw,3.2rem)] font-medium leading-[1.08]`}><Rise text="From a single desk to a global practice." /></h2>
-          <Fade delay={0.1}><p className="mt-7 text-[17px] leading-relaxed text-[#0c1f3f]/75">XIPHIAS Immigration began in 2009 as a single advisory with one conviction: that a family&apos;s global future is too important to leave to a processing factory. Today, from offices in Dubai, London and Bengaluru, we advise internationally mobile families and businesses on residency, citizenship and skilled migration across more than thirty-five jurisdictions.</p></Fade>
+          <Fade delay={0.1}><p className="mt-7 text-[17px] leading-relaxed text-[#0c1f3f]/75">XIPHIAS Immigration began in 2009 as a single advisory with one conviction: that a family&apos;s global future is too important to leave to a processing factory. Today, from offices in Dubai, Bengaluru, Gurugram, Melbourne and Waterloo, we advise internationally mobile families and businesses on residency, citizenship and skilled migration across more than thirty-five jurisdictions.</p></Fade>
           <Fade delay={0.2}><p className="mt-4 text-[16px] leading-relaxed text-[#0c1f3f]/65">We do not sell programmes. We map the right jurisdiction and route to each client&apos;s goals — mobility, tax, education, security or a genuine plan B — and we handle every step ourselves, from the source-of-funds dossier to the passport in hand. One accountable desk. Transparent costs. Discretion as standard.</p></Fade>
           <Fade delay={0.3}><blockquote className={`${serifClass} mt-12 border-l-2 pl-7 text-[clamp(1.5rem,3vw,2.2rem)] font-medium italic leading-snug`} style={{ borderColor: GOLD }}>&ldquo;We measure success in families settled — not files processed.&rdquo;</blockquote></Fade>
         </div>

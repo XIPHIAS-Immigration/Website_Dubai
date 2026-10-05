@@ -16,7 +16,7 @@ import PassportCountryShowcase from "@/components/PassportIndex/PassportCountryS
 import Flag from "@/components/Countries/Flag";
 import { passportIndexStats, passportRecords } from "@/data/passport-index";
 
-const SITE_URL = "https://www.xiphiasimmigration.com";
+const SITE_URL = "https://www.xiphiasimmigration.ae";
 
 type PageProps = {
   params: Promise<{ code: string }>;

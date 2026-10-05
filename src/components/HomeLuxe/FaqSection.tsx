@@ -23,7 +23,7 @@ export default function FaqSection({ serifClass }: { serifClass: string }) {
         <div className="lg:sticky lg:top-28 lg:h-fit">
           <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.34em]" style={{ color: GOLD }}><span className="h-px w-8" style={{ background: GOLD }} />Questions<span lang="ar" dir="rtl" className="font-arabic-display text-sm tracking-normal">أسئلة شائعة</span></p>
           <h2 className={`${serifClass} mt-5 text-[clamp(2.2rem,4.4vw,3.4rem)] font-medium leading-[1.05]`}>Frequently Asked <span className="italic" style={{ color: GOLD }}>Questions</span></h2>
-          <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-[#0c1f3f]/60">Get clear answers from the best immigration consultants about UAE visa eligibility, Golden Visa costs, processing times, family inclusion and due diligence.</p>
+          <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-[#0c1f3f]/60">Get clear answers from our immigration consultants in Dubai about UAE visa eligibility, Golden Visa costs, processing times, family inclusion and due diligence.</p>
           <a href="/contact" className="group mt-6 inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em]" style={{ color: GOLD }}>Ask an advisor <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></a>
         </div>
         <div>

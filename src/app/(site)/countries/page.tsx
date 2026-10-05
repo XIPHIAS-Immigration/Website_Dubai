@@ -30,7 +30,7 @@ export default function CountriesIndexPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Countries We Serve — Residency, Citizenship & Migration",
-    url: "https://www.xiphiasimmigration.com/countries",
+    url: "https://www.xiphiasimmigration.ae/countries",
     description:
       "Browse every country XIPHIAS Immigration supports. Explore residency, citizenship, skilled and corporate programmes for each destination.",
   };
@@ -42,7 +42,7 @@ export default function CountriesIndexPage() {
     itemListElement: countries.map((c, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://www.xiphiasimmigration.com/countries/${c.slug}`,
+      url: `https://www.xiphiasimmigration.ae/countries/${c.slug}`,
       name: c.name,
     })),
   };

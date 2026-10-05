@@ -78,7 +78,7 @@ const OFFICES = [
     city: "Dubai",
     postal: "",
     country: "UAE",
-    hours: "Sun–Thu, 9:00–18:00",
+    hours: "Mon–Fri, 9:00–18:00",
     phone: "+971-527 275 101",
     maps: "https://maps.google.com/?q=Platinum+Tower+JLT+Dubai",
   },
@@ -244,24 +244,24 @@ export default function Footer() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://www.xiphiasimmigration.com#org",
+        "@id": "https://www.xiphiasimmigration.ae#org",
         name: "XIPHIAS Immigration",
-        url: "https://www.xiphiasimmigration.com",
-        logo: "https://www.xiphiasimmigration.com/images/logo/xiphias-immigration.png",
+        url: "https://www.xiphiasimmigration.ae",
+        logo: "https://www.xiphiasimmigration.ae/images/logo/xiphias-immigration.png",
         sameAs: SOCIALS.map(s => s.href),
         contactPoint: [
           { "@type": "ContactPoint", contactType: "sales", email: "immigration@xiphias.in" },
           { "@type": "ContactPoint", contactType: "support", email: "immigration@xiphias.in" },
         ],
-        aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "1200" },
+        aggregateRating: { "@type": "AggregateRating", ratingValue: "4.7", reviewCount: "1347" },
       },
       {
         "@type": "WebSite",
         name: "XIPHIAS Immigration",
-        url: "https://www.xiphiasimmigration.com",
+        url: "https://www.xiphiasimmigration.ae",
         potentialAction: {
           "@type": "SubscribeAction",
-          target: "https://www.xiphiasimmigration.com/api/newsletter/subscribe",
+          target: "https://www.xiphiasimmigration.ae/api/newsletter/subscribe",
         },
       },
     ],
@@ -299,7 +299,7 @@ export default function Footer() {
               <div className="flex flex-wrap gap-2 md:justify-end">
                 {[
                   { href: "tel:+91-9021335577", icon: "mdi:phone", label: "+91-9021335577" },
-                  { href: "https://wa.me/919021335577", icon: "mdi:whatsapp", label: "WhatsApp", ext: true },
+                  { href: "https://wa.me/971527275101", icon: "mdi:whatsapp", label: "WhatsApp", ext: true },
                   { href: "mailto:immigration@xiphias.in", icon: "mdi:email-outline", label: "Email" },
                 ].map(({ href, icon, label, ext }) => (
                   <Link
@@ -329,7 +329,7 @@ export default function Footer() {
               <ul className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[#eef3fb]/70 text-[12px]">
                 <li className="inline-flex items-center gap-1">
                   <Icon icon="mdi:star" className="w-4 h-4 text-gold" />
-                  <strong className="text-gold">4.8/5</strong> · 10,000+ reviews{" "}
+                  <strong className="text-gold">4.7/5</strong> · Google rating{" "}
                   <Link href="https://g.page/r/CTH8DQwm1lYnEAE/review" className="underline underline-offset-4 hover:text-gold">
                     (Google)
                   </Link>
@@ -571,7 +571,7 @@ export default function Footer() {
               <div className="flex flex-wrap gap-2 mb-2">
                 {[
                   { href: "tel:+919021335577", icon: "mdi:phone", label: "Call" },
-                  { href: "https://wa.me/919021335577", icon: "mdi:whatsapp", label: "WhatsApp", ext: true },
+                  { href: "https://wa.me/971527275101", icon: "mdi:whatsapp", label: "WhatsApp", ext: true },
                   { href: "mailto:immigration@xiphias.in", icon: "mdi:email-outline", label: "Email" },
                   { href: "/personal-booking", icon: "mdi:calendar-clock", label: "Personal Paid Consultation" },
                 ].map(({ href, icon, label, ext }) => (
@@ -642,7 +642,7 @@ export default function Footer() {
                     <Icon icon="mdi:star-circle-outline" className="h-5 w-5 mt-0.5 text-gold" />
                     <div>
                       <strong className="text-[13.5px] text-[#eef3fb]">Reviews</strong>
-                      <p className="text-[13px] text-[#eef3fb]/60">4.8/5 on Google • <Link id="reviews" href="https://g.page/r/CTH8DQwm1lYnEAE/review" className="underline hover:text-gold">Read reviews</Link></p>
+                      <p className="text-[13px] text-[#eef3fb]/60">4.7/5 on Google • <Link id="reviews" href="https://g.page/r/CTH8DQwm1lYnEAE/review" className="underline hover:text-gold">Read reviews</Link></p>
                     </div>
                   </div>
                 </li>

@@ -70,7 +70,7 @@ function Hero({ serifClass, play }: { serifClass: string; play: boolean }) {
             <span className="block italic" style={{ color: GOLD }}><Rise text="strategy call." play={play} delay={0.5} /></span>
           </span>
         </h1>
-        <Fade play={play} delay={0.9}><p className="mt-7 max-w-xl text-[16px] leading-relaxed text-white/75">Reserve 60 minutes with a licensed advisor — IMC Fellow-certified, under NDA on request. Your goals, your jurisdiction, your plan.</p></Fade>
+        <Fade play={play} delay={0.9}><p className="mt-7 max-w-xl text-[16px] leading-relaxed text-white/75">Reserve 60 minutes with a senior advisor — an IMC Fellow, under NDA on request. Your goals, your jurisdiction, your plan.</p></Fade>
         <Fade play={play} delay={1.05}>
           <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <a href="/booking" className="group inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.12em]" style={{ background: GOLD, color: NAVY }}>Reserve your session <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></a>
@@ -156,7 +156,7 @@ function Expert({ serifClass }: { serifClass: string }) {
                       <span className="text-[12px] font-medium leading-snug text-[#0c1f3f]/70 underline-offset-2 group-hover:underline">{c.label}</span>
                     </a>
                   ))}
-                  {["Licensed in the UAE", "ICCRC-trained (Canada)", "Source-of-funds & KYC"].map((t) => (
+                  {["Licensed in the UAE", "CICC-licensed RCIC R516194 (Canada)", "Source-of-funds & KYC"].map((t) => (
                     <span key={t} className="rounded-full border px-3 py-1 text-[11px] font-medium text-[#0c1f3f]/60" style={{ borderColor: `${INK}20` }}>{t}</span>
                   ))}
                 </div>
@@ -176,7 +176,7 @@ function Expert({ serifClass }: { serifClass: string }) {
 
 /* ── 3. WHY BOOK ── */
 const WHY_PROPS = [
-  { no: "01", title: "You speak to the specialist", line: "Every call is led by Varun Singh, Cert IMC — not a junior.", detail: "We don't route strategy calls through account managers. You get 60 minutes with the same person who has advised 10,000+ families across 35 countries." },
+  { no: "01", title: "You speak to the specialist", line: "Every call is led by Varun Singh, Cert IMC — not a junior.", detail: "We don't route strategy calls through account managers. You get 60 minutes with the person who leads a practice that has advised 10,000+ families across 35 countries." },
   { no: "02", title: "A bespoke strategy — not a brochure", line: "We tailor the session to your specific goals, timeline and family.", detail: "Whether you're a first-time investor or evaluating your third residency, the session is prepared around your profile — not a standard script." },
   { no: "03", title: "Complete discretion, NDA on request", line: "Your information is never shared, profiled or stored beyond the engagement.", detail: "We operate under client confidentiality as standard. Where required, we sign an NDA before the call." },
   { no: "04", title: "The fee is credited on engagement", line: "The consultation cost applies against your full engagement.", detail: "If you proceed with XIPHIAS after the call, the strategy-call fee is deducted from the advisory fee — you pay once, not twice." },
@@ -287,9 +287,9 @@ function HowItWorks({ serifClass }: { serifClass: string }) {
 /* ── 5. WHAT'S COVERED ── */
 const TOPICS = [
   { tag: "Residency", title: "Golden visas & investor residence", line: "UAE Golden Visa, Portugal, Greece, Malta, Cyprus — matched to your tax and travel profile." },
-  { tag: "Citizenship", title: "Citizenship by investment", line: "Grenada, Malta, St Kitts, Dominica — second passport routes assessed against your needs." },
+  { tag: "Citizenship", title: "Citizenship by investment", line: "Grenada, St Kitts, Dominica, Türkiye — second passport routes assessed against your needs." },
   { tag: "Skilled", title: "Skilled & points-based migration", line: "Canada Express Entry, Australia, UK — profile scored and route recommended." },
-  { tag: "Corporate", title: "Corporate & workforce mobility", line: "Entity setup, intra-company transfers, team relocation — across seven jurisdictions." },
+  { tag: "Corporate", title: "Corporate & workforce mobility", line: "Entity setup, intra-company transfers, team relocation — across eight jurisdictions." },
 ];
 function WhatsCovered({ serifClass }: { serifClass: string }) {
   return (
@@ -374,7 +374,7 @@ function CTA({ serifClass }: { serifClass: string }) {
           <p className="text-[11px] uppercase tracking-[0.18em] text-white/40">Paid strategy call · 60 mins · Fee credited on engagement</p>
         </div>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-7 gap-y-2 text-[11px] uppercase tracking-[0.16em] text-white/45">
-          {["Confidential", "NDA on request", "By appointment", "Dubai · London · Bengaluru"].map((c, k, arr) => (
+          {["Confidential", "NDA on request", "By appointment", "Dubai · Bengaluru · Gurugram"].map((c, k, arr) => (
             <span key={c} className="flex items-center gap-7">{c}{k < arr.length - 1 && <span style={{ color: GOLD }}>·</span>}</span>
           ))}
         </div>

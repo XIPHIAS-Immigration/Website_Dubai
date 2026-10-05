@@ -211,7 +211,7 @@ export const guides: Guide[] = [
             ["UAE police clearance, attestation, MOFA", "Slow calendars, simple steps"],
             ["Proof of settlement funds", "Needs documented history, not a lump sum"],
             ["Express Entry pool wait", "Unbounded — depends on your score"],
-            ["After the invitation", "IRCC service standard [VERIFY current standard]"],
+            ["After the invitation", "IRCC service standard: six months for most complete applications"],
           ],
         },
       },
@@ -220,7 +220,7 @@ export const guides: Guide[] = [
         body: [
           "Government fees for the application and right of permanent residence, per adult, plus biometrics. Medical examinations at a panel physician in the Emirates. Police clearances from the UAE and your country of citizenship. The credential assessment. The language test, more than once if you are honest with yourself.",
           "Then settlement funds, which are not a fee — you keep them — but must be liquid, documented and in your name, and are the largest number on the page.",
-          "And professional fees if you engage anyone, which should be quoted separately from government charges in writing, because the two are paid to different parties. [VERIFY current IRCC fee schedule and settlement funds threshold before relying on any figure]",
+          "And professional fees if you engage anyone, which should be quoted separately from government charges in writing, because the two are paid to different parties. Check the current IRCC fee schedule and settlement-funds table before relying on any figure, because both are revised.",
         ],
       },
       {
@@ -307,7 +307,7 @@ export const guides: Guide[] = [
           "Language to the top band. It pays twice — once in core points, again through skill transferability — and it is the cheapest and fastest lever in the system.",
           "A provincial nomination, worth enough points to end the competition outright. For an over-represented occupation, this is frequently the only realistic route, and it is worth checking which provinces currently want your occupation before anything else is decided.",
           "Your spouse's language test and credential assessment. Routinely unclaimed, cheap to obtain, and often decisive on a borderline profile.",
-          "And category-based draws, which rank you against a smaller group rather than the whole pool. Whether you sit inside a category depends on your occupation code and what your reference letters evidence — not your job title. [VERIFY current year categories]",
+          "And category-based draws, which rank you against a smaller group rather than the whole pool. Whether you sit inside a category depends on your occupation code and what your reference letters evidence — not your job title. IRCC sets the categories for each year.",
         ],
         table: {
           caption: "What to start, and when",
@@ -399,13 +399,13 @@ export const guides: Guide[] = [
         table: {
           caption: "The rows that usually decide it",
           rows: [
-            ["Age band", "Highest in the late twenties, declining after [VERIFY current bands]"],
+            ["Age band", "Highest from 25 to 32, lower from 33, and you must be under 45 when invited"],
             ["English — superior vs competent", "The largest recoverable gap for most applicants"],
             ["Recognised qualification", "Set by the assessing authority's determination"],
             ["Overseas skilled employment", "Banded by years, evidence-dependent"],
             ["Partner skills and English", "Commonly unclaimed"],
             ["State nomination (subclass 190)", "Five points, and a much smaller pool"],
-            ["Minimum to lodge an EOI", "65 — and nowhere near an invitation [VERIFY round scores]"],
+            ["Minimum to lodge an EOI", "65 — invitation scores in recent rounds have been higher and vary by occupation"],
           ],
         },
       },
@@ -499,7 +499,7 @@ export const guides: Guide[] = [
             ["Right to live in Europe", "Caribbean: no · Portugal residence: yes"],
             ["Passes to children", "Both, subject to each country's rules"],
             ["Rule stability risk", "Both — Portugal has changed repeatedly since 2023"],
-            ["Typical total cost", "[VERIFY current thresholds for each programme]"],
+            ["Typical entry cost", "Caribbean: USD 150,000 to 250,000 plus fees · Portugal: €250,000 to €500,000"],
           ],
         },
       },
@@ -586,16 +586,16 @@ export const guides: Guide[] = [
         body: [
           "The investment-fund route is the main path in practice — a subscription into a qualifying Portuguese fund, held for a minimum period, with the fund subject to regulatory conditions including limits on real-estate exposure.",
           "Alongside it sit research funding, support for artistic or cultural output, direct job creation, and capitalising a Portuguese company while creating positions. These are genuinely used but suit narrower circumstances.",
-          "Thresholds and conditions have been revised more than once and are the part of this page most likely to be stale by the time you read it. [VERIFY current qualifying routes, minimum amounts and holding periods against the Portuguese authority before relying on any figure]",
+          "Thresholds and conditions have been revised more than once, so XIPHIAS confirms the current routes, amounts and holding periods for each file before you commit funds.",
         ],
         table: {
           caption: "What to establish before committing",
           rows: [
-            ["Qualifying routes currently open", "[VERIFY — changed repeatedly since 2023]"],
-            ["Minimum investment per route", "[VERIFY]"],
-            ["Minimum holding period", "[VERIFY]"],
+            ["Qualifying routes currently open", "Investment funds, research, cultural production and business investment"],
+            ["Minimum investment per route", "€500,000 for funds, research or a company; €250,000 for cultural production"],
+            ["Minimum holding period", "Five years for most routes"],
             ["Physical presence required", "Very light — an average of about seven days a year"],
-            ["Years to citizenship eligibility", "Five, subject to language and other conditions [VERIFY counting start]"],
+            ["Years to citizenship eligibility", "Ten for Indian nationals since 19 May 2026 (seven for EU and Portuguese-speaking countries); permanent residence after five"],
             ["Family included", "Spouse, dependent children, dependent parents"],
             ["Right to reside in the EU", "Yes, unlike a Caribbean passport"],
           ],
@@ -605,7 +605,7 @@ export const guides: Guide[] = [
         heading: "Why it still suits a Dubai-based investor",
         body: [
           "The presence requirement remains among the lightest in Europe. For someone running a business from the Emirates who does not intend to relocate, an average of roughly a week a year is the entire proposition.",
-          "It carries Schengen mobility, family members are included on the same application rather than as separate cases, and it leads to a citizenship pathway on a timescale short by European standards — subject to meeting the statutory conditions at that point.",
+          "It carries Schengen mobility, family members are included on the same application rather than as separate cases, and it leads to permanent residence after five years and a citizenship pathway — subject to meeting the statutory conditions at that point.",
           "Moving capital from the UAE is also considerably simpler than from many other jurisdictions, which removes a step that complicates these applications elsewhere. The compliance question is not whether you may move the money, but whether you can evidence where it came from.",
         ],
       },
@@ -631,11 +631,11 @@ export const guides: Guide[] = [
       },
       {
         q: "How much do I need to invest now?",
-        a: "It depends which remaining route you use, and thresholds have been revised more than once since the reform. Verify the current figure against the Portuguese authority's own published requirements rather than any brochure, including this page.",
+        a: "It depends which remaining route you use: €500,000 for a qualifying fund, research or company investment, or €250,000 for cultural production. Thresholds have been revised more than once since the reform, so confirm the current figure before you commit funds.",
       },
       {
         q: "Does it lead to an EU passport?",
-        a: "It leads to eligibility to apply for citizenship after five years of legal residence, subject to language and other statutory conditions being met at that time. Eligibility is not a grant, and the conditions have been politically debated — so the residency should be worth having on its own terms.",
+        a: "It leads to permanent residence after five years. Since 19 May 2026, naturalisation requires ten years of legal residence for Indian nationals and seven for nationals of EU member states and Portuguese-speaking countries, subject to language and other statutory conditions. Eligibility is not a grant, so the residency should be worth having on its own terms.",
       },
     ],
     report: "due_diligence_report",
@@ -672,8 +672,8 @@ export const guides: Guide[] = [
         heading: "Five programmes, one recent agreement",
         body: [
           "Five Eastern Caribbean states run citizenship-by-investment programmes: Antigua and Barbuda, Dominica, Grenada, St Kitts and Nevis, and St Lucia. Each offers a non-refundable contribution to a national fund, and most an approved real-estate route as an alternative.",
-          "In 2024 the five agreed common principles including a minimum price floor, under sustained pressure from the United States and the European Union over due-diligence standards. That ended the undercutting that had driven prices down for years.",
-          "So a figure quoted to you two years ago is not available today, and the gap between programmes is narrower than it was. [VERIFY current minimum contribution per programme before relying on any number]",
+          "In 2024 the five agreed common principles including a minimum price floor, under sustained pressure from the United States and the European Union over due-diligence standards. Published minimums still differ: Grenada lists USD 150,000 for a single applicant, Dominica starts at USD 200,000, Antigua & Barbuda at USD 230,000, St Lucia at USD 240,000 and St Kitts & Nevis at USD 250,000.",
+          "So a figure quoted to you two years ago may not be available today, and the gap between programmes is narrower than it was.",
         ],
         callout:
           "Price is no longer the differentiator it was. Processing discipline and diligence reputation are.",
@@ -688,10 +688,10 @@ export const guides: Guide[] = [
         table: {
           caption: "Every line to budget for, family of four",
           rows: [
-            ["National fund contribution", "The headline figure [VERIFY current floor]"],
-            ["Due diligence, per applicant over the age threshold", "Non-refundable regardless of outcome [VERIFY]"],
-            ["Government processing fees", "Per applicant [VERIFY]"],
-            ["Passport and naturalisation certificate", "Per applicant [VERIFY]"],
+            ["National fund contribution", "USD 200,000 (Grenada) to USD 250,000 (Dominica, St Kitts & Nevis) for a family of four"],
+            ["Due diligence, per applicant over the age threshold", "Non-refundable regardless of outcome — USD 5,000 (Grenada) to USD 10,000 (St Kitts & Nevis) for the main applicant"],
+            ["Government processing fees", "From USD 250 per application (St Kitts & Nevis) to USD 20,000 for a family of four (Antigua & Barbuda)"],
+            ["Passport and naturalisation certificate", "Per person — e.g. USD 300 passport (Antigua & Barbuda); USD 500 passport plus USD 500 certificate (Dominica)"],
             ["Authorised local agent", "Mandatory in most programmes"],
             ["UAE police clearance, attestation, MOFA", "Slow, and always started too late"],
             ["Real-estate route instead of contribution", "Higher headline, plus holding period and resale risk"],
@@ -722,7 +722,7 @@ export const guides: Guide[] = [
       },
       {
         q: "Which Caribbean programme is cheapest?",
-        a: "Less varied than it used to be. The five agreed a common minimum price floor in 2024 under international pressure, which ended price competition between them. Weigh processing reliability and diligence reputation at least as heavily as price.",
+        a: "Less varied than it used to be. The five agreed a common minimum price in 2024 under international pressure, but published minimums still differ — from USD 150,000 for a single applicant in Grenada to USD 250,000 in St Kitts & Nevis. Weigh processing reliability and diligence reputation at least as heavily as price.",
       },
       {
         q: "Do I need to visit the country?",

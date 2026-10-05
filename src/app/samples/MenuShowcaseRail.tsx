@@ -143,7 +143,7 @@ export default function MenuShowcaseRail({ serifClass }: { serifClass: string })
           >
             <span className="font-arabic-display">EN · ع</span>
             <span className="mx-3 text-[#bfa15c]">·</span>
-            Dubai · London · Bengaluru
+            Dubai · Bengaluru · Gurugram
           </div>
         </nav>
 

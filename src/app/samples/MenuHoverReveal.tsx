@@ -185,7 +185,7 @@ export default function MenuHoverReveal({ serifClass }: { serifClass: string }) 
         </div>
 
         <p className="mt-auto pt-10 text-[12px] tracking-[0.18em]" style={{ color: "rgba(238,243,251,0.55)" }}>
-          EN <span className="font-arabic-display">·&nbsp;ع</span>&nbsp;&nbsp;·&nbsp;&nbsp;Dubai · London · Bengaluru
+          EN <span className="font-arabic-display">·&nbsp;ع</span>&nbsp;&nbsp;·&nbsp;&nbsp;Dubai · Bengaluru · Gurugram
         </p>
       </div>
 

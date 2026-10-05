@@ -144,7 +144,7 @@ export default function HeroAbout({
                   </div>
 
                   <p className="mt-3 text-center text-[11px] text-ink/45">
-                    ICCRC • MARA • IMC aligned practices
+                    CICC RCIC • MARA • IMC Fellow
                   </p>
                 </div>
               </aside>

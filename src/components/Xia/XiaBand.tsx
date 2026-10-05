@@ -25,7 +25,7 @@ const PROMPTS = [
   "I have 500,000 USD to invest. What does that open up?",
 ];
 
-const PROOF = ["17+ years", "39 awards", "6 offices", "4.8★ on Google"];
+const PROOF = ["17+ years", "39 awards", "5 offices", "4.7★ on Google"];
 
 export default function XiaBand() {
   const [value, setValue] = useState("");

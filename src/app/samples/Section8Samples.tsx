@@ -41,7 +41,7 @@ function Actions({ light = false }: { light?: boolean }) {
 function Offices({ light = false }: { light?: boolean }) {
   return (
     <p className={`mt-10 text-[12px] uppercase tracking-[0.18em] ${light ? "text-[#14110c]/50" : "text-white/45"}`}>
-      By appointment · Dubai &nbsp;·&nbsp; London &nbsp;·&nbsp; Bengaluru
+      By appointment · Dubai &nbsp;·&nbsp; Bengaluru &nbsp;·&nbsp; Gurugram
     </p>
   );
 }

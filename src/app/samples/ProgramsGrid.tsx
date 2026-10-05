@@ -65,7 +65,7 @@ const CATEGORIES = [
 
 const HERO_STATS = [
   { v: "6", u: "Programme categories" },
-  { v: "30+", u: "Destinations covered" },
+  { v: "35+", u: "Destinations covered" },
 ];
 
 const DUO =

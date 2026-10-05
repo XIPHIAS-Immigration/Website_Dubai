@@ -49,7 +49,7 @@ const STEPS = [
 ];
 
 const PROOF = [
-  { v: "20+", u: "Years advising HNW families" },
+  { v: "17+", u: "Years advising HNW families" },
   { v: "2,000+", u: "Approvals delivered" },
   { v: "8", u: "Golden Visa jurisdictions" },
   { v: "1", u: "Dedicated desk per client" },

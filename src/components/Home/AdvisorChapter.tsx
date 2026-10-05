@@ -111,7 +111,7 @@ export default function AdvisorChapter() {
             <div className="mt-5 grid grid-cols-3 gap-3 text-center">
               {[
                 { v: "10k+", l: "Families" },
-                { v: "50+", l: "Countries" },
+                { v: "35+", l: "Countries" },
                 { v: "98%", l: "Success" },
               ].map((s) => (
                 <div key={s.l} className="rounded-2xl border border-gold/45 bg-white/[0.04] py-4">

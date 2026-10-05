@@ -2,7 +2,7 @@
 import type { MetadataRoute } from "next";
 
 // ✅ Keep robots consistent with your canonical domain (www)
-const HOST = "https://www.xiphiasimmigration.com";
+const HOST = "https://www.xiphiasimmigration.ae";
 
 export default function robots(): MetadataRoute.Robots {
   return {

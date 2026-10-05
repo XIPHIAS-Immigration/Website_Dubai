@@ -43,7 +43,7 @@ export const articlesData: Article[] = [
     id: 3,
     title: "Citizenship by Investment: Top Countries in 2025",
     description:
-      "Explore leading countries offering fast-track citizenship through investment, including the Caribbean and Europe.",
+      "Explore the countries offering citizenship through investment, including the Caribbean, Türkiye and Egypt.",
     author: "XIPHIAS Immigration",
     tags: ["Citizenship", "Investment", "Global Mobility"],
     image: "/images/hero/email-icon-522x292.jpg",

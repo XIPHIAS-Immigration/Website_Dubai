@@ -130,16 +130,16 @@ function WhyUs({ serifClass }: { serifClass: string }) {
 
 /* ═══════════ 3 · DESTINATIONS ═══════════ */
 const COUNTRIES = [
-  { name: "Grenada", slug: "grenada", region: "Caribbean", img: "/images/citizenship/grenada/coral-bay-residences.webp", time: "4–6 mo", visa: "145", from: "$235k", routes: 2 },
-  { name: "Antigua & Barbuda", slug: "antigua-barbuda", region: "Caribbean", img: "/images/citizenship/antigua/antigua-barbuda-business-investment.webp", time: "3–6 mo", visa: "150+", from: "$230k", routes: 3 },
-  { name: "Dominica", slug: "dominica", region: "Caribbean", img: "/images/citizenship/dominica/dominica-citizenship-by-investment.webp", time: "3–6 mo", visa: "145", from: "$200k", routes: 2 },
-  { name: "St Kitts & Nevis", slug: "saintkitts", region: "Caribbean", img: "/images/citizenship/st-kitts-nevis/ntf-st-principel.webp", time: "3–6 mo", visa: "150+", from: "$250k", routes: 3 },
-  { name: "Saint Lucia", slug: "saint-lucia", region: "Caribbean", img: "/images/citizenship/saint-lucia-citizenship/nef-saint-lucia.webp", time: "3–6 mo", visa: "146", from: "$240k", routes: 2 },
-  { name: "Türkiye", slug: "turkey", region: "Eurasia", img: "/images/citizenship/turkey/bank-deposit-turkey.webp", time: "6 mo", visa: "113", from: "$400k", routes: 6 },
-  { name: "Egypt", slug: "egypt", region: "Africa", img: "/images/citizenship/egypt/business-investment.webp", time: "6–9 mo", visa: "51", from: "$250k", routes: 4 },
-  { name: "São Tomé & Príncipe", slug: "saotome", region: "Africa", img: "/images/citizenship/saotome/saotome_cbi.webp", time: "2–4 mo", visa: "145", from: "$90k", routes: 1 },
-  { name: "Nauru", slug: "nauru", region: "Pacific", img: "/images/citizenship/nauru/donation-nauru.webp", time: "3–4 mo", visa: "86", from: "$105k", routes: 1 },
-  { name: "Vanuatu", slug: "vanuatu", region: "Pacific", img: "/images/citizenship/vanuatu/Vanuatu-Citizenship.webp", time: "1–2 mo", visa: "90+", from: "$130k", routes: 1 },
+  { name: "Grenada", slug: "grenada", region: "Caribbean", img: "/images/citizenship/grenada/coral-bay-residences.webp", time: "Varies", visa: "145", from: "$150k", routes: 2 },
+  { name: "Antigua & Barbuda", slug: "antigua-barbuda", region: "Caribbean", img: "/images/citizenship/antigua/antigua-barbuda-business-investment.webp", time: "Varies", visa: "150+", from: "$230k", routes: 4 },
+  { name: "Dominica", slug: "dominica", region: "Caribbean", img: "/images/citizenship/dominica/dominica-citizenship-by-investment.webp", time: "4–6 mo", visa: "145", from: "$200k", routes: 2 },
+  { name: "St Kitts & Nevis", slug: "saintkitts", region: "Caribbean", img: "/images/citizenship/st-kitts-nevis/ntf-st-principel.webp", time: "4–6 mo", visa: "150+", from: "$250k", routes: 3 },
+  { name: "Saint Lucia", slug: "saint-lucia", region: "Caribbean", img: "/images/citizenship/saint-lucia-citizenship/nef-saint-lucia.webp", time: "Under 3 mo", visa: "146", from: "$240k", routes: 4 },
+  { name: "Türkiye", slug: "turkey", region: "Eurasia", img: "/images/citizenship/turkey/bank-deposit-turkey.webp", time: "6 mo", visa: "113", from: "$400k", routes: 7 },
+  { name: "Egypt", slug: "egypt", region: "Africa", img: "/images/citizenship/egypt/business-investment.webp", time: "6–12 mo", visa: "50", from: "$250k", routes: 4 },
+  { name: "São Tomé & Príncipe", slug: "saotome", region: "Africa", img: "/images/citizenship/saotome/saotome_cbi.webp", time: "2–4 mo", visa: "58", from: "$90k", routes: 1 },
+  { name: "Nauru", slug: "nauru", region: "Pacific", img: "/images/citizenship/nauru/donation-nauru.webp", time: "3–4 mo", visa: "85", from: "$90k", routes: 1 },
+  { name: "Vanuatu", slug: "vanuatu", region: "Pacific", img: "/images/citizenship/vanuatu/Vanuatu-Citizenship.webp", time: "Varies", visa: "88", from: "$130k", routes: 1 },
 ];
 const REGIONS = ["All", "Caribbean", "Eurasia", "Africa", "Pacific"];
 const DUO_DEST = "object-cover [filter:grayscale(0.55)_brightness(0.66)_contrast(1.05)] transition-[filter,transform] duration-700 group-hover:[filter:grayscale(0)_brightness(0.82)] group-hover:scale-105";
@@ -152,9 +152,9 @@ function Destinations({ serifClass }: { serifClass: string }) {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <Eyebrow ar="الوجهات">Where we secure citizenship</Eyebrow>
+            <Eyebrow ar="الوجهات">Citizenship destinations</Eyebrow>
             <h2 className={`${serifClass} mt-5 text-[clamp(2.2rem,4.4vw,3.6rem)] font-medium`}><Rise text="Ten jurisdictions to a second passport." /></h2>
-            <p className="mt-3 text-[13px] text-[#0c1f3f]/55">10 citizenship programmes · 25 investment routes · across four regions.</p>
+            <p className="mt-3 text-[13px] text-[#0c1f3f]/55">10 citizenship programmes · 29 investment routes · across four regions.</p>
           </div>
           <div className="flex flex-wrap gap-2">
             {REGIONS.map((r) => (
@@ -197,16 +197,16 @@ function Destinations({ serifClass }: { serifClass: string }) {
 
 /* ═══════════ 4 · ROUTES + WHY IT WORKS ═══════════ */
 const ROUTES = [
-  { k: "Donation", from: "from $200,000", tag: "Speed & simplicity", line: "A non-refundable contribution to a national fund — the fastest, cleanest route, with no asset to manage.", points: ["Lowest entry threshold", "Fewest moving parts", "Fastest to passport"] },
-  { k: "Real estate", from: "from $300,000", tag: "Asset-backed value", line: "A government-approved property investment, resaleable after a holding period — your capital stays invested.", points: ["Tangible, resaleable asset", "Potential rental yield", "Capital retained, not spent"] },
+  { k: "Donation", from: "from $90,000", tag: "Simplicity", line: "A non-refundable contribution to a national fund — the simplest route, with no asset to manage.", points: ["Usually the lower threshold", "Fewest moving parts", "No asset to hold or resell"] },
+  { k: "Real estate", from: "from $200,000", tag: "Asset-backed value", line: "A government-approved property investment, resaleable after a holding period — your capital stays invested.", points: ["Tangible, resaleable asset", "Potential rental yield", "Capital retained, not spent"] },
 ];
 const BENEFITS = [
-  { v: "140+", t: "Visa-free", d: "UK, Schengen, Singapore & more." },
+  { v: "Wider", t: "Visa-free travel", d: "Destinations vary by passport — check UK and Schengen access per country." },
   { v: "Whole family", t: "Included", d: "Spouse, children & dependent parents." },
-  { v: "No residency", t: "Required", d: "Never need to live there." },
-  { v: "Tax-efficient", t: "Worldwide", d: "No tax on foreign income or estate." },
+  { v: "Minimal", t: "Residence required", d: "None in most programmes; Antigua asks 5 days in 5 years." },
+  { v: "Tax planning", t: "Potential", d: "Some programmes do not tax foreign income; take tax advice." },
   { v: "Lifetime", t: "& inheritable", d: "Citizenship that passes to your heirs." },
-  { v: "1–6 months", t: "Timeline", d: "From application to passport." },
+  { v: "2–12 months", t: "Timeline", d: "Varies by programme, from application to passport." },
 ];
 function Routes({ serifClass }: { serifClass: string }) {
   return (
@@ -266,9 +266,9 @@ function Mobility({ serifClass }: { serifClass: string }) {
       <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
           <Eyebrow ar="حرية التنقل">Where it takes you</Eyebrow>
-          <h2 className={`${serifClass} mt-5 text-[clamp(2.4rem,5vw,4rem)] font-medium leading-[1.0]`}>Visa-free to <span className="italic" style={{ color: GOLD }}>145 destinations.</span></h2>
-          <Fade delay={0.1}><p className="mt-5 max-w-md text-[16px] leading-relaxed text-white/70">The moment your citizenship is granted, the world opens — the UK, Schengen, Singapore, Hong Kong and beyond, without a visa.</p></Fade>
-          <Fade delay={0.2}><p className="mt-7 text-[12px] uppercase tracking-[0.18em] text-white/45">UK · Schengen · Singapore · Hong Kong · +140 more</p></Fade>
+          <h2 className={`${serifClass} mt-5 text-[clamp(2.4rem,5vw,4rem)] font-medium leading-[1.0]`}>Visa-free to <span className="italic" style={{ color: GOLD }}>more of the world.</span></h2>
+          <Fade delay={0.1}><p className="mt-5 max-w-md text-[16px] leading-relaxed text-white/70">Depending on the passport, citizenship can open visa-free travel to the Schengen Area, the UK, Singapore, Hong Kong and beyond. Grenada, St Kitts &amp; Nevis and Antigua &amp; Barbuda are UK visa-free with an ETA; Dominica and Saint Lucia now need a UK visa.</p></Fade>
+          <Fade delay={0.2}><p className="mt-7 text-[12px] uppercase tracking-[0.18em] text-white/45">Schengen · UK · Singapore · Hong Kong — varies by passport</p></Fade>
           <Fade delay={0.3}><a href="/passport-index" className="group mt-8 inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em]" style={{ color: GOLD }}>Explore the passport index <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></a></Fade>
         </div>
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.4 }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.13 } } }} className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border" style={{ background: "linear-gradient(135deg,#f7f9fd,#e6ecf6)", borderColor: `${GOLD}44` }}>
@@ -442,7 +442,7 @@ function CTA({ serifClass }: { serifClass: string }) {
           <a href="/guide" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:border-[#bfa15c]">Download the guide</a>
         </div>
         <p lang="ar" dir="rtl" className="mt-8 font-arabic-display text-2xl" style={{ color: GOLD }}>جنسيتك الثانية تبدأ من هنا</p>
-        <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">By appointment · Dubai · London · Bengaluru</p>
+        <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">By appointment · Dubai · Bengaluru · Gurugram</p>
       </div>
     </section>
   );

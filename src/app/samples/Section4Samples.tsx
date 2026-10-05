@@ -27,7 +27,7 @@ function Header() {
 
 const STEPS = [
   { no: "01", title: "Private consultation", line: "A confidential conversation about your goals, timeline and budget.", detail: "By invitation, under NDA — with a senior advisor, not a call-centre." },
-  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 25+ jurisdictions.", detail: "Side by side: investment, timeline, family inclusion and passport power." },
+  { no: "02", title: "Strategy & route", line: "We map the most secure, cost-effective pathway across 35+ jurisdictions.", detail: "Side by side: investment, timeline, family inclusion and passport power." },
   { no: "03", title: "Handled end to end", line: "Filing, liaison and follow-through — managed by your named advisor.", detail: "One desk, in writing, from application to approval." },
   { no: "04", title: "Arrival", line: "Your residency or citizenship secured — and we remain on call.", detail: "Banking, schooling and relocation support once you land." },
 ];

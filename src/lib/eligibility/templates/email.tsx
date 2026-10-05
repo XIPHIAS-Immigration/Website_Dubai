@@ -24,6 +24,6 @@ export function renderEligibilityEmailHTML({
     <pre style="background:#f7f7f7;padding:12px;border-radius:8px">${Object.entries(answers)
       .map(([k, v]) => `${k}: ${pretty(v)}`)
       .join("\n")}</pre>
-    <p>Next step: <a href="https://www.xiphiasimmigration.com/contact">Book a free consultation</a>.</p>
+    <p>Next step: <a href="https://www.xiphiasimmigration.ae/contact">Book a free consultation</a>.</p>
   </div>`;
 }

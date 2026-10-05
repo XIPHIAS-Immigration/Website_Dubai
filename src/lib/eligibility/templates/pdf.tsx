@@ -1,7 +1,7 @@
 import type { Result, Track, AnswerMap } from "@/lib/eligibility/types";
 
 const COMPANY_NAME = process.env.NEXT_PUBLIC_COMPANY_NAME || "XIPHIAS Immigration";
-const COMPANY_WEBSITE = process.env.NEXT_PUBLIC_PDF_WEBSITE || "www.xiphiasimmigration.com";
+const COMPANY_WEBSITE = process.env.NEXT_PUBLIC_PDF_WEBSITE || "www.xiphiasimmigration.ae";
 const COMPANY_EMAIL = process.env.NEXT_PUBLIC_PDF_EMAIL || "immigration@xiphias.in";
 const COMPANY_PHONE = process.env.NEXT_PUBLIC_PDF_PHONE || "+91 9021335577";
 const COMPANY_ADDRESS =

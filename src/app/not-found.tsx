@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://www.xiphiasimmigration.com/404",
+    canonical: "https://www.xiphiasimmigration.ae/404",
   },
   openGraph: {
     title: "404 – Page Not Found | XIPHIAS Immigration",
     description:
       "Oops! The page you’re looking for isn’t here. Head back to XIPHIAS Immigration homepage to explore our residency and citizenship solutions.",
-    url: "https://www.xiphiasimmigration.com/404",
+    url: "https://www.xiphiasimmigration.ae/404",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",

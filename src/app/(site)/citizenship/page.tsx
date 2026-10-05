@@ -15,15 +15,15 @@ const serif = cormorant;
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Citizenship by Investment Programs 2025 | XIPHIAS",
+  title: "Citizenship by Investment Programs 2026 | XIPHIAS",
   description:
-    "Malta, St Kitts, Grenada & Türkiye from €100k. Donation & real-estate citizenship routes, transparent costs, rigorous compliance. Dubai.",
+    "Caribbean, Türkiye, Egypt & Pacific programmes from USD 90,000. Donation & real-estate citizenship routes, transparent costs, rigorous compliance. Dubai.",
   alternates: { canonical: "/citizenship" },
   openGraph: {
-    title: "Citizenship by Investment Programs 2025 | XIPHIAS",
+    title: "Citizenship by Investment Programs 2026 | XIPHIAS",
     description:
-      "Second citizenship across 10+ jurisdictions — Malta, Caribbean & Türkiye. Donation & real-estate routes from €100k, arranged from Dubai.",
-    url: "https://www.xiphiasimmigration.com/citizenship",
+      "Second citizenship across 10 jurisdictions — the Caribbean, Türkiye, Egypt & the Pacific. Donation & real-estate routes from USD 90,000, arranged from Dubai.",
+    url: "https://www.xiphiasimmigration.ae/citizenship",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Citizenship by Investment — Second Passports, Privately Arranged",
     description:
-      "Second citizenship across ten jurisdictions and twenty-five investment routes, arranged with discretion from Dubai.",
+      "Second citizenship across ten jurisdictions and twenty-nine investment routes, arranged with discretion from Dubai.",
     images: ["/xiphias-immigration.png"],
   },
 };
@@ -74,7 +74,7 @@ export default function CitizenshipPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Citizenship by Investment — Second Passports, Privately Arranged",
-    url: "https://www.xiphiasimmigration.com/citizenship",
+    url: "https://www.xiphiasimmigration.ae/citizenship",
     description:
       "Donation and real-estate citizenship routes across the Caribbean, Türkiye and beyond — arranged end-to-end. Book a private consultation.",
   };
@@ -85,7 +85,7 @@ export default function CitizenshipPage() {
     itemListElement: countries.map((c, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://www.xiphiasimmigration.com/citizenship/${c.countrySlug}`,
+      url: `https://www.xiphiasimmigration.ae/citizenship/${c.countrySlug}`,
       name: c.title || c.country,
     })),
   };
@@ -96,7 +96,7 @@ export default function CitizenshipPage() {
     itemListElement: top5.map((p, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://www.xiphiasimmigration.com/citizenship/${p.countrySlug}/${p.programSlug}`,
+      url: `https://www.xiphiasimmigration.ae/citizenship/${p.countrySlug}/${p.programSlug}`,
       name: p.title,
     })),
   };

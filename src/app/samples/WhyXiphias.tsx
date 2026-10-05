@@ -23,7 +23,7 @@ const CREDS = [
   { logo: "/images/personal/credentials/imc-fellow-logo.svg", label: "Fellow · Investment Migration Council" },
   { logo: "/images/personal/credentials/imi-professionals-logo.png", label: "IMI Professional" },
 ];
-const TEXT_CREDS = ["Licensed in the UAE", "ICCRC-trained counsel (Canada)", "Source-of-funds & KYC rigour"];
+const TEXT_CREDS = ["Licensed in the UAE", "CICC-licensed RCIC (Canada)", "Source-of-funds & KYC rigour"];
 const AWARDS = [
   { img: "/images/awards/xiphias-award-2019.png", label: "Excellence 2019" },
   { img: "/images/awards/XIPHIAS-Awards-2021.jpg", label: "Industry Award 2021" },

@@ -219,7 +219,7 @@ export default function MenuImmersive({ serifClass }: { serifClass: string }) {
             <span aria-hidden="true">·</span>
             <span className="font-arabic-display">ع</span>
             <span className="mx-2 text-white/25" aria-hidden="true">·</span>
-            <span>Dubai · London · Bengaluru</span>
+            <span>Dubai · Bengaluru · Gurugram</span>
           </div>
         </div>
       </div>

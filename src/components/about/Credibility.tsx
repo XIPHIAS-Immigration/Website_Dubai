@@ -7,7 +7,7 @@ type Brand = { name: string; abbr?: string; color?: string };
 
 // Subtle regulators (mono)
 const REGULATORS: Brand[] = [
-  { name: "ICCRC", abbr: "IC" },
+  { name: "CICC", abbr: "CI" },
   { name: "MARA", abbr: "MA" },
   { name: "IMC", abbr: "IM" },
   { name: "ISO", abbr: "ISO" },

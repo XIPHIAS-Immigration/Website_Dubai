@@ -15,7 +15,7 @@ import SiteChrome from "@/components/Layout/SiteChrome";
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.xiphiasimmigration.com"),
+  metadataBase: new URL("https://www.xiphiasimmigration.ae"),
   applicationName: "XIPHIAS Immigration",
   generator: "Next.js",
 
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | XIPHIAS Immigration",
   },
   description:
-    "Trusted advisors for Residency by Investment, Citizenship by Investment, Skilled Immigration, and Corporate Mobility across 25+ countries.",
+    "Advisors for Residency by Investment, Citizenship by Investment, Skilled Immigration, and Corporate Mobility across 35+ countries.",
 
   referrer: "strict-origin-when-cross-origin",
 
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "XIPHIAS Immigration",
     description:
       "Residency & Citizenship solutions for high-net-worth individuals and global enterprises.",
-    url: "https://www.xiphiasimmigration.com",
+    url: "https://www.xiphiasimmigration.ae",
     siteName: "XIPHIAS Immigration",
     locale: "en_US",
     type: "website",
@@ -129,7 +129,7 @@ function safeJsonStringify(data: unknown) {
 }
 
 // Global JSON-LD (site-wide)
-const SITE = "https://www.xiphiasimmigration.com";
+const SITE = "https://www.xiphiasimmigration.ae";
 
 const orgJsonLd = {
   "@context": "https://schema.org",
