@@ -37,7 +37,7 @@ export default function PassportPower({ serifClass }: { serifClass: string }) {
       <div className="mx-auto max-w-6xl">
         <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.34em]" style={{ color: GOLD }}><span className="h-px w-8" style={{ background: GOLD }} />Intelligence<span lang="ar" dir="rtl" className="font-arabic-display text-sm tracking-normal">مؤشر الجوازات</span></p>
         <h2 className={`${serifClass} mt-5 max-w-3xl text-[clamp(2.2rem,4.6vw,3.6rem)] font-medium leading-[1.04]`}>Compare Second Passports <span className="italic" style={{ color: GOLD }}>and Global Mobility</span></h2>
-        <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-white/65">Compare second passports by investment amount, processing time, family inclusion and visa-free access. Our immigration consultants help investors and families evaluate suitable citizenship by investment options.</p>
+        <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-white/65">Compare second passports by investment amount, processing time, family inclusion and visa-free access. Our best immigration consultants help investors and families evaluate suitable citizenship by investment options.</p>
 
         <div className="mt-12 grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
           <div>

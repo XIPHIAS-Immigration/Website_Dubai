@@ -46,7 +46,7 @@ export default function ProgrammesTable({ serifClass, defaultTab = "citizenship"
           <div>
             <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.34em]" style={{ color: GOLD }}><span className="h-px w-8" style={{ background: GOLD }} />What we offer<span lang="ar" dir="rtl" className="font-arabic-display text-sm tracking-normal">برامجنا</span></p>
             <h2 className={`${serifClass} mt-5 text-[clamp(2.2rem,4.4vw,3.4rem)] font-medium leading-[1.05]`}>Compare Residency and <span className="italic" style={{ color: GOLD }}>Citizenship by Investment Programs</span></h2>
-            <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-[#0c1f3f]/60">Compare UAE Golden Visa, residency by investment and second citizenship programs by cost, timeline, family eligibility and mobility benefits. Our immigration consultants help you identify a program suited to your goals and investment range.</p>
+            <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-[#0c1f3f]/60">Compare UAE Golden Visa, residency by investment and second citizenship programs by cost, timeline, family eligibility and mobility benefits. The best immigration consultants help you identify a program suited to your goals and investment range.</p>
           </div>
           <div className="flex flex-wrap gap-2.5 text-center">
             {[["35", "jurisdictions"], ["100+", "programmes"], ["$90k", "entry point"], ["10", "citizenship countries"]].map(([v, u]) => (

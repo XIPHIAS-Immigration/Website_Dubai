@@ -115,7 +115,7 @@ function Hero({ serifClass }: { serifClass: string }) {
               <span lang="ar" dir="rtl" className="hidden font-arabic-display text-sm tracking-normal sm:inline">الهجرة والإقامة</span>
             </p>
             <h1 className={`${serifClass} mt-5 max-w-[13ch] text-[clamp(2.55rem,9.4vw,3.15rem)] font-medium leading-[0.96] text-white sm:max-w-[15ch] sm:text-[clamp(3.6rem,7.2vw,6.3rem)] lg:max-w-[15ch]`}>
-              Immigration Consultants in Dubai
+              Top Immigration Consultants in Dubai
               <span className="mt-3 block text-[0.52em] italic leading-[1.05] text-[#d5b866] sm:mt-4 sm:text-[0.58em]">for UAE Visa, Residency and Citizenship</span>
             </h1>
             <p className="mt-5 max-w-[34rem] text-[14px] leading-6 text-white/78 sm:mt-6 sm:max-w-[42rem] sm:text-[17px] sm:leading-8 lg:text-[18px]">XIPHIAS assists with Dubai visa, UAE Golden Visa, residency, citizenship by investment and skilled migration services. Work with experienced immigration consultants in Dubai for complete eligibility, documentation and application support.</p>
@@ -165,9 +165,9 @@ function Hero({ serifClass }: { serifClass: string }) {
 
 /* ─────────── 2 · WHAT BRINGS YOU HERE (interactive expanding panels) ─────────── */
 const INTENTS: { no: string; title: string; line: string; tag: string; href: string; media: { type: "img" | "video"; src: string } }[] = [
-  { no: "01", title: "Citizenship by Investment", line: "Secure second citizenship through eligible investment programs with support from experienced immigration consultants.", tag: "Explore Citizenship Programs", href: "/citizenship", media: { type: "img", src: IMG.family1 } },
+  { no: "01", title: "Citizenship by Investment", line: "Secure second citizenship through eligible investment programs with support from top immigration consultants.", tag: "Explore Citizenship Programs", href: "/citizenship", media: { type: "img", src: IMG.family1 } },
   { no: "02", title: "Residency by Investment", line: "Explore UAE Golden Visa and global residency programs with our Golden Visa consultants in Dubai.", tag: "Compare Residency Programs", href: "/residency", media: { type: "img", src: IMG.family2 } },
-  { no: "03", title: "Private Immigration Advisory", line: "Our immigration consultants assess your profile, budget, family and preferred destination.", tag: "Book a Private Consultation", href: "/personal-booking", media: { type: "video", src: V_ADVISOR } },
+  { no: "03", title: "Private Immigration Advisory", line: "The best immigration consultants assess your profile, budget, family and preferred destination.", tag: "Book a Private Consultation", href: "/personal-booking", media: { type: "video", src: V_ADVISOR } },
   { no: "04", title: "Corporate Mobility", line: "Dubai visa and UAE visa support for founders, executives, employees and international businesses.", tag: "Explore Global Corporate Mobility", href: "/corporate", media: { type: "img", src: IMG.corporate } },
 ];
 function WhatBringsYou({ serifClass }: { serifClass: string }) {
@@ -207,7 +207,7 @@ function WhatBringsYou({ serifClass }: { serifClass: string }) {
 
 /* ─────────── 4 · PROCESS (pinned one-card horizontal) ─────────── */
 const STEPS = [
-  { no: "01", title: "Private Consultation", line: "Our immigration consultants assess your nationality, goals, family, budget and timeline.", detail: "Confidential profile assessment", img: IMG.dubai },
+  { no: "01", title: "Private Consultation", line: "Our top immigration consultants assess your nationality, goals, family, budget and timeline.", detail: "Confidential profile assessment", img: IMG.dubai },
   { no: "02", title: "Program Selection", line: "We compare suitable UAE visa, Golden Visa, residency, citizenship and skilled migration pathways.", detail: "Cost · timeline · eligibility", img: IMG.portugal },
   { no: "03", title: "Application Management", line: "A dedicated advisor coordinates documentation, due diligence and application submission.", detail: "End-to-end coordination", img: IMG.greece },
   { no: "04", title: "Approval and Relocation", line: "We support the remaining immigration, passport and relocation formalities after approval.", detail: "Post-approval support", img: IMG.malta },
@@ -263,7 +263,7 @@ function CTA({ serifClass }: { serifClass: string }) {
         <div>
           <Eyebrow ar="ابدأ الآن">Your next move</Eyebrow>
           <h2 className={`${serifClass} mt-7 text-[clamp(2.6rem,5.5vw,4.6rem)] font-medium leading-[1.0]`}>Speak to an<br /><span className="italic" style={{ color: GOLD }}>Immigration Consultant in Dubai</span></h2>
-          <p className="mt-6 max-w-md text-[16px] leading-relaxed text-white/70">Tell us your destination, budget and family requirements. Our immigration consultants in Dubai will assess your eligibility and recommend suitable UAE visa, residency or citizenship options.</p>
+          <p className="mt-6 max-w-md text-[16px] leading-relaxed text-white/70">Tell us your destination, budget and family requirements. Our best immigration consultants in Dubai will assess your eligibility and recommend suitable UAE visa, residency or citizenship options.</p>
           <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center"><Btn href="/eligibility">Get My Free Eligibility Assessment</Btn><Btn ghost href="https://wa.me/971527275101">WhatsApp Our Dubai Team</Btn></div>
           <p lang="ar" dir="rtl" className="mt-8 font-arabic-display text-2xl" style={{ color: GOLD }}>مستقبلك العالمي يبدأ من هنا</p>
           <p className="mt-8 text-[12px] uppercase tracking-[0.18em] text-white/45">Confidential · No obligation · Personalised guidance</p>
